@@ -20,7 +20,7 @@ haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 
 [Cheerio](http://cheeriojs.github.io/cheerio/) 
 
-Fast, flexible, and lean implementation of core jQuery designed specifically for the server.
+> Fast, flexible, and lean implementation of core jQuery designed specifically for the server.
 
 ```
 npm install cheerio
@@ -31,7 +31,7 @@ npm install cheerio
 
 [request](https://github.com/request/request) 
 
-Simplified HTTP request client.
+> Simplified HTTP request client.
 
 ```
 npm install request

@@ -3,6 +3,7 @@
 What is scraping?  Who can explain this better then wikipedia.
 
 > Web scraping (web harvesting or web data extraction) is a computer software technique of extracting information from websites.
+
 from [wikipedia](https://en.wikipedia.org/wiki/Web_scraping)
 
 Okay another explaination:

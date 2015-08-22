@@ -2,10 +2,10 @@
 
 This is the summary of my book.
 
-* [Haxe general info]
+* Haxe general info
 	* [Build File](haxe/hxml.md)
 	* [Terminal info](haxe/terminal.md)
-* [Haxe and Node.js]
+* Haxe and Node.js
 	* [What is it](haxenode/what.md)
 	* [Why Haxe?](haxenode/why.md)
 	* [Download](haxenode/download.md)
