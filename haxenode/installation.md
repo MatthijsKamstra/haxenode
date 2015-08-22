@@ -1,21 +1,15 @@
-#Install Haxenode
-  
+#Installing
 
-##Install node externs for Haxe
-
-Setup haxelib if you haven't done so already
-    
-```
-haxelib setup
-```   
-And follow instructions.
+Okay I don't want to mention this again, but you need to install Node.js and Haxe first (read more about that [here](download.md))
 
 
-Haxe will have default externs for working with `node.js` : [https://github.com/HaxeFoundation/hxnodejs/](https://github.com/HaxeFoundation/hxnodejs/) but I have no idea when that will be released.
+##Install Node externs for Haxe
 
-Currently I would suggest you install
-[https://github.com/clemos/haxe-js-kit](https://github.com/clemos/haxe-js-kit).
-It has all the externs for `node.js` and **extras**!
+Haxe will have default externs for **node.js** : [https://github.com/HaxeFoundation/hxnodejs/](https://github.com/HaxeFoundation/hxnodejs/) but I can't figure out when this will be released.
+
+I suggest you install [https://github.com/clemos/haxe-js-kit](https://github.com/clemos/haxe-js-kit).
+It has all the externs for **node.js** and **extras**!
+In the future the default HaxeFoundation Node.js externs will be used, but the rest of the project is awesome too.
 
 
 ##Install **js-kit** using haxelib:

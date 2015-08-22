@@ -23,3 +23,11 @@ Extra info about Haxe, Node.js **and** the combination from the two.
 * [haxenode-js mailing list](https://groups.google.com/forum/#!forum/haxe-nodejs) 
 * [http://www.sublimetext.com/](http://www.sublimetext.com/)
 * [Other IDE/Editors](http://haxe.org/com/ide) 
+
+
+* [https://github.com/abedev/npm](https://github.com/abedev/npm)
+NPM types for Haxe
+```
+haxelib git npm https://github.com/abedev/npm
+```
+Documentation can be found [here](https://rawgit.com/abedev/npm/master/docs/index.html) 
