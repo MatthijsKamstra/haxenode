@@ -15,7 +15,7 @@ This is the summary of my book.
 * [Scraping](scraping/about.md)
 	* [Installation](scraping/installation.md)
 	* [Example](scraping/example.md)
-* [Contribute](contribut.md)
+* [Contribute](contribute.md)
 * [Haxejs WIP](http://matthijskamstra.github.io/haxejs)
 * [Community]
 * [haxelib]

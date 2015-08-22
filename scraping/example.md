@@ -5,7 +5,7 @@ This is an scraping example. If you need to know more in detail, open the tutori
 
 ## How to start
 
-_Don't forget the install [Haxe, Node.js](../haxenode/download.md) and [js-kit](../haxenode/installation.md)_
+_Don't forget the install [Haxe, Node.js](../haxenode/download.md) and [js-kit / Cheerio / Request](../haxenode/installation.md)_
 
 Create a folder named **nodeScraping** (but any name will do) and create folders **bin** and **src**.
 See example below:

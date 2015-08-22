@@ -29,7 +29,7 @@ npm install cheerio
 
 ##Install via NPM request:
 
-[request](https://github.com/request/request) 
+[Request](https://github.com/request/request) 
 
 > Simplified HTTP request client.
 
