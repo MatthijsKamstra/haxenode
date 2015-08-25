@@ -7,21 +7,14 @@ I knew there used to be a website (really old, when Haxe was spelled "haXe") tha
 But that is no more. So I decided to get some of that back.
 Based upon the information from the old site and my own need to document this.
 
-Visit the [Haxe and Node.js documentation](http://matthijskamstra.github.io/haxenode/) !
-
-
-## Documentation goals
-
-I wanted to make contributing to this documentation as easy as possible.  
-That's why I use Markdown; developers use it, but is really just plane English so **everybody** can write documentation!  
-And this documentation hosted on Github, developers favorite place to store code.  
-Even if you are not a developer and/or don't want to clone everything, you still can modify the files on the website (you need account to login in and change the `.md` files).
+### Visit the [http://matthijskamstra.github.io/haxenode/](http://matthijskamstra.github.io/haxenode/) !
 
 
 ## How to contribute?
 
 Read more about that [here](contribute.md).  
 But really it boils down to: **JUST DO IT!**
+
 
 
 ## How to build?

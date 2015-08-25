@@ -19,10 +19,10 @@ How to open the terminal on Osx
 And you are done.
 
 ###Linux
-???
+fixme
 
 ###Window
-???
+fixme
 
 
 ## Open folder in terminal
@@ -34,9 +34,9 @@ Once you started the terminal, you need to direct it to the correct folder
 4. press enter
 
 It will look something like this:
+
 ```
 → cd /path/to/folder/projectName
-path:     ~/path/to/server/projectName
 ```
 
 
