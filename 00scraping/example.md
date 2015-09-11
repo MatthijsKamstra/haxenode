@@ -20,21 +20,23 @@ See example below:
 ```
 
 
+## Install
+
+check out [the installation](installation.md).
+
+
 ## The Main.hx
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder. 
-There 
 
 ```
 package ;
 
 import js.Node;
+
 import js.npm.Cheerio;
 import js.npm.Request;
 
-/**
- * @author Matthijs Kamstra aka [mck]
- */
 class Main
 {
 	function new()

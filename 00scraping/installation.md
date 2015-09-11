@@ -16,7 +16,7 @@ haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 ```
 
 
-##Install via NPM cheerio:
+##Install cheerio via NPM:
 
 [Cheerio](http://cheeriojs.github.io/cheerio/) 
 
@@ -27,7 +27,7 @@ npm install cheerio
 ```
 
 
-##Install via NPM request:
+##Install request via NPM:
 
 [Request](https://github.com/request/request) 
 
