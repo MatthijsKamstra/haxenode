@@ -2,17 +2,17 @@
 
 ## All the power of Haxe
 
-* [Strong Typing](http://haxe.org/ref/type_advanced") 
-* [Inlining](http://haxe.org/ref/inline") 
-* [Interfaces](http://haxe.org/ref/oop") 
-* [Type inference](http://haxe.org/ref/type_infer") 
-* [Generics](http://haxe.org/ref/type_params")
-* [Packages](http://haxe.org/ref/packages")
-* [Classes](http://haxe.org/ref/oop")
-* [Conditionals](http://haxe.org/ref/conditionals") 
-* [Macros](http://haxe.org/manual/macros")
-* [Enums](http://haxe.org/ref/enums")
-* [Iterators](http://haxe.org/ref/iterators") 
+* [Strong Typing](http://haxe.org/manual/types.html) 
+* [Inlining](http://haxe.org/manual/class-field-inline.html) 
+* [Interfaces](http://haxe.org/manual/types-interfaces.html) 
+* [Type inference](http://haxe.org/manual/type-system-type-inference.html) 
+* [Generics](http://haxe.org/manual/type-system-type-parameters.html)
+* [Packages](http://haxe.org/manual/type-system-modules-and-paths.html)
+* [Classes](http://haxe.org/manual/types-class-instance.html)
+* [Conditionals](http://haxe.org/manual/lf-condition-compilation.html) 
+* [Macros](http://haxe.org/manual/macro.html)
+* [Enums](http://haxe.org/manual/types-enum-instance.html)
+* [Iterators](http://haxe.org/manual/lf-iterators.html) 
 
 
 ## All the benefits of Node.js

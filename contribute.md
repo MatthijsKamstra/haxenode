@@ -12,8 +12,9 @@ And this documentation hosted on Github, developers favorite place to store code
 Even if you are not a developer and/or don't want to clone everything, you still can modify the files on the website (you only need an account to login in and change the `.md` files).
 
 
-### Visit [https://github.com/MatthijsKamstra/haxenode](https://github.com/MatthijsKamstra/haxenode)
+### Visit [https://github.com/MatthijsKamstra/haxenode](https://github.com/MatthijsKamstra/haxenode) to modify the "source" aka markdown files.
 
+Found any "bug" or have a great idea? Please create a [new issue](https://github.com/MatthijsKamstra/haxenode/issues/new).
 
 
 ## Why?
@@ -38,8 +39,6 @@ There is very little to find about the combination of Haxe and Node.js
 
 
 ## Structure
-
-I haven't really given it a long thought, so this is my first idea about it:
 
 Every new tutorial should have:
 

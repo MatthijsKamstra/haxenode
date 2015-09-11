@@ -1,16 +1,27 @@
 #TODO
 
-* add images
-* add code examples folders
+autoconvert
+* http://lib.haxe.org/p/refactor
+
+```
+js_to_haxe.cmd <path_to_js_source_directory>
+```
+
+haxelib install refactor
+
+
+
+
+
 * ask permission from writers blogposts
 * write about this article
-    *http://saumya.github.io/ray/articles/50/
+    * http://saumya.github.io/ray/articles/50/
 * https://github.com/clemos/haxetelier-haxe-nodejs
 * https://github.com/janekp/saffron
 * https://groups.google.com/forum/#!topic/haxelang/6lzIeg6RUC4
 
 -----
- 	http://stackoverflow.com/questions/14116253/import-haxe-modules-into-a-node-js-script
+http://stackoverflow.com/questions/14116253/import-haxe-modules-into-a-node-js-script
 
 //Haxenode.hx
 

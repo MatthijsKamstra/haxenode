@@ -3,7 +3,6 @@
 This is the summary of my book.
 
 * [Haxe basics](haxe/about.md)
-	* [What is Haxe?](haxe/what-is-haxe.md)
 	* [Installation](haxe/installation.md)
 	* [Code editor](haxe/choosing-a-code-editor.md)
 	* [Hello world](haxe/hello-world.md)
@@ -15,12 +14,16 @@ This is the summary of my book.
 	* [Installation](haxenode/installation.md)
 	* [Example](haxenode/example.md)
 	* [Resources](haxenode/resource.md)
-* [Scraping](scraping/about.md)
-	* [Installation](scraping/installation.md)
-	* [Example](scraping/example.md)
+* [Scraping](00scraping/about.md)
+	* [Installation](00scraping/installation.md)
+	* [Example](00scraping/example.md)
+* [Slack bot](01slackbot/about.md)
+	* [Installation](01slackbot/installation.md)
+	* [Example](01slackbot/example.md)
 * Resources
+	* [Who to follow](follow.md)
 	* [Haxejs](http://matthijskamstra.github.io/haxejs)
 	* [Try Haxe!](http://try.haxe.org/)
 	* [Community](https://groups.google.com/forum/#!topic/haxelang)
 * [Contribute](contribute.md)
-* [Source](https://github.com/MatthijsKamstra/haxenode)
+* [Source](https://github.com/MatthijsKamstra/haxenode/)

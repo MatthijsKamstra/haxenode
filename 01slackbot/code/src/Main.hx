@@ -11,7 +11,7 @@ class Main
 	{
 		trace("Slack Incoming Webhooks Example");
 
-		var webhookURL = "https://hooks.slack.com/services/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";
+		var webhookURL = "https://hooks.slack.com/services/USE/YOUR/CODE/HERE";
 		var slack = new Webhook(webhookURL);
 
 		var payload : Webhook.Payload = { 

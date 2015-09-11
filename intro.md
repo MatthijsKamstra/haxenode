@@ -1,11 +1,16 @@
 # Haxe and Node.js
 
+![Haxe logo](img/haxe_nodejs_logos.png) 
+
 I wanted to do a quick prototype with Node.js and my favorite programming language Haxe.  
 But I couldn't find any documentation on how to start.  
 I knew there used to be a website (really old, when Haxe was spelled "haXe") that got you started.
 
 But that is no more. So I decided to get some of that back.
 Based upon the information from the old site and my own need to document this.
+
+I hope this will help. If you think so, why not help with [contribution](contribute.md) to this tutorial site.
+
 
 ###How will this help me?
 
@@ -14,7 +19,17 @@ How to setup your project, install externs and how to work with them. This proba
 
 ###For who is this?
 
-Probably for javascript developers who already started with Haxe and are curious about Node.js.
+For clever, cool and handsom developers. Duh! :D
+
+* Probably for javascript developers who already started with Haxe and are curious about Node.js.
+* Probably for javascript developers who already started with Haxe.
+* Developers who know that javascript sucks for bigger projects. 
+* Developers who have tried CoffeeScript and TypeScript.
+* Javascript developers who write more then a half a dozen classes.
+* Flash-developers looking for an AS3 replacement
+* Flash-developers starting with js and trying to compete with plain js-developers
+* Freelance developers working with js
+* Small developers teams working on big projects  
 
 
 ## Documentation goals
@@ -37,7 +52,7 @@ Writing documentation is very similar to writing a book.
 * [building markdown based developer docs](https://medium.com/code-stories/building-markdown-based-developer-docs-87c0317c56f7)
 
 
-## Other resources about writing documentation (Markdown)
+**Other resources about writing documentation (Markdown)**
 
 * [13-things-people-hate-about-your-open-source-docs/](http://blog.smartbear.com/careers/13-things-people-hate-about-your-open-source-docs/)
 * <https://github.com/PharkMillups/beautiful-docs>
