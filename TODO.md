@@ -23,15 +23,13 @@ https://github.com/GitbookIO/plugin-disqus
 
 https://www.patreon.com/posts/2740520
 
-### Examples
+### Examples DB
 https://github.com/louischatriot/nedb
+https://github.com/typicode/lowdb
 
+### desktop 
 https://github.com/nwjs/nw.js/
 
-https://docs.nodejitsu.com/articles/file-system/how-to-read-files-in-nodejs
-https://docs.nodejitsu.com/articles/file-system/how-to-write-files-in-nodejs
-
-https://github.com/typicode/lowdb
 
 
 

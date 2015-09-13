@@ -8,12 +8,29 @@ compile.hxml
 -cmd echo "│ ├── haxe/code"
 
 
-# hello world
+# scraping
 -cmd cd ../../
--cmd cd 00helloworld/code/
+-cmd cd 00scraping/code/
 --next 
 javascript.hxml
--cmd echo "│ ├── helloworld/code"
+-cmd echo "│ ├── scraping/code"
+
+
+
+# slack
+-cmd cd ../../
+-cmd cd 01slackbot/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── slackbot/code"
+
+
+# website
+-cmd cd ../../
+-cmd cd 02website/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── website/code"
 
 
 
