@@ -1,5 +1,12 @@
 #TODO
 
+* ask permission from writers blogposts
+* write about this article
+    * http://saumya.github.io/ray/articles/50/
+* https://github.com/clemos/haxetelier-haxe-nodejs
+* https://github.com/janekp/saffron
+* https://groups.google.com/forum/#!topic/haxelang/6lzIeg6RUC4
+
 ###autoconvert
 * http://lib.haxe.org/p/refactor
 
@@ -11,13 +18,8 @@ haxelib install refactor
 
 ```
 
-
-
-
 ### Disqus for the website?
 https://github.com/GitbookIO/plugin-disqus
-
-
 
 ----
 
@@ -25,24 +27,12 @@ https://www.patreon.com/posts/2740520
 
 ### Examples DB
 https://github.com/louischatriot/nedb
-https://github.com/typicode/lowdb
 
 ### desktop 
 https://github.com/nwjs/nw.js/
 
-
-
-
-
-
-* ask permission from writers blogposts
-* write about this article
-    * http://saumya.github.io/ray/articles/50/
-* https://github.com/clemos/haxetelier-haxe-nodejs
-* https://github.com/janekp/saffron
-* https://groups.google.com/forum/#!topic/haxelang/6lzIeg6RUC4
-
 -----
+
 http://stackoverflow.com/questions/14116253/import-haxe-modules-into-a-node-js-script
 
 //Haxenode.hx
