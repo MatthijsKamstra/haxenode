@@ -108,7 +108,7 @@ typedef Payload =
 ## The Haxe build file, javascript.hxml
 
 Copy and past the following lines in a document named `javascript.hxml`
-This is the short version, you want to chech out the full version open this [file](/slack/javascript.hxml);
+This is the short version, you want to chech out the full version open this [file](/code/javascript.hxml);
 
 ```
 # // javascript.hxml
