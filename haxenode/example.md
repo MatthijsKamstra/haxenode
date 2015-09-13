@@ -33,21 +33,28 @@ node example.js
 ```
 // Haxenode.hx
 
+package ;
+
 import js.Node;
-class Haxenode {
-	public static function main() {
-		var server = Node.http.createServer( function( req:NodeHttpServerReq, res:NodeHttpServerResp)
+import js.node.Http;
+import js.node.http.ServerResponse;
+
+class Main
+{
+	static public function main()
+	{		
+		var server = Http.createServer(function (req:HttpServerReq, res:ServerResponse)
 		{
 			res.setHeader("Content-Type","text/plain");
 			res.writeHead(200);
 			res.end('Hello World\\n');
-		}
-	);
+		});
+		server.listen(1337,"localhost");
 
-	server.listen(1337,"localhost");
-	trace( 'Server running at http://127.0.0.1:1337/' );
+		trace( 'Server running at http://127.0.0.1:1337/' );
 	}
 }
+
 ```
 
 
