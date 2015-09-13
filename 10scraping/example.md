@@ -1,6 +1,6 @@
 #Example 
 
-This is an scraping example. If you need to know more in detail, open the tutorial on [smashmagazine](http://www.smashingmagazine.com/2015/04/web-scraping-with-nodejs/), it has all the information you need.
+This is a scraping example. If you need to know more in detail, open the tutorial on [smashmagazine](http://www.smashingmagazine.com/2015/04/web-scraping-with-nodejs/), it has all the information you need.
 
 
 ## How to start
