@@ -87,7 +87,7 @@ You could build everything directly in the terminal, but this is more readable a
 -main Main
 
 #JavaScript target
--js bin/NodeJsScraping.js
+-js bin/example.js
 
 #You can use -D source-map-content (requires Haxe 3.1+) to have the .hx 
 #files directly embedded into the map file, this way you only have to 
@@ -108,7 +108,7 @@ You could build everything directly in the terminal, but this is more readable a
 --macro npm.Package.export("package.json")
 
 # Use terminal command to start Node.js!
--cmd node bin/NodeJsScraping.js
+-cmd node bin/example.js
 ```
 
 
