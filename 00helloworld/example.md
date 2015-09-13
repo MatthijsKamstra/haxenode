@@ -86,11 +86,3 @@ To finish and see what we have, build the file and see the result
 3. type `haxe javascript.hxml`
 4. press enter
 
-
-It will output 
-
-	Node.js Scraping Example
-	It’s 26.3 degrees Celsius.
-
-> It's possible that it outputs F, like the tutorial says.  
-> But I got Celsius so I changed it accordantly 
