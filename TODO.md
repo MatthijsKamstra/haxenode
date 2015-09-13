@@ -1,13 +1,37 @@
 #TODO
 
-autoconvert
+###autoconvert
 * http://lib.haxe.org/p/refactor
 
 ```
 js_to_haxe.cmd <path_to_js_source_directory>
 ```
-
+```
 haxelib install refactor
+
+```
+
+
+
+
+### Disqus for the website?
+https://github.com/GitbookIO/plugin-disqus
+
+
+
+----
+
+https://www.patreon.com/posts/2740520
+
+### Examples
+https://github.com/louischatriot/nedb
+
+https://github.com/nwjs/nw.js/
+
+https://docs.nodejitsu.com/articles/file-system/how-to-read-files-in-nodejs
+https://docs.nodejitsu.com/articles/file-system/how-to-write-files-in-nodejs
+
+https://github.com/typicode/lowdb
 
 
 
