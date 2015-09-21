@@ -18,17 +18,26 @@ haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 
 
 
-##Install request via NPM :
+##Install express via NPM :
 
-[Request](https://github.com/request/request) 
+[Express](https://github.com/strongloop/express) 
 
-> Simplified HTTP request client.
+> Fast, unopinionated, minimalist web framework for node.
 
 ```
-npm install request
+npm install express
 ```
 
 
 
+## Install for the more complex example
 
+Express uses more dependencies:
+
+```
+npm install morgan
+npm install body-parser
+npm install serve-favicon
+npm install express
+```
 

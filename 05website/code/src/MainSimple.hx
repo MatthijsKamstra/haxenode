@@ -3,9 +3,6 @@ package ;
 import js.Node;
 import js.npm.Express;
 
-
-import slack.*;
-
 /**
  * @author Matthijs Kamstra aka [mck]
  */
@@ -16,7 +13,8 @@ class Main
 
 	function new()
 	{
-		trace("Express website");
+		trace("Express website: open browser at http://localhost:3000");
+		trace("stop node : CTRL + c");
 
 		// source http://expressjs.com/starter/hello-world.html
 

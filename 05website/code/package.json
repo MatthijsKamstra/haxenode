@@ -1,5 +1,13 @@
 {
+	"license": "MIT",
+	"description": "Create a website with express",
+	"author": "Matthijs Kamstra aka [mck]",
+	"start": "node index.js",
+	"private": true,
 	"dependencies": {
+		"morgan": "^1.5.1",
+		"body-parser": "^1.10.1",
+		"serve-favicon": "*",
 		"express": "~4.0"
 	}
 }
