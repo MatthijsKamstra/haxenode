@@ -6,14 +6,14 @@ import js.npm.Express;
 /**
  * @author Matthijs Kamstra aka [mck]
  */
-class Main
+class MainBasic
 {
 
 	private var server:Dynamic;
 
 	function new()
 	{
-		trace("Express website: open browser at http://localhost:3000");
+		trace("Express website (Basic): open browser at http://localhost:3000");
 		trace("stop node : CTRL + c");
 
 		// source http://expressjs.com/starter/hello-world.html
@@ -35,6 +35,6 @@ class Main
 
     static public function main()
     {
-        var main = new Main();
+        var main = new MainBasic();
 	}
 }

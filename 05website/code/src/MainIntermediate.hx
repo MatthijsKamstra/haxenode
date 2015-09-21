@@ -10,12 +10,12 @@ import js.npm.express.*;
 /**
  * @author Matthijs Kamstra aka [mck]
  */
-class Main
+class MainIntermediate
 {
 
 	function new()
 	{
-		trace("Express website: open browser at http://localhost:3000");
+		trace("Express website (Intermediate): open browser at http://localhost:3000");
 		trace("stop node : CTRL + c");
 
 		// source: http://expressjs.com/starter/basic-routing.html
@@ -26,18 +26,18 @@ class Main
 		// all environments
 		app.set('port', 3000);
 		app.use(new Favicon(Node.__dirname + '/public/favicon.ico'));
-		app.use(new Morgan('dev'));
+		app.use(new Logger('dev'));
 		app.use(BodyParser.urlencoded());
 		// app.use(new MethodOverride());
 		app.use(new Static(Path.join(Node.__dirname, 'public')));
 
 		//Routes
 		app.get('/', function (req, res) {
-			res.sendfile(Node.__dirname + '/public/index.html');
+			res.sendfile(Node.__dirname + '/public/index_intermediate.html');
 		});
 
 		app.get('/remote', function (req, res) {
-			res.sendfile(Node.__dirname + '/public/remote.html');
+			res.sendfile(Node.__dirname + '/public/remote_intermediate.html');
 		});
 
 		app.use(function(req, res, next) {
@@ -53,6 +53,6 @@ class Main
 
 	static public function main()
 	{
-		var main = new Main();
+		var main = new MainIntermediate();
 	}
 }

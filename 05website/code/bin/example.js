@@ -1,5 +1,5 @@
 (function (console) { "use strict";
-var Main = function() {
+var MainAdvanced = function() {
 	console.log("Express website: open browser at http://localhost:3000");
 	console.log("stop node : CTRL + c");
 	var app = new (Express__0||require("express"))();
@@ -7,24 +7,29 @@ var Main = function() {
 	app.set("port",3000);
 	app["use"](new (Favicon__17||require("serve-favicon"))(js_Node.__dirname + "/public/favicon.ico"));
 	app["use"](new (Morgan__18||require("morgan"))("dev"));
+	app["use"]((BodyParser__19||require("body-parser")).json());
 	app["use"]((BodyParser__19||require("body-parser")).urlencoded());
 	app["use"](new (Static__20||require("express").static)((Path__6||require("path")).join(js_Node.__dirname,"public")));
 	app.get("/",function(req,res) {
-		res.sendfile(js_Node.__dirname + "/public/index.html");
+		res.sendfile(js_Node.__dirname + "/public/index_advanced.html");
 	});
 	app.get("/remote",function(req1,res1) {
-		res1.sendfile(js_Node.__dirname + "/public/remote.html");
+		res1.sendfile(js_Node.__dirname + "/public/remote_advanced.html");
 	});
-	app["use"](function(req2,res2,next) {
-		res2.status(404).send("404");
+	app.get("/api/users",function(req2,res2) {
+		var username = req2.param("username");
+		res2.send("username: " + username);
+	});
+	app["use"](function(req3,res3,next) {
+		res3.status(404).send("404");
 	});
 	server.listen(app.get("port"),function() {
 		console.log("Express server listening on port " + Std.string(app.get("port")));
 	});
 };
-Main.__name__ = true;
-Main.main = function() {
-	var main = new Main();
+MainAdvanced.__name__ = true;
+MainAdvanced.main = function() {
+	var main = new MainAdvanced();
 };
 Math.__name__ = true;
 var Std = function() { };
@@ -135,5 +140,5 @@ var Morgan__18 = require("morgan");
 var Router__1 = require("express").Router;
 var Static__20 = require("express")["static"];
 js_Node.__dirname = __dirname;
-Main.main();
+MainAdvanced.main();
 })(typeof console != "undefined" ? console : {log:function(){}});

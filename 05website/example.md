@@ -61,7 +61,7 @@ class Main
 ###More complex example
 
 This is the basic example how to work with expressjs.
-You can find a more complex version in de code folder: [Main.hx](code/src/Main.hx)
+You can find a more complex version in de code folder: [Main.hx](code/src/MainIntermediate.hx)
 
 (this example described above can be found in [MainSimple.hx](code/src/MainSimple.hx))
 

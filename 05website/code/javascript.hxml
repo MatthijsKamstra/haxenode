@@ -5,7 +5,7 @@
 -cp src
 
 #this class wil be used as entry point for your app.
--main Main
+-main MainAdvanced
 
 #JavaScript target
 -js bin/example.js
