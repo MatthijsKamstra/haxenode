@@ -33,6 +33,12 @@ https://github.com/nwjs/nw.js/
 
 -----
 
+http://book.mixu.net/node/ch10.html
+
+
+-----
+
+
 http://stackoverflow.com/questions/14116253/import-haxe-modules-into-a-node-js-script
 
 //Haxenode.hx

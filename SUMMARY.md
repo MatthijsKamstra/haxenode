@@ -7,7 +7,7 @@ This is the summary of my book.
 	* [Code editor](haxe/choosing-a-code-editor.md)
 	* [Hello world](haxe/hello-world.md)
 	* [Learn Haxe](haxe/learn-haxe.md)
-* Haxe and Node.js
+* [Haxe and Node.js](haxenode/about.md)
 	* [What is it](haxenode/what.md)
 	* [Why Haxe?](haxenode/why.md)
 	* [Download](haxenode/download.md)
