@@ -5,6 +5,8 @@
 -cp src
 
 #this class wil be used as entry point for your app.
+# -main MainBasic
+# -main MainIntermediate
 -main MainAdvanced
 
 #JavaScript target

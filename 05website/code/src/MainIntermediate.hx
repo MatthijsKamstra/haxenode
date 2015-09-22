@@ -18,7 +18,7 @@ class MainIntermediate
 		trace("Express website (Intermediate): open browser at http://localhost:3000");
 		trace("stop node : CTRL + c");
 
-		// source: http://expressjs.com/starter/basic-routing.html
+		// source: https://www.codementor.io/nodejs/tutorial/build-google-tv-raspberrypi-nodejs-socket-io
 
 		var app : Express   = new Express();
 		var server : Dynamic = Http.createServer(app);
@@ -26,7 +26,8 @@ class MainIntermediate
 		// all environments
 		app.set('port', 3000);
 		app.use(new Favicon(Node.__dirname + '/public/favicon.ico'));
-		app.use(new Logger('dev'));
+		// there is no Logger class in js-kit, so I added it in this source folder (js/npm/express/Logger.hx)
+		app.use(new Logger('dev')); 
 		app.use(BodyParser.urlencoded());
 		// app.use(new MethodOverride());
 		app.use(new Static(Path.join(Node.__dirname, 'public')));

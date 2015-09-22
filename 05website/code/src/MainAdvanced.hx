@@ -18,6 +18,8 @@ class MainAdvanced
 		trace("Express website: open browser at http://localhost:3000");
 		trace("stop node : CTRL + c");
 
+		// https://www.codementor.io/nodejs/tutorial/build-google-tv-raspberrypi-nodejs-socket-io
+		// https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters
 
 		var app : Express   = new Express();
 		var server : Dynamic = Http.createServer(app);
@@ -25,10 +27,12 @@ class MainAdvanced
 		// all environments
 		app.set('port', 3000);
 		app.use(new Favicon(Node.__dirname + '/public/favicon.ico'));
+		// if you read the code from Intermediate example you noticed Logger class here.
+		// for some reason Morgan is used in js-kit, which you will see when you open the Logger.hx class I added :P
 		app.use(new Morgan('dev'));
 		app.use(BodyParser.json());
 		app.use(BodyParser.urlencoded());
-		// app.use(new MethodOverride());
+		// app.use(new MethodOverride()); // can't find it in js-kit AND don't know what it does...
 		app.use(new Static(Path.join(Node.__dirname, 'public')));
 
 		//Routes
