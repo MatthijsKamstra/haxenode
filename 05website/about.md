@@ -25,4 +25,8 @@ This example covers 3 different examples
 - [Intermediate](exampleIntermediate.md)
 - [Advanced](exampleAdvanced.md)
 
+
+
+Because I don't want to spend time on styling the `.html`/`.jade` files, I use [Bootstrap](http://getbootstrap.com/getting-started/#examples)
+
 ----

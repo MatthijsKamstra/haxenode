@@ -30,7 +30,7 @@ npm install express
 
 
 
-## Install for the more complex example
+## Install for the more Intermediate and Advance example
 
 Express uses more dependencies:
 
@@ -39,6 +39,7 @@ npm install morgan
 npm install body-parser
 npm install serve-favicon
 npm install express
+npm install jade
 ```
 
 -----

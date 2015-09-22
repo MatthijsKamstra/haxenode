@@ -1,7 +1,9 @@
-#Example simple website
+#Example intermediate website
 
-We start with a simple example van de express homepage:
-<http://expressjs.com/starter/hello-world.html>
+This example is probably a collection of the next tutorials:
+
+- https://www.codementor.io/nodejs/tutorial/build-google-tv-raspberrypi-nodejs-socket-io
+- https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters
 
 
 ## How to start
@@ -12,59 +14,78 @@ See example below:
 ```
 + foobar
 	+ bin
+		+ public
+			+ css
+			+ fonts
+			+ images
+			+ js
+			- favicon.ico
+			- index_advanced.html
+			- index_intermediate.html
+			- remote_intermediate.html
 	+ src
-		- Main.hx
+		- MainIntermediate.hx
 	- javascript.hxml
 ```
 
 
 ## Install
 
-check out [the installation](installation.md).
+Check out [the installation](installation.md).
 
 
-## The Main.hx
+## The MainIntermediate.hx
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder. 
 
 ```
 package ;
 import js.Node;
+import js.node.Http;
+import js.node.Path;
 import js.npm.Express;
-/**
- * @author Matthijs Kamstra aka [mck]
- */
-class Main
+import js.npm.express.*;
+class MainIntermediate
 {
-	private var server:Dynamic;
 	function new()
 	{
-		trace("Express website");
-		var app : Express = new Express();
+		var app : Express   = new Express();
+		var server : Dynamic = Http.createServer(app);
+
+		app.set('port', 3000);
+		app.use(new Favicon(Node.__dirname + '/public/favicon.ico'));
+		// there is no Logger class in js-kit, so I added it in this source folder (js/npm/express/Logger.hx)
+		app.use(new Logger('dev')); 
+		app.use(BodyParser.urlencoded());
+		// app.use(new MethodOverride()); // can't find it in js-kit AND don't know what it does...
+		app.use(new Static(Path.join(Node.__dirname, 'public')));
+
+		// Routes
+		// http://localhost:3000
 		app.get('/', function (req, res) {
-			res.send('Hello World!');
+			res.sendfile(Node.__dirname + '/public/index_intermediate.html');
 		});
-		server = app.listen(3000, function () 
-		{
-			var host = server.address().address;
-			var port = server.address().port;
-			trace( 'Example app listening at http://$host:$port'); // ???? http://:::3000
+
+		// http://localhost:3000/remote
+		app.get('/remote', function (req, res) {
+			res.sendfile(Node.__dirname + '/public/remote_intermediate.html');
+		});
+
+		// http://localhost:3000/nope
+		app.use(function(req, res, next) {
+			res.status(404).send('404');
+		});
+
+		server.listen(app.get('port'), function(){
+			trace('Express server listening on port ' + app.get('port'));
 		});
 	}
-    static public function main()
-    {
-        var main = new Main();
+	static public function main()
+	{
+		var main = new MainIntermediate();
 	}
-}
+}}
 ```
-
-###More complex example
-
-This is the basic example how to work with expressjs.
-You can find a more complex version in de code folder: [Main.hx](code/src/MainIntermediate.hx)
-
-(this example described above can be found in [MainSimple.hx](code/src/MainSimple.hx))
-
 
 ## The Haxe build file, javascript.hxml
 
@@ -75,9 +96,10 @@ This is the short version, you want to chech out the full version open this [fil
 # // javascript.hxml
 -lib js-kit
 -cp src
--main Main
+-main MainIntermediate
 -js bin/example.js
--cmd node bin/example.js
+-cmd cd bin
+-cmd node example.js
 ```
 
 
@@ -90,3 +112,5 @@ To finish and see what we have, build the file and see the result
 2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
 3. type `haxe javascript.hxml`
 4. press enter
+
+----

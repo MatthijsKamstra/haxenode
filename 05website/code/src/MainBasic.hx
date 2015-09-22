@@ -14,7 +14,7 @@ class MainBasic
 	function new()
 	{
 		trace("Express website (Basic): open browser at http://localhost:3000");
-		trace("stop node : CTRL + c");
+		trace("Stop node.js : CTRL + c");
 
 		// source http://expressjs.com/starter/hello-world.html
 

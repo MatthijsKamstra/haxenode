@@ -16,7 +16,7 @@ class MainIntermediate
 	function new()
 	{
 		trace("Express website (Intermediate): open browser at http://localhost:3000");
-		trace("stop node : CTRL + c");
+		trace("Stop node.js : CTRL + c");
 
 		// source: https://www.codementor.io/nodejs/tutorial/build-google-tv-raspberrypi-nodejs-socket-io
 
@@ -29,18 +29,21 @@ class MainIntermediate
 		// there is no Logger class in js-kit, so I added it in this source folder (js/npm/express/Logger.hx)
 		app.use(new Logger('dev')); 
 		app.use(BodyParser.urlencoded());
-		// app.use(new MethodOverride());
+		// app.use(new MethodOverride()); // can't find it in js-kit AND don't know what it does...
 		app.use(new Static(Path.join(Node.__dirname, 'public')));
 
-		//Routes
+		// Routes
+		// http://localhost:3000
 		app.get('/', function (req, res) {
 			res.sendfile(Node.__dirname + '/public/index_intermediate.html');
 		});
 
+		// http://localhost:3000/remote
 		app.get('/remote', function (req, res) {
 			res.sendfile(Node.__dirname + '/public/remote_intermediate.html');
 		});
 
+		// http://localhost:3000/nope
 		app.use(function(req, res, next) {
 			res.status(404).send('404');
 		});

@@ -1,7 +1,16 @@
-#Example simple website
+#Example advanced website
 
-We start with a simple example van de express homepage:
-<http://expressjs.com/starter/hello-world.html>
+This example is probably a collection of the next tutorials:
+
+- https://www.codementor.io/nodejs/tutorial/build-google-tv-raspberrypi-nodejs-socket-io
+- https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters
+- http://www.clock.co.uk/blog/a-simple-website-in-nodejs-with-express-jade-and-stylus
+
+
+With this we will also be using jade
+But I have NO experience with Jade, so I decide to use a quick way to convert exhisting html to jade:
+<http://html2jade.org/>
+
 
 
 ## How to start
@@ -12,58 +21,108 @@ See example below:
 ```
 + foobar
 	+ bin
+		+ public
+			+ css
+			+ fonts
+			+ images
+			+ js
+			+ views
+				- index.jade
+			- favicon.ico
+			- index_advanced.html
+			- index_intermediate.html
+			- remote_intermediate.html
 	+ src
-		- Main.hx
+		- MainIntermediate.hx
 	- javascript.hxml
 ```
-
 
 ## Install
 
 check out [the installation](installation.md).
 
 
-## The Main.hx
+## The MainAdvanced.hx
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder. 
 
 ```
 package ;
 import js.Node;
+import js.node.Http;
+import js.node.Path;
 import js.npm.Express;
-/**
- * @author Matthijs Kamstra aka [mck]
- */
-class Main
+import js.npm.express.*;
+import js.npm.Jade;
+class MainAdvanced
 {
-	private var server:Dynamic;
 	function new()
 	{
-		trace("Express website");
-		var app : Express = new Express();
-		app.get('/', function (req, res) {
-			res.send('Hello World!');
+		var app : Express   = new Express();
+		var server : Dynamic = Http.createServer(app);
+
+		app.set('port', 3000);
+		app.set('views', Node.__dirname + '/public/views');
+		app.set('view engine', 'jade');
+		app.use(new Favicon(Node.__dirname + '/public/favicon.ico'));
+		// if you read the code from Intermediate example you noticed Logger class here.
+		// for some reason Morgan is used in js-kit, which you will see when you open the Logger.hx class I added :P
+		app.use(new Morgan('dev'));
+		app.use(BodyParser.json());
+		app.use(BodyParser.urlencoded());
+		// app.use(new MethodOverride()); // can't find it in js-kit AND don't know what it does...
+		app.use(new Static(Path.join(Node.__dirname, 'public')));
+
+		app.get('/', function (req:Request,res:Response) {
+			res.sendfile(Node.__dirname + '/public/index_advanced.html');
 		});
-		server = app.listen(3000, function () 
-		{
-			var host = server.address().address;
-			var port = server.address().port;
-			trace( 'Example app listening at http://$host:$port'); // ???? http://:::3000
+
+		app.get('/remote', function (req:Request,res:Response) {
+			res.sendfile(Node.__dirname + '/public/remote_advanced.html');
+		});
+
+		app.get('/jade', function (req:Request,res:Response) {
+			res.render('index',{title:'Home',h1:'Title'});
+		});
+
+		// http://localhost:3000/api/users?username=foobar
+		// routes will go here
+		app.get('/api/users', function(req, res) {
+			var username = req.param('username');  
+			res.send('username: ' + username );
+		});
+
+		// POST http://localhost:8080/api/users
+		// app.post('/api/users', function (req, res) {
+		// 	var _req : Dynamic = req;
+		// 	var _username = _req.body.username;
+		// 	res.send('_username: ' + _username);
+		// });
+
+
+		// var sample = "My name is <strong>::name::</strong>, <em>::age::</em> years old";
+		// var user = {name:"Mark", age:30};
+		// var template = new haxe.Template(sample);
+		// var output = template.execute(user);
+		// trace(output);
+
+		app.use(function(req, res, next) {
+			res.status(404).send('404');
+			// res.status(404).send(output);
+		});
+
+		server.listen(app.get('port'), function(){
+			trace('Express server listening on port ' + app.get('port'));
 		});
 	}
-    static public function main()
-    {
-        var main = new Main();
+
+	static public function main()
+	{
+		var main = new MainAdvanced();
 	}
 }
 ```
 
-###More complex example
-
-This is the basic example how to work with expressjs.
-You can find a more complex version in de code folder: [Main.hx](code/src/MainIntermediate.hx)
-
-(this example described above can be found in [MainSimple.hx](code/src/MainSimple.hx))
 
 
 ## The Haxe build file, javascript.hxml
@@ -75,9 +134,10 @@ This is the short version, you want to chech out the full version open this [fil
 # // javascript.hxml
 -lib js-kit
 -cp src
--main Main
+-main MainAdvanced
 -js bin/example.js
--cmd node bin/example.js
+-cmd cd bin
+-cmd node example.js
 ```
 
 
@@ -90,3 +150,5 @@ To finish and see what we have, build the file and see the result
 2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
 3. type `haxe javascript.hxml`
 4. press enter
+
+----

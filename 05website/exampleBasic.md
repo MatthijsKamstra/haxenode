@@ -1,6 +1,6 @@
-#Example simple website
+#Example basic website
 
-We start with a simple example van de express homepage:
+We start with a simple example from the ExpressJS homepage:
 <http://expressjs.com/starter/hello-world.html>
 
 ## How to start
@@ -12,14 +12,14 @@ See example below:
 + foobar
 	+ bin
 	+ src
-		- Main.hx
+		- MainBasic.hx
 	- javascript.hxml
 ```
 
 
 ## Install
 
-check out [the installation](installation.md).
+Check out [the installation](installation.md).
 
 
 ## The MainBasic.hx
@@ -72,7 +72,8 @@ This is the short version, you want to chech out the full version open this [fil
 -cp src
 -main MainBasic
 -js bin/example.js
--cmd node bin/example.js
+-cmd cd bin
+-cmd node example.js
 ```
 
 

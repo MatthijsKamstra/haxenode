@@ -5,6 +5,7 @@
 	"start": "node index.js",
 	"private": true,
 	"dependencies": {
+		"jade": "*",
 		"morgan": "^1.5.1",
 		"body-parser": "^1.10.1",
 		"serve-favicon": "*",

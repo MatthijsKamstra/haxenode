@@ -1,27 +1,32 @@
 (function (console) { "use strict";
 var MainAdvanced = function() {
-	console.log("Express website: open browser at http://localhost:3000");
-	console.log("stop node : CTRL + c");
-	var app = new (Express__0||require("express"))();
-	var server = (Http__7||require("http")).createServer(app);
+	console.log("Express website: open browser at <a href='http://localhost:3000'>test</a>");
+	console.log("Stop node.js : CTRL + c");
+	var app = new (Express__1||require("express"))();
+	var server = (Http__8||require("http")).createServer(app);
 	app.set("port",3000);
-	app["use"](new (Favicon__17||require("serve-favicon"))(js_Node.__dirname + "/public/favicon.ico"));
-	app["use"](new (Morgan__18||require("morgan"))("dev"));
-	app["use"]((BodyParser__19||require("body-parser")).json());
-	app["use"]((BodyParser__19||require("body-parser")).urlencoded());
-	app["use"](new (Static__20||require("express").static)((Path__6||require("path")).join(js_Node.__dirname,"public")));
+	app.set("views",js_Node.__dirname + "/public/views");
+	app.set("view engine","jade");
+	app["use"](new (Favicon__18||require("serve-favicon"))(js_Node.__dirname + "/public/favicon.ico"));
+	app["use"](new (Morgan__19||require("morgan"))("dev"));
+	app["use"]((BodyParser__20||require("body-parser")).json());
+	app["use"]((BodyParser__20||require("body-parser")).urlencoded());
+	app["use"](new (Static__21||require("express").static)((Path__7||require("path")).join(js_Node.__dirname,"public")));
 	app.get("/",function(req,res) {
 		res.sendfile(js_Node.__dirname + "/public/index_advanced.html");
 	});
 	app.get("/remote",function(req1,res1) {
 		res1.sendfile(js_Node.__dirname + "/public/remote_advanced.html");
 	});
-	app.get("/api/users",function(req2,res2) {
-		var username = req2.param("username");
-		res2.send("username: " + username);
+	app.get("/jade",function(req2,res2) {
+		res2.render("index",{ title : "Home", h1 : "Title"});
 	});
-	app["use"](function(req3,res3,next) {
-		res3.status(404).send("404");
+	app.get("/api/users",function(req3,res3) {
+		var username = req3.param("username");
+		res3.send("username: " + username);
+	});
+	app["use"](function(req4,res4,next) {
+		res4.status(404).send("404");
 	});
 	server.listen(app.get("port"),function() {
 		console.log("Express server listening on port " + Std.string(app.get("port")));
@@ -117,28 +122,29 @@ js_node_stream_IWritable.__name__ = true;
 js_node_stream_IWritable.__interfaces__ = [js_node_events_IEventEmitter];
 String.__name__ = true;
 Array.__name__ = true;
-var Crypto__10 = require("crypto");
-var EventEmitter__2 = require("events").EventEmitter;
-var Http__7 = require("http");
-var Net__15 = require("net");
-var Path__6 = require("path");
-var Url__13 = require("url");
-var Stats__21 = require("fs").Stats;
-var Agent__8 = require("http").Agent;
-var ClientRequest__5 = require("http").ClientRequest;
-var Server__9 = require("http").Server;
-var Writable__3 = require("stream").Writable;
-var ServerResponse__4 = require("http").ServerResponse;
-var Server__16 = require("net").Server;
-var Socket__14 = require("net").Socket;
-var Duplex__11 = require("stream").Duplex;
-var Readable__12 = require("stream").Readable;
-var Express__0 = require("express");
-var BodyParser__19 = require("body-parser");
-var Favicon__17 = require("serve-favicon");
-var Morgan__18 = require("morgan");
-var Router__1 = require("express").Router;
-var Static__20 = require("express")["static"];
+var Crypto__11 = require("crypto");
+var EventEmitter__3 = require("events").EventEmitter;
+var Http__8 = require("http");
+var Net__16 = require("net");
+var Path__7 = require("path");
+var Url__14 = require("url");
+var Stats__22 = require("fs").Stats;
+var Agent__9 = require("http").Agent;
+var ClientRequest__6 = require("http").ClientRequest;
+var Server__10 = require("http").Server;
+var Writable__4 = require("stream").Writable;
+var ServerResponse__5 = require("http").ServerResponse;
+var Server__17 = require("net").Server;
+var Socket__15 = require("net").Socket;
+var Duplex__12 = require("stream").Duplex;
+var Readable__13 = require("stream").Readable;
+var Express__1 = require("express");
+var Jade__0 = require("jade");
+var BodyParser__20 = require("body-parser");
+var Favicon__18 = require("serve-favicon");
+var Morgan__19 = require("morgan");
+var Router__2 = require("express").Router;
+var Static__21 = require("express")["static"];
 js_Node.__dirname = __dirname;
 MainAdvanced.main();
 })(typeof console != "undefined" ? console : {log:function(){}});

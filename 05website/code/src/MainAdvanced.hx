@@ -6,6 +6,7 @@ import js.node.Path;
 
 import js.npm.Express;
 import js.npm.express.*;
+import js.npm.Jade;
 
 /**
  * @author Matthijs Kamstra aka [mck]
@@ -15,17 +16,20 @@ class MainAdvanced
 
 	function new()
 	{
-		trace("Express website: open browser at http://localhost:3000");
-		trace("stop node : CTRL + c");
+		trace("Express website (Advanced): open browser at http://localhost:3000");
+		trace("Stop node.js : CTRL + c");
 
 		// https://www.codementor.io/nodejs/tutorial/build-google-tv-raspberrypi-nodejs-socket-io
 		// https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters
+		// http://www.clock.co.uk/blog/a-simple-website-in-nodejs-with-express-jade-and-stylus
 
 		var app : Express   = new Express();
 		var server : Dynamic = Http.createServer(app);
 
 		// all environments
 		app.set('port', 3000);
+		app.set('views', Node.__dirname + '/public/views');
+		app.set('view engine', 'jade');
 		app.use(new Favicon(Node.__dirname + '/public/favicon.ico'));
 		// if you read the code from Intermediate example you noticed Logger class here.
 		// for some reason Morgan is used in js-kit, which you will see when you open the Logger.hx class I added :P
@@ -42,6 +46,10 @@ class MainAdvanced
 
 		app.get('/remote', function (req:Request,res:Response) {
 			res.sendfile(Node.__dirname + '/public/remote_advanced.html');
+		});
+
+		app.get('/jade', function (req:Request,res:Response) {
+			res.render('index',{title:'Home',h1:'Title'});
 		});
 
 		// http://localhost:3000/api/users?username=foobar
