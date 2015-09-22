@@ -30,4 +30,5 @@
 --macro npm.Package.export("package.json")
 
 # Use terminal command to start Node.js!
--cmd node bin/example.js
+-cmd cd bin
+-cmd node example.js
