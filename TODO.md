@@ -5,7 +5,7 @@
     * http://saumya.github.io/ray/articles/50/
 * https://github.com/clemos/haxetelier-haxe-nodejs
 * https://github.com/janekp/saffron
-* https://groups.google.com/forum/#!topic/haxelang/6lzIeg6RUC4
+
 
 ###autoconvert
 * http://lib.haxe.org/p/refactor
@@ -13,13 +13,22 @@
 ```
 js_to_haxe.cmd <path_to_js_source_directory>
 ```
+
 ```
 haxelib install refactor
 
 ```
 
-### Disqus for the website?
-https://github.com/GitbookIO/plugin-disqus
+
+
+## automated convert
+
+haxelib run refactor convert --exclude-string-literals --exclude-comments PATH_TO_SOURCE_JS_FOLDER *.js PATH_TO_DEST_HAXE_FOLDER /[.]js/.hx/ js_to_haxe.rules
+
+haxelib run refactor convert --exclude-string-literals --exclude-comments ~/Documents/workingdir/haxe/haxejs/05externs/code/bin *.js ~/Documents/workingdir/haxe/haxejs/05externs/code/bin/out /[.]js/.hx/ js_to_haxe.rules
+
+
+
 
 ----
 
