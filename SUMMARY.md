@@ -32,7 +32,7 @@ This is the summary of my book.
 * [Example Website](05website/about.md)
 	* [Installation](05website/installation.md)
 	* [Example Basic](05website/exampleBasic.md)
-	* [Example Internediate](05website/exampleInternediate.md)
+	* [Example Internediate](05website/exampleIntermediate.md)
 	* [Example Advanced](05website/exampleAdvanced.md)
 * [Example NeDB](06nedb/about.md)
 	* [Installation](06nedb/installation.md)
