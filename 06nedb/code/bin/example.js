@@ -21,10 +21,10 @@ var Main = function() {
 		console.log("docs: " + docs3);
 	});
 	db.find({ 'completeData.planets.name' : "Jupiter"},function(err4,docs4) {
-		console.log("docs: " + docs4);
+		console.log("docs.length: " + docs4.length);
 	});
 	db.find({ 'completeData.planets.0.name' : "Earth"},function(err5,docs5) {
-		console.log("docs: " + docs5);
+		console.log("docs.length: " + docs5.length);
 	});
 	db.find({ humans : { genders : 2}},function(err6,docs6) {
 		console.log("docs.length: " + docs6.length);

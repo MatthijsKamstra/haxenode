@@ -34,7 +34,7 @@ class Main
 		});
 
 		// Finding all planets whose name contain the substring 'ar' using a regular expression
-		// db.find({ planet: ar }, function (err, docs) {
+		// db.find({ planet: /ar/ }, function (err, docs) {
 		// 	// docs contains Mars and Earth
 		// 	trace ('{ planet: /ar/ } :: $docs');
 		// });
@@ -59,13 +59,13 @@ class Main
 
 		db.find({ "completeData.planets.name": "Jupiter" }, function (err, docs) {
 			// docs is empty
-			trace( "docs: " + docs );
+			trace( "docs.length: " + docs.length );
 		});
 
 		db.find({ "completeData.planets.0.name": "Earth" }, function (err, docs) {
 			// docs contains document 5
 			// If we had tested against "Mars" docs would be empty because we are matching against a specific array element
-			trace( "docs: " + docs );
+			trace( "docs.length: " + docs.length );
 		});
 
 
@@ -97,6 +97,16 @@ class Main
 }
 
 
-typedef Planet = {
-
+typedef Planet = 
+{
+	@:optional var _id : String; // 'id1'
+	var planet : String; //'Mars'
+	var system : String; // 'solar'
+	var inhabited : Bool; // false
+	@:optional var satellites : Array<String>; // ['Phobos', 'Deimos'] } );
+	@:optional var humans : { 
+		var genders: Int;
+		@:optional var eyes: Bool;
+	};
+	@:optional var completeData : Dynamic;
 }

@@ -3,7 +3,7 @@
 There is always a need to store data, one way or another.
 We already describe two ways to store data in a `.json` file ([haxelow](../04haxelow) and [lowdb](../03lowdb)).
 
-But what if we need something with more punch: [neddb](https://github.com/louischatriot/nedb)
+But what if we need something with more punch: [NeDB](https://github.com/louischatriot/nedb)
 
 ## NeDB (Node embedded database)
 
