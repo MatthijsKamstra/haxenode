@@ -6,11 +6,13 @@ What is NeDB (Node embedded database)?
 
 This example is a combination of tutorials/examples below:
 
-- https://ehret.me/a-desktop-web-app-with-node-webkit-database-with-nedb/
-- https://github.com/louischatriot/nedb#creatingloading-a-database
+- https://github.com/louischatriot/nedb#finding-documents
 
 Although js-kit is awesome, it doesn't have externs for NeDB...
 So I added it [here](/code/src/js/npm/NeDB.hx).
+
+
+check out the first [example](example.md)
 
 
 ## How to start
@@ -35,7 +37,9 @@ See example below:
 Check out [the installation](installation.md).
 
 
-## The MainBasic.hx
+## The Main.hx
+
+It's really a long list, so not everything is written in this example, check out the [source Main.hx](code/src/Main.hx)
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder. 
 
@@ -45,33 +49,33 @@ package ;
 import js.Node;
 import js.node.Path;
 import js.npm.NeDB;
-class MainBasic
+class Main
 {
 	function new()
 	{
-		var options : DataStoreOptions = { filename : Path.join(Node.__dirname, '/basic.db'), autoload : true};
+		// https://github.com/louischatriot/nedb#finding-documents
+		var options : DataStoreOptions = { filename : Path.join(Node.__dirname, '/intermediate.db'), autoload : true};
 		var db = new NeDB(options);
-		var doc = { 
-			hello: 'world',
-			n: 5, 
-			today: Date.now(), 
-			nedbIsAwesome: true,
-			notthere: null,
-			// notToBeSaved: undefined,  // Will not be saved (Doesn't even work in Haxe: src/MainBasic.hx:29: characters 17-26 : Unknown identifier : undefined)
-			fruits: [ 'apple', 'orange', 'pear' ],
-			infos: { name: 'nedb' }
-		};
-		db.insert(doc, function (err, newDoc) {   
-			// Callback is optional
-			// newDoc is the newly inserted document, including its _id
-			// newDoc has no key called notToBeSaved since its value was undefined
-			trace ('newDoc: $newDoc');
+
+		db.insert( { _id: 'id1', planet: 'Mars', system: 'solar', inhabited: false, satellites: ['Phobos', 'Deimos'] } );
+		db.insert( { _id: 'id2', planet: 'Earth', system: 'solar', inhabited: true, humans: { genders: 2, eyes: true } } );
+		db.insert( { _id: 'id3', planet: 'Jupiter', system: 'solar', inhabited: false } );
+		db.insert( { _id: 'id4', planet: 'Omicron Persei 8', system: 'futurama', inhabited: true, humans: { genders: 7 } } );
+		db.insert( { _id: 'id5', completeData: { planets: [ { name: 'Earth', number: 3 }, { name: 'Mars', number: 2 }, { name: 'Pluton', number: 9 } ] } } );
+
+		// Finding all planets in the solar system
+		db.find({ system: 'solar' }, function (err, docs) {
+			// docs is an array containing documents Mars, Earth, Jupiter
+			// If no document is found, docs is equal to []
+			trace ('{ system: \'solar\' } :: ${docs.length}');
 		});
+
+		// this example works, but check out the source file  of this class for more examples
 	}
 
 	static public function main()
 	{
-		var main = new MainBasic();
+		var main = new Main();
 	}
 }
 

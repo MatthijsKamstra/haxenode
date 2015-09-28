@@ -7,7 +7,7 @@ import js.npm.NeDB;
 /**
  * @author Matthijs Kamstra aka [mck]
  */
-class Main
+class MainBasic
 {
 	function new()
 	{
@@ -27,7 +27,7 @@ class Main
 			today: Date.now(), 
 			nedbIsAwesome: true,
 			notthere: null,
-			// notToBeSaved: undefined,  // Will not be saved (Doesn't even work in Haxe: src/Main.hx:29: characters 17-26 : Unknown identifier : undefined)
+			// notToBeSaved: undefined,  // Will not be saved (Doesn't even work in Haxe: src/MainBasic.hx:29: characters 17-26 : Unknown identifier : undefined)
 			fruits: [ 'apple', 'orange', 'pear' ],
 			infos: { name: 'nedb' }
 		};
@@ -46,6 +46,6 @@ class Main
 
 	static public function main()
 	{
-		var main = new Main();
+		var main = new MainBasic();
 	}
 }

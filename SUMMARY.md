@@ -37,6 +37,7 @@ This is the summary of my book.
 * [Example NeDB](06nedb/about.md)
 	* [Installation](06nedb/installation.md)
 	* [Example](06nedb/example.md)
+	* [Example 2](06nedb/example2.md)
 * [Example Slack bot](09slackbot/about.md)
 	* [Installation](09slackbot/installation.md)
 	* [Example](09slackbot/example.md)
