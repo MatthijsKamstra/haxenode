@@ -1,6 +1,6 @@
 (function (console) { "use strict";
 var MainAdvanced = function() {
-	console.log("Express website: open browser at <a href='http://localhost:3000'>test</a>");
+	console.log("Express website (Advanced): open browser at http://localhost:3000");
 	console.log("Stop node.js : CTRL + c");
 	var app = new (Express__1||require("express"))();
 	var server = (Http__8||require("http")).createServer(app);

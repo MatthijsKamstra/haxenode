@@ -35,7 +35,7 @@ class MainAdvanced
 		// for some reason Morgan is used in js-kit, which you will see when you open the Logger.hx class I added :P
 		app.use(new Morgan('dev'));
 		app.use(BodyParser.json());
-		app.use(BodyParser.urlencoded());
+		app.use(BodyParser.urlencoded({ extended: true }));
 		// app.use(new MethodOverride()); // can't find it in js-kit AND don't know what it does...
 		app.use(new Static(Path.join(Node.__dirname, 'public')));
 
