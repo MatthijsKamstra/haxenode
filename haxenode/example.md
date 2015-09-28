@@ -63,7 +63,7 @@ class Main
 in terminal
 
 ```
-haxe -lib nodejs -js haxenode.js -main Haxenode
+haxe -lib js-kit -js haxenode.js -main Haxenode
 node haxenode.js
 # Server running at http://127.0.0.1:1337/
 ```
