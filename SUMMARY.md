@@ -44,6 +44,9 @@ This is the summary of my book.
 * [Example Scraping](10scraping/about.md)
 	* [Installation](10scraping/installation.md)
 	* [Example](10scraping/example.md)
+* [Example Automation](11automation/about.md)
+	* [Installation](11automation/installation.md)
+	* [Example](11automation/example.md)
 * Resources
 	* [Who to follow](follow.md)
 	* [Haxejs](http://matthijskamstra.github.io/haxejs/)

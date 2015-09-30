@@ -1,0 +1,74 @@
+#About automation
+
+> Automate the Boring Stuff with ...
+
+Do you recognize this pattern? 
+
+- CMD + TAB > Terminal
+- Cursor + UP
+- Enter
+- CMD + TAB > Browser
+- CMD + R
+- CMD + TAB > Sublime Text
+- change files
+- repeat
+
+
+As a programmer you are looking for patterns, so you can put them a function and use that function *over and over* again.
+
+The same thing applies to compiling/refreshing/updating code.
+
+If you do a lot of the same tasks *over and over and over* again, you should read this example.
+Probably for the more experienced programmer, but I guess everybody can benefit from automation.
+
+So this example is not really about programming or Haxe/NodeJs.  
+But about the tedious task around programming.
+
+So this example is exactly the same as the first example: a simple "Hello world"!  
+*Read more about "[hello world](../00helloworld/about.md)"*
+
+In this example we will build the Haxe with Grunt and let Grunt "watch" the files for changes.
+If there are any changes, Grunt will rebuild.
+
+The same thing will be done with Nodemon.
+Nodemon will restart Node, when the file changes.
+In our case it will only watch one file, but when it changes it will restart the server.
+
+
+## Automation/Task runner
+
+Grunt   
+The JavaScript Task Runner
+
+![](http://gruntjs.com/img/grunt-logo.png)
+
+> Why use a task runner?
+> In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it through a Gruntfile, a task runner can do most of that mundane work for you—and your team—with basically zero effort.
+
+*source [http://gruntjs.com/](http://gruntjs.com/)*
+
+
+## Nodemon
+
+To restart node we will use [Nodemon](http://nodemon.io/).
+
+>Nodemon is a utility that will monitor for any changes in your source and automatically restart your server. Perfect for development. Install it using npm.
+>
+>Just use nodemon instead of node to run your code, and now your process will automatically restart when your code changes. 
+
+
+
+## Grunt vs Gulp
+
+There are probably more, but in the javascript ecosystem the 2 biggest are 
+[Grunt](http://gruntjs.com/) and [Gulp](http://gulpjs.com/)
+
+I will not get into the Grunt vs Gulp discussion.  
+Because I like Grunt I will explain Grunt!  
+(And its fun to say the word Grunt as many times you can)
+
+It absolutely doesn't mean Gulp is bad, I just leave that example to someone else!
+
+
+
+---
