@@ -1,5 +1,9 @@
 #Installing Haxe
 
+
+![](../img/install.jpg)
+
+
 First, you will need to install Haxe (Neko and Haxelib).   
 There are a couple ways to install Haxe:
 

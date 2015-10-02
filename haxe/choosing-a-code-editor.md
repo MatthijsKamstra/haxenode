@@ -6,11 +6,15 @@ Although you can write code using even a simple text editor, a quality IDE can p
 
 ## FlashDevelop
 
+![](http://flashdevelop.org/wikidocs/images/tour/0a-interface.png)
+
 [FlashDevelop](http://www.flashdevelop.org) is one of the strongest IDEs for Haxe development. If you are a Windows user (and perhaps if you are not), we recommend that you try FlashDevelop first to get a feel for what an integrated environment looks like. Many developers prefer FlashDevelop.
 
 FlashDevelop is free and open-source.
 
 ## Sublime Text
+
+![](http://www.sublimetext.com/screenshots/alpha_ui_large.png)
 
 [Sublime Text](http://www.sublimetext.com) is a code editor, with support for Haxe using the [Haxe Sublime Bundle](https://github.com/clemos/haxe-sublime-bundle). Sublime Text is cross-platform, with support for Windows, Mac and Linux.
 
@@ -20,11 +24,21 @@ Sublime Text is free-to-use, with reminders to pay for continued use.
 
 ## IntelliJ IDEA
 
+![](https://upload.wikimedia.org/wikipedia/commons/c/cd/IntelliJ_IDEA_12.0.4_Ultimate.jpg)
+
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is primarily marketed as a Java IDE, but it has growing support within the Haxe community, including large teams, such as TiVo. The full edition, as well as the free community edition, support the [Haxe plugin](https://plugins.jetbrains.com/plugin/6873?pr=idea), which is not easy to install, but can provide a fuller native IDE experience for Mac or Linux users.
 
 ## Atom
 
+![](http://kerrygallagher.co.uk/content/images/2014/Mar/Screenshot_2014_03_01_10_58_06.png)
+
+[Atom](https://atom.io/) A hackable text editor
+for the 21st Century.  
+Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.
+
 ## Brackets
+
+![](https://raw.githubusercontent.com/Brackets-Themes/80sBaby/master/screenshots/css.png)
 
 [Brackets](http://brackets.io/) is a lightweight, yet powerful, modern text editor. We blend visual tools into the editor so you get the right amount of help when you want it.
 
@@ -51,7 +65,7 @@ There are other code editors to choose from, include vim and up-and-coming Haxe-
 
 
 `*` there is a way to get it partially working on Mac, but I failed.  
-`**` it will ask you to pay for a licence
+`**` it will ask you to pay for a license
 
 
 
