@@ -4,6 +4,21 @@ We will use a simple example to illustrate the workings of automation.
 And to do that we will use the first example we made: the hello world in node.js.  
 Read more about "[hello world](../00helloworld/about.md)"
 
+
+## UPDATE #1
+
+Everything changed a little by a suggestion from [Clark Jones](https://disqus.com/home/discussion/haxeandnodejs/haxe_and_nodejs_91/#comment-2291149693)! 
+
+![](https://www.npmjs.com/static/images/npm-logo.svg)
+
+I now would suggest you use NPM for automation.   
+And visit [the second example](example2.md) I wrote (with a big help from Clark). It uses NPM for watch, livereload, restart Nodemon and only one terminal window!  
+Check out the [code folder](https://github.com/MatthijsKamstra/haxenode/tree/master/11automation/code2)
+
+That doesn't mean this example doesn't work!   
+But the NPM way is much cleaner!  
+
+
 ## How to start
 
 Create a folder named **foobar** (please use a better name; any name will do) and create folders **bin** and **src**.

@@ -35,6 +35,19 @@ Nodemon will restart Node, when the file changes.
 In our case it will only watch one file, but when it changes it will restart the server.
 
 
+## UPDATE #1
+
+Everything changed a little by a suggestion from [Clark Jones](https://disqus.com/home/discussion/haxeandnodejs/haxe_and_nodejs_91/#comment-2291149693)! 
+
+![](https://www.npmjs.com/static/images/npm-logo.svg)
+
+I now would suggest you use NPM for automation.   
+And visit [the second example](example2.md) I wrote (with a big help from Clark). It uses NPM for watch, livereload, restart Nodemon and only one terminal window!  
+Check out the [code folder](https://github.com/MatthijsKamstra/haxenode/tree/master/11automation/code2)
+
+
+
+
 ## Automation/Task runner
 
 Grunt   

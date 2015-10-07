@@ -47,6 +47,7 @@ This is the summary of my book.
 * [Example Automation](11automation/about.md)
 	* [Installation](11automation/installation.md)
 	* [Example](11automation/example.md)
+	* [Better Example](11automation/example2.md)
 * Resources
 	* [Who to follow](follow.md)
 	* [Haxejs](http://matthijskamstra.github.io/haxejs/)
