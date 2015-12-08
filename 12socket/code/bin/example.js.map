@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"example.js",
+"sourceRoot":"file:///",
+"sources":["/Volumes/Data HD/Users/matthijs/Documents/workingdir/haxe/haxenode/12socket/code/src/Main.hx","/usr/lib/haxe/lib/js-kit/git/js/Node.hx"],
+"names":[],
+"mappings":";OAwBA,IALD;CAGoB,AAHpB,EAGoB;CAIlB,WAAM,TAA+D;CACrE,WAAM;CAEO;CACA,AAA0B;CAC1B,sBAA2B;CAExC,AAAS,AAAQ,EAAkB;CACnC,AAAS,AAAc;CAEvB,AAAQ,qBAAW,nBAAkB;CACrC,AAAQ,qBAAY;CACpB,AAAQ,sBAAY,pBAAkB;CAEtC,AAAQ,AAAK,iBAAwC;EAClC;EAGlB,CAAc;EAEd,DAAW,AAAQ,YAAc;;CAQlC,AAAO,AAAa,gBAAkB;EACrC,DAAa,AAAU,SAAY;EACnC,DAAW,AAAO,cACjB;CAAiB,AAAU;;;CAI7B,WAAO,TAAuB;CAE9B,AAAc;;YAIE,DAEV;CAAW;;;;;;;;;;;;;oBCnD4C;;;;"
+}

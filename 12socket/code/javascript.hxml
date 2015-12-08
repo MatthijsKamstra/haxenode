@@ -1,13 +1,29 @@
 # libs used in project
+-lib jQueryExtern
+-lib js-kit
+# source folder
+-cp src
+# class entry point
+-main MainClient
+#JavaScript target
+-js bin/public/js/client.js
+-D source-map-content
+-debug
+-dce full
+--macro npm.Package.export("package.json")
+
+--next
+
+
+
+# libs used in project
 -lib js-kit
 
 #integrate files to classpath
 -cp src
 
 #this class wil be used as entry point for your app.
--main MainBasic
-# -main MainIntermediate
-# -main MainAdvanced
+-main Main
 
 #JavaScript target
 -js bin/example.js
@@ -19,7 +35,7 @@
 # -D source-map-content
 
 #Generate source map and add debug information
-# -debug
+-debug
 
 #dead code elimination : remove unused code
 #"-dce no" : do not remove unused code
@@ -30,6 +46,11 @@
 # This is very cool, but not necessary for this project, you can create a package.json with the correct depencicies (https://github.com/clemos/haxe-js-kit#exporting-your-project-dependencies)
 --macro npm.Package.export("package.json")
 
+
+
+
+
 # Use terminal command to start Node.js!
--cmd cd bin
--cmd node example.js
+# -cmd cd bin
+# -cmd node example.js
+
