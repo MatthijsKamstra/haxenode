@@ -17,9 +17,9 @@ I hope this will help. If you think so, why not help with [contribution](contrib
 It will get you started with Node.js **and** Haxe.
 How to setup your project, install externs and how to work with them. This probably will never be a complete documentation but it will help you get started!
 
-###For who is this?
+###Who is this for?
 
-For clever, cool and handsom developers. Duh! :D
+For clever, cool and handsome developers. Duh! :D
 
 * Probably for javascript developers who already started with Haxe and are curious about Node.js.
 * Probably for javascript developers who already started with Haxe.
@@ -36,14 +36,14 @@ For clever, cool and handsom developers. Duh! :D
 
 I wanted to make contributing to this documentation as easy as possible.  
 That's why I use Markdown; developers use it, but is really just plane English so **everybody** can write documentation!  
-And this documentation hosted on Github, developers favorite place to store code.  
+And this documentation hosted on GitHub, developers favorite place to store code.  
 Even if you are not a developer and/or don't want to clone everything, you still can modify the files on the website (you need account to login in and change the `.md` files).
 And as a final resort, you can leave your comments/suggestions/etc at the bottom of the page via Disqus.
 
 
 ## Open-sourcing the documentation
 
-I thought I was the first to try to write documentation this way, but other beat me.  
+I thought I was the first to try to write documentation this way, but others beat me to it.  
 Although my idea was formed by writing a book in Markdown (Gitbook, but there are others).
 Writing documentation is very similar to writing a book.
 
