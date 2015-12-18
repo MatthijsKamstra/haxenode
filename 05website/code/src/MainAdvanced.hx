@@ -24,7 +24,6 @@ class MainAdvanced
 		// http://www.clock.co.uk/blog/a-simple-website-in-nodejs-with-express-jade-and-stylus
 
 		var app : Express   = new Express();
-		var server : Dynamic = Http.createServer(app);
 
 		// all environments
 		app.set('port', 3000);
@@ -45,7 +44,7 @@ class MainAdvanced
 		});
 
 		app.get('/remote', function (req:Request,res:Response) {
-			res.sendfile(Node.__dirname + '/public/remote_advanced.html');
+			res.sendfile(Node.__dirname + '/public/remote_intermediate.html');
 		});
 
 		app.get('/jade', function (req:Request,res:Response) {
@@ -79,7 +78,7 @@ class MainAdvanced
 			// res.status(404).send(output);
 		});
 
-		server.listen(app.get('port'), function(){
+		app.listen(app.get('port'), function(){
 			trace('Express server listening on port ' + app.get('port'));
 		});
 

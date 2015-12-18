@@ -68,7 +68,6 @@ class Main
 		var main = new Main();
 	}
 }
-
 ```
 
 
@@ -80,6 +79,7 @@ This is the short version, you want to chech out the full version open this [fil
 ```
 # // javascript.hxml
 -lib js-kit
+-lib hxnodejs
 -cp src
 -main Main
 -js bin/example.js

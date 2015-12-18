@@ -50,6 +50,7 @@ package ;
 import js.Node;
 import js.node.Http;
 import js.node.http.ServerResponse;
+import js.node.http.IncomingMessage;
 
 /**
  * @author Matthijs Kamstra aka [mck]
@@ -60,7 +61,7 @@ class Main
 	{
 		trace("Node.js Hello World Example");
 		
-		Http.createServer(function (request:HttpServerReq, response:ServerResponse):Void {
+		Http.createServer(function (request:IncomingMessage, response:ServerResponse):Void {
 			response.writeHead(200, {'Content-Type': 'text/plain'});
 			response.end('Hello World\n' + Date.now() );
 		}).listen(8080);
@@ -72,7 +73,7 @@ class Main
 
 	static public function main()
 	{
-		var main = new Main();
+		var main = new Main(); 
 	}
 }
 
@@ -87,6 +88,7 @@ This is the short version, you want to chech out the full version open this [fil
 ```
 # // javascript.hxml
 -lib js-kit
+-lib hxnodejs
 -cp src
 -main Main
 -js bin/example.js

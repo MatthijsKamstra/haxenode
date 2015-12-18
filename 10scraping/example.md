@@ -79,6 +79,7 @@ You could build everything directly in the terminal, but this is more readable a
 
 # libs used in project
 -lib js-kit
+-lib hxnodejs
 
 #integrate files to classpath
 -cp src

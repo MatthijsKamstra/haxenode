@@ -1,5 +1,6 @@
 # libs used in project
 -lib js-kit
+-lib hxnodejs
 
 #integrate files to classpath
 -cp src

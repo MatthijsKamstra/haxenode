@@ -43,6 +43,11 @@ Atom is a text editor that's modern, approachable, yet hackable to the core—a 
 [Brackets](http://brackets.io/) is a lightweight, yet powerful, modern text editor. We blend visual tools into the editor so you get the right amount of help when you want it.
 
 
+## Visual Studio Code
+
+![](https://code.visualstudio.com/Content/images/hero-osx.png)
+
+[Visual Studio Code](https://code.visualstudio.com/) Build and debug modern web and cloud applications. Code is free and available on your favorite platform - Linux, Mac OSX, and Windows.
 
 ## Other Choices
 
@@ -62,10 +67,12 @@ There are other code editors to choose from, include vim and up-and-coming Haxe-
 | IntelliJ IDEA | Windows, Mac, Linux | Free | Apache License 2.0 | [Haxe Support](http://plugins.jetbrains.com/plugin/6873?pr=idea) |
 | Atom | Windows, Mac, Linux, FreeBSD | Free | Open Source | [language-haxe](https://atom.io/packages/language-haxe) |
 | Bracket | Windows, Mac, Linux | Free | ? | [haxe-brackets-extension](https://github.com/jasononeil/haxe-brackets-extension)|
+| VSCode | Windows, Mac, Linux | Free | ? | `***` |
 
 
 `*` there is a way to get it partially working on Mac, but I failed.  
-`**` it will ask you to pay for a license
+`**` it will ask you to pay for a license  
+`***` plugin not ready (yet, [Jeff Ward](https://twitter.com/Jeff__Ward/status/677725911123390464) is working on it)  
 
 
 

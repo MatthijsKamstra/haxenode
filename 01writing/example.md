@@ -53,19 +53,17 @@ class Main
 {
 	function new()
 	{
-		trace("Node.js Hello World Example");
+		trace("Node.js writing Example");
 		
-		Fs.writeFile('helloworld.txt', 'Hello World!');	
-
-		// this example code is closest to the pure node.js example
-		Fs.writeFile('hello.txt', 'hello', {}, function (err){
+		var str : String = 'Hello World!\nWritten on: ' + Date.now().toString();
+		// this code example is closest to the pure node.js example
+		Fs.writeFile('hello.txt', str, {}, function (err){
 			if (err != null) 
 				trace( "err: " + err );
 			else
 				trace('Hello > hello.txt');
 		});
 	}
-
 	static public function main()
 	{
 		var main = new Main();
@@ -83,6 +81,7 @@ This is the short version, you want to chech out the full version open this [fil
 ```
 # // javascript.hxml
 -lib js-kit
+-lib hxnodejs
 -cp src
 -main Main
 -js bin/example.js

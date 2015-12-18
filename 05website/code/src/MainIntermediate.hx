@@ -21,7 +21,6 @@ class MainIntermediate
 		// source: https://www.codementor.io/nodejs/tutorial/build-google-tv-raspberrypi-nodejs-socket-io
 
 		var app : Express   = new Express();
-		var server : Dynamic = Http.createServer(app);
 
 		// all environments
 		app.set('port', 3000);
@@ -48,7 +47,7 @@ class MainIntermediate
 			res.status(404).send('404');
 		});
 
-		server.listen(app.get('port'), function(){
+		app.listen(app.get('port'), function(){
 			trace('Express server listening on port ' + app.get('port'));
 		});
 

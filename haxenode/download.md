@@ -6,12 +6,15 @@ Obviously you need to install Haxe. There are a [couple of ways to do it](../hax
 
 Don't want to kick in some open doors, but before you can use Node.js ... you need to [install](#node) that also.
 
+And a [code editor](#ide) will be usefull!
+
 Last but not least, you need to install the [Haxe Externs](#externs). These are the "translators" from untyped node.js code to typed Haxe code. You only need to install the Node.js externs but get other fun stuff as wel. You will need them further on these documentation. 
 
+----
 
 Current versions are:  
 
-* **Haxe** v3.2.0
+* **Haxe** v3.2.1
 * **Node.js** v0.12.7
 
 But if the version numbers changed, it only means I haven't updated this part of the document in some time :D
@@ -30,13 +33,24 @@ But if the version numbers changed, it only means I haven't updated this part of
 
 * Get your version here: [https://nodejs.org/](https://nodejs.org/)
 
+
+<a name="ide"></a>
+##Code editor
+
+If you work on Windows you should install [FlashDevelop](http://www.flashdevelop.org), on other platforms you should read this chapter: [Choosing a Code Editor](../haxe/choosing-a-code-editor.md)
+
+
 <a name="externs"></a>
 ##Externs
 
-For now you need to install externs via haxelib.   
-But when Haxe hits version 3.2.1 you don't have to (the node externs will be part of the install).
-So for now, I advice to install the Haxe Externs from js-kit.   
-**(install this after you have installed Haxe; you need haxelib to install js-kit this way)**
+Install the [official Haxe node.js externs](https://github.com/HaxeFoundation/hxnodejs) lib via [haxelib](http://lib.haxe.org/p/hxnodejs/).
+Haxelib is automaticly installed when installing Haxe and you can see it as a sort of NPM.
+
+```
+haxelib install hxnodejs
+```
+
+In this tutorial I use mostly js-kit externs, there are more ways to get externs but the js-kit has a lot so it's more a one stop shop thing!   
 
 ```
 haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib

@@ -6,27 +6,16 @@ function $extend(from, fields) {
 	if( fields.toString !== Object.prototype.toString ) proto.toString = fields.toString;
 	return proto;
 }
-var HxOverrides = function() { };
-HxOverrides.__name__ = true;
-HxOverrides.dateStr = function(date) {
-	var m = date.getMonth() + 1;
-	var d = date.getDate();
-	var h = date.getHours();
-	var mi = date.getMinutes();
-	var s = date.getSeconds();
-	return date.getFullYear() + "-" + (m < 10?"0" + m:"" + m) + "-" + (d < 10?"0" + d:"" + d) + " " + (h < 10?"0" + h:"" + h) + ":" + (mi < 10?"0" + mi:"" + mi) + ":" + (s < 10?"0" + s:"" + s);
-};
 var Main = function() {
-	console.log("Node.js writing Example");
-	var str;
-	str = "Hello World!\nWritten on: " + (function($this) {
-		var $r;
-		var _this = new Date();
-		$r = HxOverrides.dateStr(_this);
-		return $r;
-	}(this));
-	js_node_Fs.writeFile("hello.txt",str,{ },function(err) {
-		if(err != null) console.log("err: " + Std.string(err)); else console.log("Hello > hello.txt");
+	console.log("Node.js Scraping Example");
+	var request = require("request");
+	var url = "http://www.wunderground.com/cgi-bin/findweather/getForecast?&query=02888";
+	request.post(url,function(error,response,body) {
+		if(!error) {
+			var _cheerio = js_npm_Cheerio.load(body);
+			var temperature = _cheerio("[data-variable='temperature'] .wx-value").html();
+			console.log("It’s " + temperature + " degrees Celsius.");
+		} else console.log("We’ve encountered an error: " + (error == null?"null":"" + error));
 	});
 };
 Main.__name__ = true;
@@ -432,12 +421,10 @@ js_html_compat_Uint8Array._subarray = function(start,end) {
 	a.byteOffset = start;
 	return a;
 };
-var js_node_Fs = require("fs");
+var js_npm_Cheerio = require("cheerio");
 String.prototype.__class__ = String;
 String.__name__ = true;
 Array.__name__ = true;
-Date.prototype.__class__ = Date;
-Date.__name__ = ["Date"];
 var Int = { __name__ : ["Int"]};
 var Dynamic = { __name__ : ["Dynamic"]};
 var Float = Number;

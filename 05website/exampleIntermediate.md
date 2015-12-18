@@ -50,7 +50,6 @@ class MainIntermediate
 	function new()
 	{
 		var app : Express   = new Express();
-		var server : Dynamic = Http.createServer(app);
 
 		app.set('port', 3000);
 		app.use(new Favicon(Node.__dirname + '/public/favicon.ico'));
@@ -76,7 +75,7 @@ class MainIntermediate
 			res.status(404).send('404');
 		});
 
-		server.listen(app.get('port'), function(){
+		app.listen(app.get('port'), function(){
 			trace('Express server listening on port ' + app.get('port'));
 		});
 	}
@@ -95,6 +94,7 @@ This is the short version, you want to chech out the full version open this [fil
 ```
 # // javascript.hxml
 -lib js-kit
+-lib hxnodejs
 -cp src
 -main MainIntermediate
 -js bin/example.js

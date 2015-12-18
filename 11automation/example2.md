@@ -56,6 +56,7 @@ package ;
 import js.Node;
 import js.node.Http;
 import js.node.http.ServerResponse;
+import js.node.http.IncomingMessage;
 
 /**
  * @author Matthijs Kamstra aka [mck]
@@ -66,7 +67,7 @@ class Main
 	{
 		trace("Node.js Hello World Example");
 		
-		Http.createServer(function (request:HttpServerReq, response:ServerResponse):Void {
+		Http.createServer(function (request:IncomingMessage, response:ServerResponse):Void {
 			response.writeHead(200, {'Content-Type': 'text/html'});
 			
 			#if debug
@@ -97,6 +98,7 @@ This is the short version, you want to check out the full version open this [fil
 
 ```
 -lib js-kit
+-lib hxnodejs
 -cp src
 -main Main
 -js bin/example.js

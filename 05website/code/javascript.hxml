@@ -1,13 +1,14 @@
 # libs used in project
 -lib js-kit
+-lib hxnodejs
 
 #integrate files to classpath
 -cp src
 
 #this class wil be used as entry point for your app.
--main MainBasic
+# -main MainBasic
 # -main MainIntermediate
-# -main MainAdvanced
+-main MainAdvanced
 
 #JavaScript target
 -js bin/example.js

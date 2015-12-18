@@ -2,35 +2,69 @@
 
 
 # extremly simple hello world
--cmd cd haxe/code/
---next
-compile.hxml
--cmd echo "│ ├── haxe/code"
+-cmd cd 00helloworld/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── helloworld/code"
 
+
+# writing
+-cmd cd ../../
+-cmd cd 01writing/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── writing/code"
+
+# reading
+-cmd cd ../../
+-cmd cd 02reading/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── reading/code"
+
+# lowdb
+-cmd cd ../../
+-cmd cd 03lowdb/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── lowdb/code"
+
+# haxelow
+-cmd cd ../../
+-cmd cd 04haxelow/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── haxelow/code"
+
+# website
+-cmd cd ../../
+-cmd cd 05website/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── website/code"
+
+# nedb
+-cmd cd ../../
+-cmd cd 06nedb/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── nedb/code"
+
+# slack
+-cmd cd ../../
+-cmd cd 09slackbot/code/
+--next 
+javascript.hxml
+-cmd echo "│ ├── slackbot/code"
 
 # scraping
 -cmd cd ../../
--cmd cd 00scraping/code/
+-cmd cd 10scraping/code/
 --next 
 javascript.hxml
 -cmd echo "│ ├── scraping/code"
 
 
-
-# slack
--cmd cd ../../
--cmd cd 01slackbot/code/
---next 
-javascript.hxml
--cmd echo "│ ├── slackbot/code"
-
-
-# website
--cmd cd ../../
--cmd cd 02website/code/
---next 
-javascript.hxml
--cmd echo "│ ├── website/code"
 
 
 

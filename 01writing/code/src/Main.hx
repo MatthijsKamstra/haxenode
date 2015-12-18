@@ -12,10 +12,8 @@ class Main
 	{
 		trace("Node.js writing Example");
 		
-		var str = 'Hello World!\nWritten on: ' + Date.now().toString();
-		Fs.writeFile('helloworld.txt', str);
-
-		// this example code is closest to the pure node.js example
+		var str : String = 'Hello World!\nWritten on: ' + Date.now().toString();
+		// this code example is closest to the pure node.js example
 		Fs.writeFile('hello.txt', str, {}, function (err){
 			if (err != null) 
 				trace( "err: " + err );

@@ -1,6 +1,7 @@
 # libs used in project
 -lib jQueryExtern
 -lib js-kit
+-lib hxnodejs
 # source folder
 -cp src
 # class entry point
@@ -18,6 +19,7 @@
 
 # libs used in project
 -lib js-kit
+-lib hxnodejs
 
 #integrate files to classpath
 -cp src

@@ -84,6 +84,7 @@ This is the short version, you want to chech out the full version open this [fil
 ```
 # // javascript.hxml
 -lib js-kit
+-lib hxnodejs
 -lib haxelow
 -cp src
 -main Main

@@ -26,7 +26,7 @@ class Main
 		// takes place.
 		db.save();
 
-		trace( "end" );
+		trace( "open /bin/db.json" );
 
 	}
 

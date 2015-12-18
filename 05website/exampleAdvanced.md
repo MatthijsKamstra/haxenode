@@ -59,7 +59,6 @@ class MainAdvanced
 	function new()
 	{
 		var app : Express   = new Express();
-		var server : Dynamic = Http.createServer(app);
 
 		app.set('port', 3000);
 		app.set('views', Node.__dirname + '/public/views');
@@ -92,26 +91,12 @@ class MainAdvanced
 			res.send('username: ' + username );
 		});
 
-		// POST http://localhost:8080/api/users
-		// app.post('/api/users', function (req, res) {
-		// 	var _req : Dynamic = req;
-		// 	var _username = _req.body.username;
-		// 	res.send('_username: ' + _username);
-		// });
-
-
-		// var sample = "My name is <strong>::name::</strong>, <em>::age::</em> years old";
-		// var user = {name:"Mark", age:30};
-		// var template = new haxe.Template(sample);
-		// var output = template.execute(user);
-		// trace(output);
-
 		app.use(function(req, res, next) {
 			res.status(404).send('404');
 			// res.status(404).send(output);
 		});
 
-		server.listen(app.get('port'), function(){
+		app.listen(app.get('port'), function(){
 			trace('Express server listening on port ' + app.get('port'));
 		});
 	}
@@ -133,6 +118,7 @@ This is the short version, you want to chech out the full version open this [fil
 ```
 # // javascript.hxml
 -lib js-kit
+-lib hxnodejs
 -cp src
 -main MainAdvanced
 -js bin/example.js

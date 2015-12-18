@@ -1,0 +1,32 @@
+{
+	"name": "haxenode",
+	"version": "1.0.0",
+	"description": "Documenting Haxe and JavaScript",
+	"main": "Gruntfile.js",
+	"scripts": {
+		"test": "helloworld"
+	},
+	"devDependencies": {
+		"grunt": "~0.4.5",
+		"grunt-contrib-watch": "~0.6.1",
+		"grunt-exec": "~0.4.6"
+	}, 
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MatthijsKamstra/haxenode.git"
+	},
+	"keywords": [
+		"js",
+		"haxe",
+		"Haxe",
+		"javascript",
+		"node.js",
+		"wip"
+	],
+	"author": "Matthijs Kamstra aka [mck]",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/MatthijsKamstra/haxenode/issues"
+	},
+	"homepage": "https://github.com/MatthijsKamstra/haxenode#readme"
+}
