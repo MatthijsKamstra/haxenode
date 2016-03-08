@@ -35,7 +35,7 @@ For clever, cool and handsome developers. Duh! :D
 ## Documentation goals
 
 I wanted to make contributing to this documentation as easy as possible.  
-That's why I use Markdown; developers use it, but is really just plane English so **everybody** can write documentation!  
+That's why I use Markdown; developers use it, but is really just plain English so **everybody** can write documentation!  
 And this documentation hosted on GitHub, developers favorite place to store code.  
 Even if you are not a developer and/or don't want to clone everything, you still can modify the files on the website (you need account to login in and change the `.md` files).
 And as a final resort, you can leave your comments/suggestions/etc at the bottom of the page via Disqus.
