@@ -26,7 +26,7 @@ To get you start I have a little chapter about [learning Haxe](haxe/learn-haxe.m
 **A very basic knowledge of the topic but no professional usage**  
 
 * [Example Hello World](00helloworld/about.md)
-* [Example writing](01writing/about.md)
+* [Example Writing](01writing/about.md)
 * [Example Reading](02reading/about.md)
 
 ##Intermediate
