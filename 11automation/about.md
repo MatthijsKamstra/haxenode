@@ -30,9 +30,9 @@ This example is the same as the first example: a simple "Hello world"!
 In this example we will build the Haxe with Grunt and let Grunt "watch" the files for changes.
 If there are any changes, Grunt will rebuild.
 
-You can achief he same thing with Nodemon.
+You can achieve he same thing with Nodemon.
 Nodemon will restart Node, when the file changes.
-In our case it will only watch one file, but when it changes it will restart the server.
+In our case it will watch one file, but when it changes it will restart the server.
 
 
 ## UPDATE #1
