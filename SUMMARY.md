@@ -40,6 +40,11 @@
    * [Installation](06nedb/installation.md)
    * [Example](06nedb/example.md)
    * [Example 2](06nedb/example2.md)
+* Resources
+   * [Who to follow](follow.md)
+   * [Haxejs](http:/matthijskamstra.github.io/haxejs/)
+   * [Try Haxe!](http:/try.haxe.org/)
+   * [Community](https:/groups.google.com/forum/#!topic/haxelang/)
 * [Example Slack bot](09slackbot/about.md)
    * [Installation](09slackbot/installation.md)
    * [Example](09slackbot/example.md)
@@ -50,11 +55,6 @@
    * [Installation](11automation/installation.md)
    * [Example](11automation/example.md)
    * [Better Example](11automation/example2.md)
-* Resources
-   * [Who to follow](follow.md)
-   * [Haxejs](http:/matthijskamstra.github.io/haxejs/)
-   * [Try Haxe!](http:/try.haxe.org/)
-   * [Community](https:/groups.google.com/forum/#!topic/haxelang/)
 * [Contribute](contribute.md)
 * [Source](https:/github.com/MatthijsKamstra/haxenode/)
 * [Suggestion Box](https:/github.com/MatthijsKamstra/haxenode/issues/1)
