@@ -23,7 +23,7 @@ console.log('Server running at http://127.0.0.1:1337/');
 
 ### Run
 
-In terminal
+In terminal:
 
 ```
 node example.js
@@ -65,9 +65,9 @@ class Main
 ```
 
 
-### compile & run
+### Compile & run
 
-in terminal
+In terminal:
 
 ```
 haxe -lib hxnodejs -js haxenode.js -main Haxenode
