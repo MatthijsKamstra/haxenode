@@ -29,7 +29,7 @@ You install via git:
 haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 ```
 
-Optional: check that js-kit installed successfully:
+Optional, check that js-kit installed correctly:
 
 ```
 haxelib list
