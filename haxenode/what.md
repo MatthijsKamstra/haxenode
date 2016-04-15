@@ -16,7 +16,8 @@
 
 
 ## All the benefits of Node.js
-event-driven, non-blocking design. Use npm and many open-source node.js libraries and frameworks.
+
+Event-driven, non-blocking design. Use npm and many open-source node.js libraries and frameworks.
 
 ## What is Strong Typing?
 The Haxe compiler uses static type checking at compile-time so you have a stronger guarantee of the application&#039;s behavior at run-time. Haxe uses several kinds of types.
