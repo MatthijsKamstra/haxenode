@@ -42,7 +42,7 @@ Everything changed a little by a suggestion from [Clark Jones](https://disqus.co
 ![](https://www.npmjs.com/static/images/npm-logo.svg)
 
 I now would suggest you use NPM for automation.   
-And visit [the second example](example2.md) I wrote (with a big help from Clark). It uses NPM for watch, livereload, restart Nodemon and only one terminal window!  
+And visit [the second example](example2.md) I wrote (with a big help from Clark). It uses NPM for watch, livereload, restart Nodemon and one terminal window!  
 Check out the [code folder](https://github.com/MatthijsKamstra/haxenode/tree/master/11automation/code2)
 
 
@@ -73,7 +73,7 @@ To restart node we will use [Nodemon](http://nodemon.io/).
 
 ## Grunt vs Gulp
 
-There are probably more, but in the javascript ecosystem the 2 biggest are 
+There are probably more, but in the JavaScript ecosystem the 2 biggest are 
 [Grunt](http://gruntjs.com/) and [Gulp](http://gulpjs.com/)
 
 I will not get into the Grunt vs Gulp discussion.  
