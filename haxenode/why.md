@@ -12,7 +12,7 @@ JavaScript2 promised a lot of great features for the future. Haxe provides a ver
 Pass objects between different platforms using remoting classes from the same codebase. Successful de-serialization makes remoting between platforms elegant and fast.
 
 ## Benefits type checking
-Strict type checking &amp; compile-time checks allows you to catch errors before testing in the browser or vm. This means a faster workflow for dynamically typed targets (like JavaScript).
+Strict type checking &amp; compile-time checks allows you to catch errors before testing in the browser or vm. This means a faster work-flow for dynamically typed targets (like JavaScript).
 
 ## ECMA style programming
 ECMA style programming for client-side, server-side &amp; desktop. The Haxe syntax is familiar to those coming from ActionScript and JavaScript.
