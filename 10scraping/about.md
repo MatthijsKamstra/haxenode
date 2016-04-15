@@ -1,6 +1,6 @@
 #About scraping
 
-> Web scraping is the process of programmatically retrieving information from the Internet. As the volume of data on the web has increased, this practice has become increasingly widespread, and a number of powerful services have emerged to simplify it.
+> Web scraping is the process of programmatically retrieving information from the Internet. As the volume of data on the web has increased, this practice has become increasingly widespread. And a number of powerful services have emerged to simplify it.
 
 
 > Web scraping (web harvesting or web data extraction) is a computer software technique of extracting information from websites.
