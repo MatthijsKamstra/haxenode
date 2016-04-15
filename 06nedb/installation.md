@@ -24,7 +24,7 @@ haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 
 ##Install Nedb via NPM:
 
-install nedb 
+Install nedb 
 
 ```
 npm install nedb --save 
