@@ -6,7 +6,7 @@ Obviously you need to install Haxe. There are a [couple of ways to do it](../hax
 
 Don't want to kick in some open doors, but before you can use Node.js ... you need to [install](#node) that also.
 
-And a [code editor](#ide) will be usefull!
+And a [code editor](#ide) will be useful!
 
 Last but not least, you need to install the [Haxe Externs](#externs). These are the "translators" from untyped node.js code to typed Haxe code. You only need to install the Node.js externs but get other fun stuff as wel. You will need them further on these documentation. 
 
