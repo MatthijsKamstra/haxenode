@@ -24,7 +24,7 @@ Probably for the more experienced programmer, but I guess everybody can enjoy au
 This example is not about programming or Haxe/NodeJs.  
 But about the tedious task around programming.
 
-This example is exactly the same as the first example: a simple "Hello world"!  
+This example is the same as the first example: a simple "Hello world"!  
 *Read more about "[hello world](../00helloworld/about.md)"*
 
 In this example we will build the Haxe with Grunt and let Grunt "watch" the files for changes.
