@@ -1,4 +1,4 @@
-(function (console) { "use strict";
+(function (console, $global) { "use strict";
 var $estr = function() { return js_Boot.__string_rec(this,''); };
 function $extend(from, fields) {
 	function Inherit() {} Inherit.prototype = from; var proto = new Inherit();
@@ -6,44 +6,26 @@ function $extend(from, fields) {
 	if( fields.toString !== Object.prototype.toString ) proto.toString = fields.toString;
 	return proto;
 }
-var MainAdvanced = function() {
-	console.log("Express website (Advanced): open browser at http://localhost:3000");
+var MainBasic = function() {
+	var _g = this;
+	console.log("Express website (Basic): open browser at http://localhost:3000");
 	console.log("Stop node.js : CTRL + c");
 	var app = new js_npm_Express();
-	app.set("port",3000);
-	app.set("views",__dirname + "/public/views");
-	app.set("view engine","jade");
-	app["use"](new js_npm_express_Favicon(__dirname + "/public/favicon.ico"));
-	app["use"](new js_npm_express_Morgan("dev"));
-	app["use"](js_npm_express_BodyParser.json());
-	app["use"](js_npm_express_BodyParser.urlencoded({ extended : true}));
-	app["use"](new js_npm_express_Static(js_node_Path.join(__dirname,"public")));
 	app.get("/",function(req,res) {
-		res.sendfile(__dirname + "/public/index_advanced.html");
+		res.send("Hello World!");
 	});
-	app.get("/remote",function(req1,res1) {
-		res1.sendfile(__dirname + "/public/remote_intermediate.html");
-	});
-	app.get("/jade",function(req2,res2) {
-		res2.render("index",{ title : "Home", h1 : "Title"});
-	});
-	app.get("/api/users",function(req3,res3) {
-		var username = req3.param("username");
-		res3.send("username: " + username);
-	});
-	app["use"](function(req4,res4,next) {
-		res4.status(404).send("404");
-	});
-	app.listen(app.get("port"),function() {
-		console.log("Express server listening on port " + Std.string(app.get("port")));
+	this.server = app.listen(3000,function() {
+		var host = _g.server.address().address;
+		var port = _g.server.address().port;
+		console.log("Example app listening at http://" + host + ":" + port);
 	});
 };
-MainAdvanced.__name__ = true;
-MainAdvanced.main = function() {
-	var main = new MainAdvanced();
+MainBasic.__name__ = true;
+MainBasic.main = function() {
+	var main = new MainBasic();
 };
-MainAdvanced.prototype = {
-	__class__: MainAdvanced
+MainBasic.prototype = {
+	__class__: MainBasic
 };
 Math.__name__ = true;
 var Std = function() { };
@@ -257,7 +239,7 @@ js_Boot.__isNativeObj = function(o) {
 	return js_Boot.__nativeClassName(o) != null;
 };
 js_Boot.__resolveNativeClass = function(name) {
-	return (Function("return typeof " + name + " != \"undefined\" ? " + name + " : null"))();
+	return $global[name];
 };
 var js_html_compat_ArrayBuffer = function(a) {
 	if((a instanceof Array) && a.__enum__ == null) {
@@ -441,12 +423,7 @@ js_html_compat_Uint8Array._subarray = function(start,end) {
 	a.byteOffset = start;
 	return a;
 };
-var js_node_Path = require("path");
 var js_npm_Express = require("express");
-var js_npm_express_BodyParser = require("body-parser");
-var js_npm_express_Favicon = require("serve-favicon");
-var js_npm_express_Morgan = require("morgan");
-var js_npm_express_Static = require("express").static;
 String.prototype.__class__ = String;
 String.__name__ = true;
 Array.__name__ = true;
@@ -458,10 +435,10 @@ var Bool = Boolean;
 Bool.__ename__ = ["Bool"];
 var Class = { __name__ : ["Class"]};
 var Enum = { };
-var ArrayBuffer = (Function("return typeof ArrayBuffer != 'undefined' ? ArrayBuffer : null"))() || js_html_compat_ArrayBuffer;
+var ArrayBuffer = $global.ArrayBuffer || js_html_compat_ArrayBuffer;
 if(ArrayBuffer.prototype.slice == null) ArrayBuffer.prototype.slice = js_html_compat_ArrayBuffer.sliceImpl;
-var DataView = (Function("return typeof DataView != 'undefined' ? DataView : null"))() || js_html_compat_DataView;
-var Uint8Array = (Function("return typeof Uint8Array != 'undefined' ? Uint8Array : null"))() || js_html_compat_Uint8Array._new;
+var DataView = $global.DataView || js_html_compat_DataView;
+var Uint8Array = $global.Uint8Array || js_html_compat_Uint8Array._new;
 haxe_io_FPHelper.i64tmp = (function($this) {
 	var $r;
 	var x = new haxe__$Int64__$_$_$Int64(0,0);
@@ -470,5 +447,5 @@ haxe_io_FPHelper.i64tmp = (function($this) {
 }(this));
 js_Boot.__toStr = {}.toString;
 js_html_compat_Uint8Array.BYTES_PER_ELEMENT = 1;
-MainAdvanced.main();
-})(typeof console != "undefined" ? console : {log:function(){}});
+MainBasic.main();
+})(typeof console != "undefined" ? console : {log:function(){}}, typeof window != "undefined" ? window : typeof global != "undefined" ? global : typeof self != "undefined" ? self : this);

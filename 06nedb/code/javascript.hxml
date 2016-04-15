@@ -8,6 +8,7 @@
 #this class wil be used as entry point for your app.
 -main Main
 # -main MainBasic
+# -main MainInter
 
 #JavaScript target
 -js bin/example.js

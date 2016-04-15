@@ -23,6 +23,8 @@ typedef DataStoreOptions = {
 	@:optional
 	var autoload : Bool;
 	@:optional
+	var timestampData : Bool;
+	@:optional
 	var onload : Error -> Dynamic;
 	@:optional
 	var afterSerialization : String -> String;
