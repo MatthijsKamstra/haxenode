@@ -8,7 +8,7 @@ Don't want to kick in some open doors, but before you can use Node.js ... you ne
 
 And a [code editor](#ide) will be useful!
 
-Last but not least, you need to install the [Haxe Externs](#externs). These are the "translators" from untyped node.js code to typed Haxe code. You only need to install the Node.js externs but get other fun stuff as well. You will need them further on these documentation. 
+Last but not least, you need to install the [Haxe Externs](#externs). These are the "translators" from `untyped` node.js code to typed Haxe code. You need to install the Node.js externs but get other fun stuff as well. You will need them further on these documentation. 
 
 ----
 
