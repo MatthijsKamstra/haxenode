@@ -15,7 +15,7 @@ It has all the externs for **node.js** and **extras**!
 
 ##Install hxnodejs
 
-Install [hxnodejs](http://lib.haxe.org/p/hxnodejs) via haxelib
+Install [hxnodejs](http://lib.haxe.org/p/hxnodejs) via haxelib:
 
 ```
 haxelib install hxnodejs
