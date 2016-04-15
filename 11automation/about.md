@@ -19,7 +19,7 @@ As a programmer you are looking for patterns, so you can put them a function and
 The same thing applies to compiling/refreshing/updating code.
 
 If you do a lot of the same tasks *over and over and over* again, you should read this example.
-Probably for the more experienced programmer, but I guess everybody can benefit from automation.
+Probably for the more experienced programmer, but I guess everybody can enjoy automation.
 
 So this example is not really about programming or Haxe/NodeJs.  
 But about the tedious task around programming.
