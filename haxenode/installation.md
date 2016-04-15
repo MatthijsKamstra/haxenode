@@ -6,10 +6,20 @@ Okay I don't want to mention this again, but you need to install Node.js and Hax
 ##Install Node externs for Haxe
 
 
+The 
+
 
 I suggest you install [https://github.com/clemos/haxe-js-kit](https://github.com/clemos/haxe-js-kit).
 It has all the externs for **node.js** and **extras**!
-In the future the default HaxeFoundation Node.js externs will be used, but the rest of the project is awesome too.
+
+
+##Install hxnodejs
+
+Install [hxnodejs](http://lib.haxe.org/p/hxnodejs) via haxelib
+
+```
+haxelib install hxnodejs
+```
 
 
 ##Install **js-kit** using haxelib:
