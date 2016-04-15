@@ -2,7 +2,7 @@
 
 Before you can use there are a couple of thing you need to do.
 
-Obviously you need to install Haxe. There are a [couple of ways to do it](../haxe/installation.md), but in this document I will only send you to the [official place](#haxe).
+You need to install Haxe. There are a [couple of ways to do it](../haxe/installation.md), but in this document I will send you to the [official place](#haxe).
 
 Don't want to kick in some open doors, but before you can use Node.js ... you need to [install](#node) that also.
 
