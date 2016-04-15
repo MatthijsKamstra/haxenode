@@ -8,7 +8,7 @@ And you should probably skip this tutorial, because... well you need a slack cha
 
 > 
 ###Welcome to the Slack API
-> The Slack APIs allow you to integrate complex services with Slack to go beyond the integrations we provide out of the box.
+> The Slack APIs allow you to integrate complex services with Slack to go beyond the integration we provide out of the box.
 
 You can read the rest [here](https://api.slack.com/)
 
