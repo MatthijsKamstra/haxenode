@@ -21,10 +21,10 @@ The same thing applies to compiling/refreshing/updating code.
 If you do a lot of the same tasks *over and over and over* again, you should read this example.
 Probably for the more experienced programmer, but I guess everybody can enjoy automation.
 
-So this example is not really about programming or Haxe/NodeJs.  
+This example is not about programming or Haxe/NodeJs.  
 But about the tedious task around programming.
 
-So this example is exactly the same as the first example: a simple "Hello world"!  
+This example is exactly the same as the first example: a simple "Hello world"!  
 *Read more about "[hello world](../00helloworld/about.md)"*
 
 In this example we will build the Haxe with Grunt and let Grunt "watch" the files for changes.
