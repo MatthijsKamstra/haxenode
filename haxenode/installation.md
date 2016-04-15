@@ -5,7 +5,7 @@ Okay I don't want to mention this again, but you need to install Node.js and Hax
 
 ##Install Node externs for Haxe
 
-Haxe will have default externs for **node.js** : [https://github.com/HaxeFoundation/hxnodejs/](https://github.com/HaxeFoundation/hxnodejs/) but I can't figure out when this will be released.
+
 
 I suggest you install [https://github.com/clemos/haxe-js-kit](https://github.com/clemos/haxe-js-kit).
 It has all the externs for **node.js** and **extras**!
