@@ -10,8 +10,8 @@ Do you recognize this pattern?
 - CMD + TAB > Browser
 - CMD + R
 - CMD + TAB > Sublime Text
-- change files
-- repeat
+- Change files
+- Repeat
 
 
 As a programmer you are looking for patterns, so you can put them a function and use that function *over and over* again.
