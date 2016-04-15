@@ -14,7 +14,7 @@ But if you want to create a website I strongly suggest you use `ExpressJS`!!!
 In this tutorial we will be using [Express](http://expressjs.com):
 
 > ###Web Applications
-> Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.  
+> Express is a minimal and flexible Node.js web application framework. It provides a robust set of features for web and mobile applications.  
 > <http://expressjs.com>
 
 And build an `index.html`, `remote.html` and `404`!
