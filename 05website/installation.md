@@ -28,7 +28,7 @@ haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 
 [Express](https://github.com/strongloop/express) 
 
-> Fast, unopinionated, minimalist web framework for node.
+> Fast, un-opinionated, minimalist web framework for node.
 
 ```
 npm install express
