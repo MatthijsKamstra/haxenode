@@ -20,7 +20,7 @@ See example below:
 
 ## Install
 
-check out [the installation](installation.md).
+Check out [the installation](installation.md).
 
 
 ## The Main.hx
