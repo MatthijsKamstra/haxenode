@@ -4,7 +4,7 @@
 
 
 Okay that is a little bit to much to ask for now.  
-So instead me trying to explain it, I will give you some places you can go.
+Instead me trying to explain it, I will give you some places you can go.
 
 
 ## Learn X in Y minutes
@@ -27,12 +27,12 @@ Can't miss this one, it's the mother ship
 
 ## Haxe API documentation
 
-Documentation can be found here: [http://api.haxe.org/](http://api.haxe.org/)
+Find the documentation here: [http://api.haxe.org/](http://api.haxe.org/)
 
 
 ## Haxe Manual
 
-Same idea as this documentation (not with `.md`- but `.tex`-files), but more in-depth into coding with Haxe (wip): the [HaxeManual](https://github.com/HaxeFoundation/HaxeManual)  
+Same idea as this documentation (not with `.md`- but `.tex`-files). But more in-depth into coding with Haxe (wip): the [HaxeManual](https://github.com/HaxeFoundation/HaxeManual).  
 Download the [pdf here](https://github.com/HaxeFoundation/HaxeManual/raw/master/HaxeManual/HaxeManual.pdf)
 
 
@@ -95,7 +95,7 @@ Videos that could help you on your way
 
 ## Try Haxe
 
-Not really a place to learn, but to try out without installing Haxe.
+Not a place to learn, but to **try out** without installing Haxe.
 [Try Haxe!](http://try.haxe.org/)
 
 
@@ -103,7 +103,7 @@ Not really a place to learn, but to try out without installing Haxe.
 
 ## Other links, perhaps worth looking into
 
-Could be old and outdated.
+Could be old and outdated, haven't investigated it thourough.
 
 * [http://haxelearning.wikispaces.com/](http://haxelearning.wikispaces.com/)
 * [http://haxe.us/haxe_tutorial.html](http://haxe.us/haxe_tutorial.html)

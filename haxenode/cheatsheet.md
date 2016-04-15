@@ -15,14 +15,14 @@ Haxe includes support for:
 * [Iterators](http://haxe.org/manual/lf-iterators.html)
 * [Conditional compilation](http://Haxe.org/manual/lf-condition-compilation.html) 
 * [Inlining](http://Haxe.org/manual/class-field-inline.html) 
-* and more! ([check here](index.md))
+* And more! ([check here](index.md))
 
 
 ---
 
 ### Haxe &amp; JavaScript common syntax comparison
 
-This guide is based off from [OpenFL's guide](http://www.openfl.org/archive/developer/documentation/actionscript-developers/) and [HaxeFlixel'd guide](http://haxeflixel.com/documentation/as3-and-haxe-comparison/).
+This guide based off from [OpenFL's guide](http://www.openfl.org/archive/developer/documentation/actionscript-developers/) and [HaxeFlixel'd guide](http://haxeflixel.com/documentation/as3-and-haxe-comparison/).
 
 ---
 
@@ -68,7 +68,7 @@ This guide is based off from [OpenFL's guide](http://www.openfl.org/archive/deve
 
 CommonJS vs AMD vs ES2015 module
 ```
-need example
+needs example
 ```
 
 **Haxe**
@@ -83,10 +83,10 @@ package com.example.myapplication;
  
 **JavaScript**
 
-prototypal inheritance 
+Prototypal inheritance 
 
 ```
-need example
+needs example
 ```
 
 **Haxe**
@@ -176,7 +176,7 @@ switch (value)
 		break;
    default:
 		console.log ("Not equal to 1");
-	  break;
+		break;
 
 }
 	   
@@ -201,6 +201,7 @@ switch (value)
 
 
 **JavaScript**  
+
 Dynamic typing
 
 ```
@@ -215,6 +216,7 @@ console.log ( typeof hi );
 ```        
 
 **Haxe**  
+
 Static typing
 
 ```
@@ -292,10 +294,9 @@ table["key"] = 100;
 
 console.log (table.hasOwnProperty ("key"));
 
-for (var key in table) {
-
-   trace (key + " = " + table[key]);
-
+for (var key in table) 
+{
+   console.log (key + " = " + table[key]);
 }
 
 delete table["key"];
