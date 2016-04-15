@@ -28,7 +28,7 @@ haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 
 ##Install Grunt with NPM
 
-You really should read more about Grunt [here](http://gruntjs.com/getting-started), it will explain the workings of Grunt.
+You should read more about Grunt [here](http://gruntjs.com/getting-started), it will explain the workings of Grunt.
 But the quick-and-dirty install is the line below in your terminal.
 
 ```
