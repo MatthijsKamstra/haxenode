@@ -9,9 +9,9 @@ And JavaScript is becoming one of the most powerful and [popular](https://github
 
 
 One of the reasons it's becoming so popular is Node.js!
-With node you write javascript for the backend.
+With node you write JavaScript for the back-end.
 
-With javascript and node.js you are able to write front-end AND back-end.
+With JavaScript and node.js you are able to write front-end AND back-end.
 
 
 
