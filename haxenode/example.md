@@ -1,7 +1,7 @@
 # Node.js example
 
 Here you will see an original node.js code and the Haxe version of the same code.
-I will not do that every time, so this is just an example to show you that there is not a lot of diffence between the two ways.
+I will not do that every time, so this is just an example to show you that there is not a lot of difference between the two ways.
 
 ----
 
@@ -21,9 +21,9 @@ server.listen(1337, "127.0.0.1");
 console.log('Server running at http://127.0.0.1:1337/');
 ```
 
-### run
+### Run
 
-in terminal
+In terminal
 
 ```
 node example.js
