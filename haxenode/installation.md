@@ -8,7 +8,7 @@ Okay I don't want to mention this again, but you need to install Node.js and Hax
 
 The HaxeFoundation maintains the [hxnodejs](https://github.com/HaxeFoundation/hxnodejs) externs.
 
-Beside the hsxnodejs externs I suggest you install [https://github.com/clemos/haxe-js-kit](https://github.com/clemos/haxe-js-kit) as well. It has all the externs this documentation is written upon.
+Beside the node externs I suggest you install [https://github.com/clemos/haxe-js-kit](https://github.com/clemos/haxe-js-kit) as well. It has all the externs this documentation based upon.
 
 
 
