@@ -7,7 +7,7 @@ But what if we need something with more punch: [NeDB](https://github.com/louisch
 
 ## NeDB (Node embedded database)
 
-> Embedded persistent database for Node.js, written in Javascript, with no dependency (except npm modules), which can be used with a simple require statement. The API is a subset of MongoDB's. You can use it as a persistent or an in-memory only datastore, and it can also be used in all recent browsers (Chrome, Firefox, Safari, IE9+).
+> Embedded persistent database for Node.js, written in JavaScript, with no dependency (except npm modules). Which can be used with a simple require statement. The API is a subset of MongoDB's. You can use it as a persistent or an in-memory only datastore, and it can also be used in all recent browsers (Chrome, Firefox, Safari, IE9+).
 
 
 ```
