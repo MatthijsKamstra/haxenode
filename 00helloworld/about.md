@@ -1,11 +1,11 @@
 #About hello http
 
-I'd guess that while it's not the only use case for node.js, most people are using it as a web application platform. So the next example will be a simple HTTP server that responds to every request with the plain text message "Hello World"
+I'd guess that while it's not the use case for node.js, most people are using it as a web application platform. The next example will be a simple HTTP server that responds to every request with the plain text message "Hello World"
 
 *Source: <http://howtonode.org/hello-node>*
 
 
-#about hello world
+#About hello world
 
 Hello world is the first thing you will write in a new language.
 
