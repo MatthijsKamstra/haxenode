@@ -8,7 +8,7 @@ Don't want to kick in some open doors, but before you can use Node.js ... you ne
 
 And a [code editor](#ide) will be useful!
 
-Last but not least, you need to install the [Haxe Externs](#externs). These are the "translators" from untyped node.js code to typed Haxe code. You only need to install the Node.js externs but get other fun stuff as wel. You will need them further on these documentation. 
+Last but not least, you need to install the [Haxe Externs](#externs). These are the "translators" from untyped node.js code to typed Haxe code. You only need to install the Node.js externs but get other fun stuff as well. You will need them further on these documentation. 
 
 ----
 
@@ -17,7 +17,7 @@ Current versions are:
 * **Haxe** v3.2.1
 * **Node.js** v0.12.7
 
-But if the version numbers changed, it only means I haven't updated this part of the document in some time :D
+But if the version numbers changed, it means I haven't updated this part of the document in some time :D
 
 <a name="haxe"></a>
 ##Download Haxe
