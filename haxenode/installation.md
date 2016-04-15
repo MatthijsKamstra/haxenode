@@ -23,7 +23,7 @@ haxelib install hxnodejs
 
 ##Install **js-kit** using haxelib:
 
-Currently this is done via git, but it will not change a lot, so you could ignore this message :D
+You install via git:
 
 ```
 haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
