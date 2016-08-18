@@ -52,9 +52,9 @@ class Main
 	{		
 		var server = Http.createServer(function (request:IncomingMessage, response:ServerResponse):Void
 		{
-			res.setHeader("Content-Type","text/plain");
-			res.writeHead(200);
-			res.end('Hello World\\n');
+			response.setHeader("Content-Type","text/plain");
+			response.writeHead(200);
+			response.end('Hello World\\n');
 		});
 		server.listen(1337,"localhost");
 
