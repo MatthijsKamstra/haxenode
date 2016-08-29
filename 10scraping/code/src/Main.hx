@@ -12,11 +12,11 @@ class Main
 	function new()
 	{
 		trace("Node.js Scraping Example");
-		
+
 		var request : Request = Request.construct();
 		var url = "http://www.wunderground.com/cgi-bin/findweather/getForecast?&query=02888";
 
-		request.post(url, function (error, response, body) {
+		request.get(url, function (error, response, body) {
 			if (!error) {
 				// Variables names staring with a dollar are not allowed, that is why I changed $ into _cheerio
 				var _cheerio = Cheerio.load(body);
@@ -26,7 +26,7 @@ class Main
 			} else {
 				trace("We’ve encountered an error: " + error);
 			}
-		}); 		
+		});
 	}
 
     static public function main()
