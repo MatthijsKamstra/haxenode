@@ -4,16 +4,19 @@
 	"author": "Matthijs Kamstra aka [mck]",
 	"start": "node index.js",
 	"private": true,
-	"scripts": {
-		"prewatch": "haxe javascript.hxml",
-		"watch": "onchange '**/*.hx' '**/*.md' -v -- haxe javascript.hxml & nodemon bin/example.js & livereload bin/"
-	},
 	"dependencies": {
-		"livereload": "^0.3.7",
-    	"nodemon": "^1.7.1",
-    	"onchange": "^2.0.0",
 		"jade": "*",
-		"express": "~4.0",
-		"socket.io":"1.0"
+		"morgan": "^1.5.1",
+		"socket.io": "1.0",
+		"onchange": "^2.0.0",
+		"socket.io-adapter": "0.3.1",
+		"livereload": "^0.3.7",
+		"nodemon": "^1.7.1",
+		"serve-favicon": "*",
+		"express": "~4.0"
+	},
+	"scripts": {
+		"watch": "onchange '**/*.hx' '**/*.md' -v -- haxe javascript.hxml & nodemon bin/example.js & livereload bin/",
+		"prewatch": "haxe javascript.hxml"
 	}
 }

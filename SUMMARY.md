@@ -50,6 +50,9 @@
    * [Installation](11automation/installation.md)
    * [Example](11automation/example.md)
    * [Better Example](11automation/example2.md)
+* [Example Socket](12socket/about.md)
+   * [Installation](12socket/installation.md)
+   * [Example](12socket/example.md)
 * Resources
    * [Who to follow](follow.md)
    * [Haxejs](http:/matthijskamstra.github.io/haxejs/)

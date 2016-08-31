@@ -2,7 +2,7 @@
 "version":3,
 "file":"example.js",
 "sourceRoot":"file:///",
-"sources":["/Volumes/Data HD/Users/matthijs/Documents/workingdir/haxe/haxenode/12socket/code/src/Main.hx","/usr/lib/haxe/lib/js-kit/git/js/Node.hx"],
+"sources":["/Users/matthijs/Documents/workingdir/haxe/haxenode/12socket/code/src/Main.hx"],
 "names":[],
-"mappings":";OAwBA,IALD;CAGoB,AAHpB,EAGoB;CAIlB,WAAM,TAA+D;CACrE,WAAM;CAEO;CACA,AAA0B;CAC1B,sBAA2B;CAExC,AAAS,AAAQ,EAAkB;CACnC,AAAS,AAAc;CAEvB,AAAQ,qBAAW,nBAAkB;CACrC,AAAQ,qBAAY;CACpB,AAAQ,sBAAY,pBAAkB;CAEtC,AAAQ,AAAK,iBAAwC;EAClC;EAGlB,CAAc;EAEd,DAAW,AAAQ,YAAc;;CAQlC,AAAO,AAAa,gBAAkB;EACrC,DAAa,AAAU,SAAY;EACnC,DAAW,AAAO,cACjB;CAAiB,AAAU;;;CAI7B,WAAO,TAAuB;CAE9B,AAAc;;YAIE,DAEV;CAAW;;;;;;;;;;;;;oBCnD4C;;;;"
+"mappings":";;;WAwBC,WALD;AAAA,CAGoB,AAHpB,YAGoB;CAIlB,YAAM,+DAA+D;CACrE,YAAM;CAEN,UAAa;CACb,aAAa,0BAA2B,AAAK;CAC7C,SAAa,2BAA2B;CAExC,QAAS,QAAQ,YAAkB;CACnC,QAAS,cAAc;CAEvB,WAAQ,0BAAW,YAAkB;CACrC,WAAQ,0BAAY;CACpB,WAAQ,2BAAY,YAAkB;CAEtC,QAAQ,IAAK,kBAMZ;AAAA,aAAW,OAAQ,eAAc;;CAQlC,MAAO,aAAa,iBAAkB;AAAA,EACrC,YAAa,UAAU,YAAY;EACnC,UAAW,OAAO,eACjB;AAAA,mBAAiB,UAAU;;;CAI7B,YAAO,uBAAuB;CAE9B,cAAc;;YAID,WAEF;AAAA;;;;;;;;;;;;;"
 }

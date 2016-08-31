@@ -6,7 +6,6 @@ import js.html.*;
 
 class MainClient {
 
-	
 	private var _messages = [];
 	private var _socket : Dynamic;
 	private var _inputField : InputElement;
@@ -14,18 +13,17 @@ class MainClient {
 	private var _content : Element;
 	private var _inputName : InputElement ;
 
-
 	public function new()
 	{
 
 		new JQuery(Browser.document).ready ( function ()
 		{
-			trace ("MainClient document ready!"); 
+			trace ("MainClient document ready!");
 
 			init();
 
-			new JQuery("#inputField").keyup( function (e : Dynamic) 
-			{	
+			new JQuery("#inputField").keyup( function (e : Dynamic)
+			{
 				if(e.keyCode == 13) {
 					sendMessage();
 				}
@@ -45,13 +43,13 @@ class MainClient {
 
 		_socket.on('message', function (data)
 		{
-			if(data.message != null) 
+			if(data.message != null)
 			{
 				_messages.push(data);
 				var html = '';
 
-				for (i in 0 ... _messages.length) 
-				{	
+				for (i in 0 ... _messages.length)
+				{
 					html += '<b>' + (_messages[i].username != null ? _messages[i].username : 'Server') + ': </b>';
 					html += _messages[i].message + '<br />';
 				}

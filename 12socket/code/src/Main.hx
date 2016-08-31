@@ -28,7 +28,7 @@ class Main
 		trace("Stop node.js : CTRL + c");
 
 		var app    = new js.npm.Express();
-		var server = js.node.Http.createServer(app);
+		var server = js.node.Http.createServer( cast app );
 		var io     = new js.npm.socketio.Server(server);
 
 		app.set('views', Node.__dirname + '/public/views');
@@ -39,10 +39,10 @@ class Main
 		app.use(new Favicon(Node.__dirname + '/public/favicon.ico'));
 
 		app.get("/", function(req : Request, res : Response ){
-		 	var liveReload = "";
-		 	#if debug
-			// liveReload = '<script src="http://0.0.0.0:35729/livereload.js" type="text/javascript"></script>'; 
-			liveReload = 'http://0.0.0.0:35729/livereload.js'; 
+			var liveReload = "";
+			#if debug
+			// liveReload = '<script src="http://0.0.0.0:35729/livereload.js" type="text/javascript"></script>';
+			liveReload = 'http://0.0.0.0:35729/livereload.js';
 			#end
 			res.render("page", {livereload : liveReload});
 		});
@@ -62,11 +62,11 @@ class Main
 		trace ("Listening on port " + PORT);
 
 		server.listen(PORT);
-		
+
 	}
 
-    static public function main()
-    {
-        var main = new Main();
+	static public function main()
+	{
+		var main = new Main();
 	}
 }
