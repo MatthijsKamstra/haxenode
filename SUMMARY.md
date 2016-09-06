@@ -55,7 +55,7 @@
    * [Example](12socket/example.md)
 * Resources
    * [Who to follow](follow.md)
-   * [Haxejs](http:/matthijskamstra.github.io/haxejs/)
+   * [More like this](more.md)
    * [Try Haxe!](http:/try.haxe.org/)
    * [Community](https:/groups.google.com/forum/#!topic/haxelang/)
 * [Contribute](contribute.md)
