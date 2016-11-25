@@ -44,6 +44,7 @@ To get you start I have a little chapter about [learning Haxe](haxe/learn-haxe.m
 * [Example Scraping](10scraping/about.md)
 * [Example Automation](11automation/about.md)
 * [Example Sockets](12socket/about.md)
+* [Example Sequelize](13sequelize/about.md)
 
 
 ##Expert

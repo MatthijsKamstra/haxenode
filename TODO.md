@@ -1,5 +1,18 @@
 #TODO
 
+```
+import js.Node.console;
+
+...
+
+console.log()
+
+```
+
+
+
+
+
 * ask permission from writers blogposts
 * write about this article
     * http://saumya.github.io/ray/articles/50/
@@ -37,7 +50,7 @@ https://www.patreon.com/posts/2740520
 ### Examples DB
 https://github.com/louischatriot/nedb
 
-### desktop 
+### desktop
 https://github.com/nwjs/nw.js/
 
 -----

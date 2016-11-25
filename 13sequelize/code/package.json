@@ -1,0 +1,19 @@
+{
+	"license": "MIT",
+	"description": "Sequelize example",
+	"author": "Matthijs Kamstra aka [mck]",
+	"private": true,
+	"devDependencies": {
+		"onchange": "^2.0.0",
+		"livereload": "^0.3.7",
+		"nodemon": "^1.11.0"
+	},
+	"dependencies": {
+		"sqlite3": "*",
+		"sequelize": "^3.0.0"
+	},
+	"scripts": {
+		"watch": "onchange '**/*.hx' '**/*.md' -v -- haxe build.hxml & nodemon bin/example.js & livereload bin/",
+		"prewatch": "haxe build.hxml"
+	}
+}
