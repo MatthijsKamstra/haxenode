@@ -28,14 +28,14 @@ For clever, cool and handsome developers. Duh! :D
 * Developers who have tried CoffeeScript and TypeScript.
 * JavaScript developers who write more then a half a dozen classes.
 * Flash-developers looking for an AS3 replacement
-* Flash-developers starting with JS and trying to compete with plain JS-developers
+* Flash-developers starting with JS and trying to compete with JS-developers
 * Freelance developers working with JS
 * Small developers teams working on big projects  
 
 ## Documentation goals
 
 I wanted to make contributing to this documentation as easy as possible.  
-That's why I use Markdown. Developers use it, but is just writing in plane English so **everybody** can write documentation!  
+That's why I use Markdown. Developers use it, but is just writing in plain English so **everybody** can write documentation!  
 And this documentation hosted on Github, developers favorite place to store code.  
 Even if you are not a developer. Don't want to clone everything, you still can change the files on the website (you need account to login in and change the `.md` files).
 And as a final resort, you can leave your comments/suggestions/etc at the bottom of the page via Disqus.
