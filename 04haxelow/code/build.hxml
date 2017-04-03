@@ -1,5 +1,6 @@
 -lib js-kit
 -lib hxnodejs
+-lib haxelow
 -cp src
 -main Main
 -js bin/example.js

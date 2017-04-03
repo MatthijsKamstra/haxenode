@@ -1,8 +1,0 @@
-{
-"version":3,
-"file":"example.js",
-"sourceRoot":"file:///",
-"sources":["/Users/matthijs/Documents/workingdir/haxe/haxenode/12socket/code/src/Main.hx"],
-"names":[],
-"mappings":";;;WAwBC,WALD;AAAA,CAGoB,AAHpB,YAGoB;CAIlB,YAAM,+DAA+D;CACrE,YAAM;CAEN,UAAa;CACb,aAAa,0BAA2B,AAAK;CAC7C,SAAa,2BAA2B;CAExC,QAAS,QAAQ,YAAkB;CACnC,QAAS,cAAc;CAEvB,WAAQ,0BAAW,YAAkB;CACrC,WAAQ,0BAAY;CACpB,WAAQ,2BAAY,YAAkB;CAEtC,QAAQ,IAAK,kBAMZ;AAAA,aAAW,OAAQ,eAAc;;CAQlC,MAAO,aAAa,iBAAkB;AAAA,EACrC,YAAa,UAAU,YAAY;EACnC,UAAW,OAAO,eACjB;AAAA,mBAAiB,UAAU;;;CAI7B,YAAO,uBAAuB;CAE9B,cAAc;;YAID,WAEF;AAAA;;;;;;;;;;;;;"
-}
