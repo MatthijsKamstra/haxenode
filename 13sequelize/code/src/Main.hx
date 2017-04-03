@@ -41,13 +41,13 @@ class Main
 			.then(function(err) {
 				console.log('Connection has been established successfully.');
 			})
-			.catch_(function (err) {
+			.Catch(function (err) {
 				console.log('Unable to connect to the database:', err);
 			});
 
 		// Your first model
 		// http://sequelize.readthedocs.io/en/latest/docs/getting-started/#your-first-model
-		var fields : Dynamic<ModelAttributes> = {
+		var fields : Dynamic<ModelDefinition> = {
 			firstName: {
 				type: Sequelize.STRING()
 			},

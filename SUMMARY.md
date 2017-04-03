@@ -53,9 +53,11 @@
 * [Example Socket](12socket/about.md)
    * [Installation](12socket/installation.md)
    * [Example](12socket/example.md)
+<!--
 * [Example Sequelize](13sequelize/about.md)
    * [Installation](13sequelize/installation.md)
    * [Example](13sequelize/example.md)
+-->
 * Resources
    * [Who to follow](resources/follow.md)
    * [More like this](resources/more.md)
