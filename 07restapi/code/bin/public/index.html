@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Haxe Node - Website - Index</title>
+	</head>
+<body>
+
+	<div class="container">
+		<h1>Rest API</h1>
+		<ul>
+			<li><a href="/musician/Matthijs">GET /musician/Matthijs</a></li>
+			<li><a href="/musicians">GET /musicians</a></li>
+			<li><a href="/musicians/123">GET /musicians/123</a></li>
+			<!-- <li><a href="/musicians">POST /musicians</a></li> -->
+<!-- 			<li><a href="/musicians/123">PUT /musicians/123</a></li>
+			<li><a href="/musicians/123">DELETE /musicians/123</a></li> -->
+		</ul>
+
+		<h2>POST /musicians</h2>
+
+		<form method="post" action="/musicians">
+			<div class="form-group">
+				<label for="inputName">Name</label>
+				<input type="text" class="form-control" id="inputName" name="inputName" placeholder="Name" value="Haxe">
+			</div>
+			<div class="form-group">
+				<label for="inputGroupName">Groupname</label>
+				<input type="text" class="form-control" id="inputGroupName" name="inputGroupName" placeholder="Groupname" value="Foundation">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+
+
+<!--
+		<h2>PUT /musicians</h2>
+
+		<form method="post" action="/musicians">
+			<input type="hidden" name="_method" value="put" />
+			<div class="form-group">
+				<label for="inputName">Name</label>
+				<input type="text" class="form-control" id="inputName" name="inputName" placeholder="Name" value="Haxe">
+			</div>
+			<div class="form-group">
+				<label for="inputGroupName">Groupname</label>
+				<input type="text" class="form-control" id="inputGroupName" name="inputGroupName" placeholder="Groupname" value="Foundation">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+-->
+
+
+	</div>
+
+	<!-- from jQuery's CDN (http://jquery.com/download/#using-jquery-with-a-cdn) -->
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- Your Haxe compiled script -->
+	<!-- <script type="text/javascript" src="example.js"></script> -->
+
+</body>
+</html>

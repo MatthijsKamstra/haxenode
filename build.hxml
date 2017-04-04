@@ -50,6 +50,13 @@ build.hxml
 build.hxml
 -cmd echo "│ ├── 06nedb/code"
 
+# restapi
+-cmd cd ../../
+-cmd cd 07restapi/code/
+--next
+build.hxml
+-cmd echo "│ ├── 07restapi/code"
+
 # slack
 -cmd cd ../../
 -cmd cd 09slackbot/code/
