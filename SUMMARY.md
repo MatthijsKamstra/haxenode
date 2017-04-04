@@ -16,6 +16,7 @@
    * [Example](haxenode/example.md)
    * [Resources](haxenode/resource.md)
    * [Cheatsheet](haxenode/cheatsheet.md)
+   * [Copy & Paste](haxenode/copy_paste.md)
 * [Example Hello World](00helloworld/about.md)
    * [Installation](00helloworld/installation.md)
    * [Example](00helloworld/example.md)
