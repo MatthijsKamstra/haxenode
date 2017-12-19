@@ -46,7 +46,7 @@ import js.node.Http;
 import js.node.http.ServerResponse;
 import js.node.http.IncomingMessage;
 
-class Main
+class Haxenode
 {
 	static public function main()
 	{		
