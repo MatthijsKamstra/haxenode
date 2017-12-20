@@ -48,7 +48,7 @@ Every new tutorial should have:
 	|	+ bin
 	|	+ src
 	|	|	- Main.hx
-	|	- javascript.hxml
+	|	- build.hxml
 	- about.md (short description what it will do)
 	- install.md (is there something you need to install)
 	- example.md (javscript.hxml, Main.hx, how to build, etc)

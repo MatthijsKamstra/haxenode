@@ -3,7 +3,7 @@
 	"structure": {
 		"readme": "intro.md"
 	},
-	"plugins": ["edit-link","disqus","ga"],
+	"plugins": ["edit-link","disqus","ga", "anchors"],
 	"pluginsConfig": {
 		"edit-link": {
 			"base": "https://github.com/MatthijsKamstra/haxenode/blob/master/",

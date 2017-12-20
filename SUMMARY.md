@@ -1,5 +1,7 @@
 # Summary
 
+This is the summary of my book.
+
 * [Introduction](intro.md)
 * [Level of Difficulty](level.md)
 * [Haxe basics](haxe/about.md)
@@ -62,8 +64,8 @@
 * Resources
    * [Who to follow](resources/follow.md)
    * [More like this](resources/more.md)
-   * [Try Haxe!](http://try.haxe.org/)
-   * [Community](https://groups.google.com/forum/#!topic/haxelang/)
+   * [Try Haxe!](https://try.haxe.org/)
+   * [Community](http://community.haxe.org/)
 * [Contribute](contribute.md)
 * [Source](https://github.com/MatthijsKamstra/haxenode/)
 * [Suggestion Box](https://github.com/MatthijsKamstra/haxenode/issues/1)

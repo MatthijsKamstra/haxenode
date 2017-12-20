@@ -7,9 +7,9 @@ You just want to get started ... right!
 
 Choose your OS:
 
-* [OSX](# osx)
-* [Linux](# linux)
-* [Windows](# windows)
+* [OSX](#osx)
+* [Linux](#linux)
+* [Windows](#windows)
 
 __At the time of writing, the version is Haxe 3.2.1, but don't let that stop you when that has changed__
 
@@ -31,23 +31,31 @@ You can find installers and binaries for Windows, OS X and Linux on [http://haxe
 
 You need an editor, lets install **Visual Studio Code**
 
-![Visual Studio Code](https://code.visualstudio.com/home-screenshot-mac-lg.png)
+![Visual Studio Code](https://code.visualstudio.com/home/home-screenshot-mac-lg.png)
 
-On the homepage of [Visual Studio Code](https://code.visualstudio.com/) find the button called "Download for OSX" (it right in your face, big button).
+On the homepage of [Visual Studio Code](https://code.visualstudio.com/) find the button called "Download for OSX" (it right in your face, a big button).
 
 - Download
 - And install
 
-## Step 3: Install VSCode - Haxe Language Extension
+## Step 3: Install VSCode - Haxe Extension Pack
 
-To get VSCode working with Haxe you need to install the "Haxe Language Extension"
+To get VSCode working with Haxe you should install the "Haxe Extension Pack"
 
-([vscode-haxe](https://marketplace.visualstudio.com/items?itemName=haxedevs.haxe))
+([Haxe Extension Pack ](https://marketplace.visualstudio.com/items?itemName=vshaxe.haxe-extension-pack))
 
 - Launch VS Code
 - Quick Open (⌘+P)
-- Paste the following command: `ext install haxe`
+- Paste the following command: `ext install haxe-extension-pack`
 - And type enter
+
+It currently contains 3 extensions
+
+- Haxe ([Haxe Support for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=nadako.vshaxe))
+- Haxe Debug ([Haxe Debug for flash target](https://marketplace.visualstudio.com/items?itemName=vshaxe.haxe-debug))
+- codedox ([JSDoc style comments](https://marketplace.visualstudio.com/items?itemName=wiggin77.codedox))
+
+But that might become more in the future!
 
 ## Step 4 (extra): Install haxelib libraries
 
@@ -58,7 +66,6 @@ This is not necessary but something you eventually need to do.
 
 ```
 haxelib install hxnodejs
-haxelib install jQueryExtern
 haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 haxelib install markdown
 haxelib install msignal
@@ -75,7 +82,7 @@ Download Node.js: get your version here: [https://nodejs.org/](https://nodejs.or
 Now you have access to NPM.
 
 - Open `terminal`
-- Copy and past the following (and see current NPM version)
+- Copy and paste the following (and see current NPM version)
 
 ```
 npm -v
@@ -102,35 +109,42 @@ You can find installers and binaries for Windows, OS X and Linux on [http://haxe
 
 You need an editor, lets install **Visual Studio Code**
 
-![Visual Studio Code](https://code.visualstudio.com/home-screenshot-mac-lg.png)
+![Visual Studio Code](https://code.visualstudio.com/home/home-screenshot-mac-lg.png)
 
-On the homepage of [Visual Studio Code](https://code.visualstudio.com/) find the button called "Download" (its right in your face, big button).
+On the homepage of [Visual Studio Code](https://code.visualstudio.com/) find the button called "Download" (its right in your face, a big button).
 
 - Download
 - And install
 
 
-## Step 3: Install VSCode - Haxe Language Extension
+## Step 3: Install VSCode - Haxe Extension Pack
 
-To get VSCode working with Haxe you need to install the "Haxe Language Extension"
+To get VSCode working with Haxe you should install the "Haxe Extension Pack"
 
-([vscode-haxe](https://marketplace.visualstudio.com/items?itemName=haxedevs.haxe))
+([Haxe Extension Pack ](https://marketplace.visualstudio.com/items?itemName=vshaxe.haxe-extension-pack))
 
 - Launch VS Code
 - Quick Open (⌘+P)
-- Paste the following command: `ext install haxe`
+- Paste the following command: `ext install haxe-extension-pack`
 - And type enter
+
+It currently contains 3 extensions
+
+- Haxe ([Haxe Support for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=nadako.vshaxe))
+- Haxe Debug ([Haxe Debug for flash target](https://marketplace.visualstudio.com/items?itemName=vshaxe.haxe-debug))
+- codedox ([JSDoc style comments](https://marketplace.visualstudio.com/items?itemName=wiggin77.codedox))
+
+But that might become more in the future!
 
 ## Step 4 (extra): Install haxelib libraries
 
 This is not necessary but something you eventually need to do.
 
 - Open `terminal`
-- Copy and past the following
+- Copy and paste the following
 
 ```
 haxelib install hxnodejs
-haxelib install jQueryExtern
 haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 haxelib install markdown
 haxelib install msignal
@@ -147,7 +161,7 @@ Download Node.js: get your version here: [https://nodejs.org/](https://nodejs.or
 Now you have access to NPM.
 
 - Open `terminal`
-- Copy and past the following (and see current NPM version)
+- Copy and paste the following (and see current NPM version)
 
 ```
 npm -v
@@ -177,7 +191,7 @@ You need an IDE, install **HaxeDevelop**
 
 ![](http://haxedevelop.org/img/haxedevelop-interface.jpg)
 
-On the homepage of [HaxeDevelop](http://www.haxedevelop.org) find the button called "Download" (its right in your face, big button).
+On the homepage of [HaxeDevelop](http://www.haxedevelop.org) find the button called "Download" (its right in your face, a big button).
 
 - Download
 - And install
@@ -193,7 +207,6 @@ This is not necessary but something you eventually need to do.
 
 ```
 haxelib install hxnodejs
-haxelib install jQueryExtern
 haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 haxelib install markdown
 haxelib install msignal
@@ -211,7 +224,7 @@ Download Node.js: get your version here: [https://nodejs.org/](https://nodejs.or
 Now you have access to NPM.
 
 - Open `terminal`
-- Copy and past the following (and see current NPM version)
+- Copy and paste the following (and see current NPM version)
 
 ```
 npm -v

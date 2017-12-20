@@ -1,6 +1,6 @@
 # Learn Haxe
 
-![](http://haxe.org/website-content/pages/img/targets/all-targets.svg)
+![](http://haxe.org/img/targets/all-targets.svg)
 
 
 Okay that is a little bit to much to ask for now.
@@ -34,6 +34,31 @@ Find the documentation here: [http://api.haxe.org/](http://api.haxe.org/)
 
 Same idea as this documentation (not with `.md`- but `.tex`-files). But more in-depth into coding with Haxe (wip): the [HaxeManual](https://github.com/HaxeFoundation/HaxeManual).
 Download the [pdf here](https://github.com/HaxeFoundation/HaxeManual/raw/master/HaxeManual/HaxeManual.pdf)
+
+
+## Try Haxe
+
+Not a place to learn, but to **try out** without installing Haxe.
+[Try Haxe!](https://try.haxe.org/)
+
+
+## Haxe Code Cookbook
+
+A lot of nice example in different categories:
+
+- Beginner
+- Abstract types
+- Compilation
+- Data structures
+- Design patterns
+- Functional Programming
+- Macros
+- Principles
+- Other
+
+> Easy to read Haxe coding examples.
+
+[Haxe Code Cookbook](http://code.haxe.org/)
 
 
 ## Video
@@ -93,10 +118,7 @@ Videos that could help you on your way
 >Showcase of Haxe's compiler to target native platforms as well as languages or VM's, and why it's a safe bet for a future-proof codebase. Examples using the language that can get you started.
 
 
-## Try Haxe
 
-Not a place to learn, but to **try out** without installing Haxe.
-[Try Haxe!](http://try.haxe.org/)
 
 
 

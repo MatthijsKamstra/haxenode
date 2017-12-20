@@ -1,13 +1,13 @@
 # Who to follow
 
 The Haxe community is a pleasant one.
-So if you have questions, just go to the [google haxe group](https://groups.google.com/forum/#!topic/haxelang/) and ask it.
+So if you have questions, just go to the [community.haxe](http://community.haxe.org/) and ask it.
 
 You can also be non verbal and just follow Haxe people on Twitter for example.
 I have compiled a list of Haxe peeps with their speciality.
 
 
-[General](# haxe-in-general) / [Java](# java) / [Python](# python) / [C++](# c) / [C# ](# c) / [JavaScript](# javascript--nodejs) / [PHP](# php) / [Flash](# flashas3games) / [Lua](# lua)
+[General](#haxe-in-general) / [Java](#java) / [Python](#python) / [C++](#c) / [C#](#c) / [JavaScript](#javascript--nodejs) / [PHP](#php) / [Flash](#flashas3games) / [Lua](#lua)
 
 <a name="haxe"></a>
 ## Haxe in general
@@ -93,9 +93,9 @@ Don't know a lot about this target, so here it is.
 | Simon Krajewski `1` | [Simn](https://github.com/Simn) |  |  |
 
 <a name="cs"></a>
-## `C# `
+## Cs
 
-I know nothing about C# , so this is what I know.
+I know nothing about C#, so this is what I know.
 
 | Name | Github | Twitter | Blog |
 |------|--------|---------|------|

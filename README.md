@@ -28,8 +28,14 @@ You need to install Node.js and then you automatically have NPM:
 
 Install gitbook
 
-```
+```bash
 npm install gitbook-cli -g
+```
+
+or if you have gitbook installed, update it
+
+```bash
+gitbook update
 ```
 
 I wanted to make the editing of these file as-easy-as-possible.
@@ -38,13 +44,13 @@ And if all fails, I used [Disqus comments on your books](https://github.com/Gitb
 
 Activate the plugins with:
 
-```
+```bash
 gitbook install
 ```
 
 Export everything to `html`
 
-```
+```bash
 gitbook build
 ```
 

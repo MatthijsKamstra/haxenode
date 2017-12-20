@@ -7,10 +7,10 @@
 First, you will need to install Haxe (Neko and Haxelib).
 There are a couple ways to install Haxe:
 
-* Get the [installer](# haxe) from [haxe.org](http://haxe.org/download/) (original)
-* Use [NPM](# npm)
-* Use [Homebrew](# brew)
-* Use [Chocolatey](# chocolatey)
+* Get the [installer](#haxe) from [haxe.org](http://haxe.org/download/) (original)
+* Use [NPM](#npm)
+* Use [Homebrew](#brew)
+* Use [Chocolatey](#chocolatey)
 
 
 Although all the installation methods _should_ work. I have use the original installer from haxe.org, and didn't try the other methods.
