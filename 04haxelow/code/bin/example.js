@@ -1248,6 +1248,6 @@ var Class = $hxClasses["Class"] = { __name__ : ["Class"]};
 var Enum = { };
 var __map_reserved = {}
 js_Boot.__toStr = ({ }).toString;
-tjson_TJSON.OBJECT_REFERENCE_PREFIX = "@~obRef#";
+tjson_TJSON.OBJECT_REFERENCE_PREFIX = "@~obRef# ";
 Main.main();
 })(typeof window != "undefined" ? window : typeof global != "undefined" ? global : typeof self != "undefined" ? self : this);

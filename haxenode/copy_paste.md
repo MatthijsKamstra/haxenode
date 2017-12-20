@@ -18,90 +18,23 @@ In the case of JavaScript:
 console.log('test');
 ```
 
-A handy shortcut for `console.log` is in package [js.Browser](http://api.haxe.org/js/Browser.html#console)
+A handy shortcut for `console.log` is in package [js.Node](https://github.com/HaxeFoundation/hxnodejs/blob/master/src/js/Node.hx# L48)
+
 
 So you could rewrite everything to that:
 
 ```haxe
 // console.log('foo');
-js.Browser.console.log('foo');
+js.Node.console.log('foo');
 ```
 
 But it's *MUCH* easier to add it to you imports
 
 ```haxe
-import js.Browser.console; 	// if you only want to use console.log
-import js.Browser.*; 		// if you also want to use window, document, alert, etc
-
+import js.Node.console;
 ```
 
 and then your `console.log` will just work without any changes to the copied code
-
-
-## document, window, console, location
-
-Pretty much the same as previous example.
-This is easily fixed with the correct import:
-
-```haxe
-import js.Browser.*;
-```
-
-And then a simple VanillaJS example works out of the box.
-
-```haxe
-document.addEventListener("DOMContentLoaded", function(event) {
-	console.log("VanillaJs DOM ready");
-	trace('host: ', location.host);
-});
-```
-
-## jQuery
-
-Haxe has [jQuery](http://api.haxe.org/js/JQuery.html) externs embedded in the compiler, but there are some differences using it.
-
-
-For a typical JS starting point with jQuery, you write:
-
-```js
-$(function(){
-    //do your magic
-});
-```
-
-You probably don't realise it but it's a short-hand that bind your magic codes to the document ready event, same as if you write:
-
-```js
-$(document).ready(function(){
-    //do your magic
-});
-```
-
-Both will result in `Unknown identifier : $`
-
-So both code-examples won't work in Haxe, because Haxe does not allow using `$` as a class name or a function name.
-But `$` is just a short-hand to jQuery so we should be able to fix that.... except...
-Haxe requires all class names start with capital letter, so it is `JQuery` in Haxe and not `jQuery`.
-
-
-You start your Haxe/JS codes using the jQuery extern as following:
-
-```haxe
-import js.jquery.JQuery;
-
-class Main {
-    static public function main():Void {
-        new JQuery(function():Void { //when document is ready
-            //your magic
-        });
-    }
-}
-```
-
-So in short: you replace `$( ... )` with `new JQuery( ... )`, `import js.jquery.JQuery;` and it will work.
-
-
-For more examples check the chapter [jQuery](../01jquery/example.md).
 
 
 ## for loop
@@ -126,7 +59,7 @@ for (i in 0...100) {
 }
 ```
 
-For more examples check [cheatsheet.html#loops](https://matthijskamstra.github.io/haxejs/haxejs/cheatsheet.html#loops).
+For more examples check [cheatsheet.html# loops](https://matthijskamstra.github.io/haxejs/haxejs/cheatsheet.html#loops).
 
 
 ## imports
@@ -197,8 +130,6 @@ Perhaps someone has some use for it.
 ```haxe
 package ;
 
-import js.Browser.*;
-
 class Main
 {
 	function new() {
@@ -216,6 +147,7 @@ class Main
 `build.hxml`
 
 ```
+-lib hxnodejs
 -cp src
 -main Main
 -js bin/example.js

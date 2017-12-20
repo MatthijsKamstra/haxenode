@@ -1,8 +1,8 @@
-#About Socket.io
+# About Socket.io
 
 This chapter is a Haxe translation of <https://github.com/DonaldDerek/Chat-Node>
 
-###What we primarily use are sockets.
+### What we primarily use are sockets.
 
 Socket.IO enables real-time bidirectional event-based communication.
 It works on every platform, browser or device, focusing equally on reliability and speed.

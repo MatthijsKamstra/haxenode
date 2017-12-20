@@ -1,22 +1,22 @@
-#Example 
+# Example
 
-We will use a simple example to illustrate the workings of automation.  
-And to do that we will use the first example we made: the hello world in node.js.  
+We will use a simple example to illustrate the workings of automation.
+And to do that we will use the first example we made: the hello world in node.js.
 Read more about "[hello world](../00helloworld/about.md)"
 
 
 ## UPDATE #1
 
-Everything changed a little by a suggestion from [Clark Jones](https://disqus.com/home/discussion/haxeandnodejs/haxe_and_nodejs_91/#comment-2291149693)! 
+Everything changed a little by a suggestion from [Clark Jones](https://disqus.com/home/discussion/haxeandnodejs/haxe_and_nodejs_91/#comment-2291149693)!
 
 ![](https://www.npmjs.com/static/images/npm-logo.svg)
 
-I now would suggest you use NPM for automation.   
-And visit [the second example](example2.md) I wrote (with a big help from Clark). It uses NPM for watch, livereload, restart Nodemon and only one terminal window!  
+I now would suggest you use NPM for automation.
+And visit [the second example](example2.md) I wrote (with a big help from Clark). It uses NPM for watch, livereload, restart Nodemon and only one terminal window!
 Check out the [code folder](https://github.com/MatthijsKamstra/haxenode/tree/master/11automation/code2)
 
-That doesn't mean this example doesn't work!   
-But the NPM way is much cleaner!  
+That doesn't mean this example doesn't work!
+But the NPM way is much cleaner!
 
 
 ## How to start
@@ -42,7 +42,7 @@ Check out [the installation](installation.md).
 
 ## The Main.hx
 
-Open your favorite editor, copy/paste the code and save it in the `src` folder. 
+Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
 ```
 package ;
@@ -60,20 +60,20 @@ class Main
 	function new()
 	{
 		trace("Node.js Hello World Example");
-		
+
 		Http.createServer(function (request:IncomingMessage, response:ServerResponse):Void {
 			response.writeHead(200, {'Content-Type': 'text/plain'});
 			response.end('Hello World\n' + Date.now() );
 		}).listen(8080);
 
-		trace('Server started: ');		
-		trace('open http://localhost:8080');		
-		trace('Close Node with CTRL + C');		
+		trace('Server started: ');
+		trace('open http://localhost:8080');
+		trace('Close Node with CTRL + C');
 	}
 
 	static public function main()
 	{
-		var main = new Main(); 
+		var main = new Main();
 	}
 }
 
@@ -82,7 +82,7 @@ class Main
 
 ## The Haxe build file, javascript.hxml
 
-Copy and past the following lines in a document named `javascript.hxml`  
+Copy and past the following lines in a document named `javascript.hxml`
 This is the short version, you want to chech out the full version open this [file](/code/javascript.hxml);
 
 ```
@@ -99,11 +99,11 @@ This is the short version, you want to chech out the full version open this [fil
 
 ## Automate! (no not yet, but getting closer)
 
-Normally you would have a "how to build" instruction for Haxe here.  
-But now we will use Grunt to build the `.hxml` file and let Grunt "watch" the files for changes.  
+Normally you would have a "how to build" instruction for Haxe here.
+But now we will use Grunt to build the `.hxml` file and let Grunt "watch" the files for changes.
 If there are any changes, Grunt will rebuild.
 
-The same thing will be done with Nodemon.  
+The same thing will be done with Nodemon.
 Nodemon will restart Node, when the file changes.
 In our case it will only watch one file (example.js), but when it changes it will restart the server.
 
@@ -239,7 +239,7 @@ Cool huh!
 
 ----
 
-So now Grunt will watch changes to the `.hx` and recompile the example.js file.  
+So now Grunt will watch changes to the `.hx` and recompile the example.js file.
 Now we need something to restart Node.
 
 We want Nodemon to watch only one file: example.js
@@ -271,7 +271,7 @@ If you now change `Main.hx`:
 - Grunt watch will see that it's changed and will recompile
 - after recompiling, Nodemon will see that the file is changed and will restart Node
 
-and this will go on as long as you change the file 
+and this will go on as long as you change the file
 
 
 ----

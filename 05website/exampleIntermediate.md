@@ -1,4 +1,4 @@
-#Example intermediate website
+# Example intermediate website
 
 This example is probably a collection of the next tutorials:
 
@@ -36,7 +36,7 @@ Check out [the installation](installation.md).
 
 ## The MainIntermediate.hx
 
-Open your favorite editor, copy/paste the code and save it in the `src` folder. 
+Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
 ```
 package ;
@@ -54,7 +54,7 @@ class MainIntermediate
 		app.set('port', 3000);
 		app.use(new Favicon(Node.__dirname + '/public/favicon.ico'));
 		// there is no Logger class in js-kit, so I added it in this source folder (js/npm/express/Logger.hx)
-		app.use(new Logger('dev')); 
+		app.use(new Logger('dev'));
 		app.use(BodyParser.urlencoded());
 		// app.use(new MethodOverride()); // can't find it in js-kit AND don't know what it does...
 		app.use(new Static(Path.join(Node.__dirname, 'public')));
@@ -109,7 +109,7 @@ This is the short version, you want to chech out the full version open this [fil
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
+2. `cd ` to the correct folder where you have saved the `javascript.hxml`
 3. type `haxe javascript.hxml`
 4. press enter
 

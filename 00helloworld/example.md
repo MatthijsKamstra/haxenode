@@ -1,4 +1,4 @@
-#Example 
+# Example
 
 This is the hello world in node.js. An example you can find everywhere.
 
@@ -24,7 +24,7 @@ check out [the installation](installation.md).
 
 ## The Main.hx
 
-Open your favorite editor, copy/paste the code and save it in the `src` folder. 
+Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
 ```
 package ;
@@ -42,15 +42,15 @@ class Main
 	function new()
 	{
 		trace("Node.js Hello World Example");
-		
+
 		Http.createServer(function (request:IncomingMessage, response:ServerResponse):Void {
 			response.writeHead(200, {'Content-Type': 'text/plain'});
 			response.end('Hello World\n');
 		}).listen(8080);
 
-		trace('Server started: ');		
-		trace('open http://localhost:8080');		
-		trace('Close Node with CTRL + C');		
+		trace('Server started: ');
+		trace('open http://localhost:8080');
+		trace('Close Node with CTRL + C');
 	}
 
 	static public function main()
@@ -84,7 +84,7 @@ This is the short version, you want to chech out the full version open this [fil
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
+2. `cd ` to the correct folder where you have saved the `javascript.hxml`
 3. type `haxe javascript.hxml`
 4. press enter
 

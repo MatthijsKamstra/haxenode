@@ -30,4 +30,4 @@ var js_npm_sequelize_Sequelize = require("sequelize");
 Main.main();
 })();
 
-//# sourceMappingURL=example.js.map
+//#sourceMappingURL=example.js.map

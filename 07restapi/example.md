@@ -1,4 +1,3 @@
-
 # Example basic website
 
 We start with a simple example from the ExpressJS homepage:

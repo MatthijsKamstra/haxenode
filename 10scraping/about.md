@@ -1,4 +1,4 @@
-#About scraping
+# About scraping
 
 > Web scraping is the process of programmatically retrieving information from the Internet. As the volume of data on the web has increased, this practice has become increasingly widespread. And a number of powerful services have emerged to simplify it.
 
@@ -14,7 +14,7 @@ From [webopedia](http://www.webopedia.com/TERM/W/Web_Scraping.html)
 
 ## About this tutorial
 
-Node.js is an easy way to do some web-scraping. 
+Node.js is an easy way to do some web-scraping.
 But there are not a lot of tutorials about Haxe and Node.js, so there are none about Haxe/Node.js and scraping.
 Not a problem, lets translate a existing tutorial to Haxe!
 

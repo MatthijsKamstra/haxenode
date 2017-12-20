@@ -16,7 +16,7 @@ var server = http.createServer(
 			res.end('Hello World\\n');
 	   	}
  	)
- 
+
 server.listen(1337, "127.0.0.1");
 console.log('Server running at http://127.0.0.1:1337/');
 ```
@@ -31,7 +31,7 @@ node example.js
 ```
 
 ----
-		  
+
 # Haxe example
 
 ### haxe node
@@ -49,7 +49,7 @@ import js.node.http.IncomingMessage;
 class Main
 {
 	static public function main()
-	{		
+	{
 		var server = Http.createServer(function (request:IncomingMessage, response:ServerResponse):Void
 		{
 			response.setHeader("Content-Type","text/plain");

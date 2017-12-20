@@ -5,7 +5,7 @@
 
 Once Haxe has been [installed](installation.md) (yes you should do that first!). It is helpful to choose an integrated development environment (IDE), with good support for Haxe and OpenFL development.
 
-Although you can write code using even a simple text editor. 
+Although you can write code using even a simple text editor.
 A quality IDE can provide:
 
 - code completion (code hints)
@@ -49,7 +49,7 @@ Sublime Text is free-to-use, with reminders to pay for continued use.
 
 ![](https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/screenshot-main-80d8c9841da6ed11c9d87f31136a4ca9.png)
 
-[Atom](https://atom.io/) A hack-able text editor for the 21st Century.  
+[Atom](https://atom.io/) A hack-able text editor for the 21st Century.
 
 > Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.
 
@@ -84,14 +84,14 @@ There are other code editors to choose from, include vim and up-and-coming Haxe-
 
 | Name | Platform | Price | License | Plugin |
 | ---- | ---- | ---- | ---- | ---- | ---- |
-| HaxeDevelop | Windows`*` | Free | Open Source | | 
+| HaxeDevelop | Windows`*` | Free | Open Source | |
 | Sublime Text | Windows, Mac, Linux | Free-to-use`**` |Commercial | [haxe-sublime2-bundle](https://github.com/clemos/haxe-sublime2-bundle) |
 | IntelliJ IDEA | Windows, Mac, Linux | Free | Apache License 2.0 | [Haxe Support](http://plugins.jetbrains.com/plugin/6873?pr=idea) |
 | Atom | Windows, Mac, Linux, FreeBSD | Free | Open Source | [language-haxe](https://atom.io/packages/language-haxe) |
 | Bracket | Windows, Mac, Linux | Free | ? | [haxe-brackets-extension](https://github.com/jasononeil/haxe-brackets-extension)|
 | VSCode | Windows, Mac, Linux | Free | ? | [vscode-haxe](https://marketplace.visualstudio.com/items?itemName=haxedevs.haxe) |
 
-`*` there is a way to get it partially working on Mac, but I failed.  
+`*` there is a way to get it partially working on Mac, but I failed.
 `**` it will ask you to pay for a license
 
 

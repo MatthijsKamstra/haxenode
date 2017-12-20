@@ -10,25 +10,15 @@ Controller.findAll = function(req,res) {
 	res.send([{ "id" : 1, "name" : "Max", "band" : "Maximum Pain", "instrument" : "guitar"}]);
 };
 Controller.findByName = function(req,res) {
-	console.log("name:" + req.params.name);
 	res.send("{\"id\": 1,\"name\":\"" + req.params.name + "\",\"band\":\"BBQ Brawlers\"}");
 };
 Controller.findById = function(req,res) {
-	console.log("findbyid");
 	res.send("findbyid: " + req.params.id);
 };
 Controller.add = function(req,res) {
 	var inputName = req.body.inputName;
 	var inputGroupName = req.body.inputGroupName;
 	res.send("{\"id\": 1,\"name\":\"" + inputName + "\",\"band\":\"" + inputGroupName + "\"}");
-};
-Controller.update = function(req,res) {
-	console.log("update");
-	res.send("update");
-};
-Controller["delete"] = function(req,res) {
-	console.log("delete");
-	res.send("delete");
 };
 var Main = function() {
 	this.PORT = 3001;
@@ -66,8 +56,6 @@ Routes.init = function(app) {
 	app.get("/musicians",Controller.findAll);
 	app.get("/musicians/:id",Controller.findById);
 	app.post("/musicians",Controller.add);
-	app.put("/musicians/:id",Controller.update);
-	app["delete"]("/musicians/:id",Controller["delete"]);
 };
 var Std = function() { };
 Std.__name__ = true;

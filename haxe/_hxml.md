@@ -1,4 +1,4 @@
-#Haxe build file .hxml
+# Haxe build file .hxml
 
 Command Line Arguments
 
@@ -13,7 +13,7 @@ HaXe is a cross platform language. Thus, while compiling your code, you need to 
 
 ## Writing a HXML File
 
-A hxml file consists of what are called compile switches. These are like keywords that tell the compiler how you want your hx files to be compiled. They allow you to perform operations that cannot be achieved in the haXe code ( like directing the haXe compiler ).These switches are followed by `-` or sometimes `--`. 
+A hxml file consists of what are called compile switches. These are like keywords that tell the compiler how you want your hx files to be compiled. They allow you to perform operations that cannot be achieved in the haXe code ( like directing the haXe compiler ).These switches are followed by `-` or sometimes `--`.
 
 
 **The -main switch**
@@ -33,7 +33,7 @@ The next switch tells the compiler which platform to compile the code to.
 Platform Switch
 
 `-neko`
-Compiles for the Neko platform to execute code on server and desktops  
+Compiles for the Neko platform to execute code on server and desktops
 
 `-swf`
 Compiles for the flash platform
@@ -60,7 +60,7 @@ So, the name of the output swf would be test.swf. Note that we also need to spec
 Now, we need to put all this together in one file. Let us say we need to compile a class called Main for the neko platform. This is the hxml file required:
 
 `-main Main`
- 
+
 `-neko main.n`
 
 We can put the two switches on the same line also. We save this file as compile.hxml
@@ -81,7 +81,7 @@ The best approach is to use a hxml file.
 
 
 
-##Resources:
+## Resources:
 
 * <http://old.haxe.org/doc/compiler>
 * <http://haxelearning.wikispaces.com/Using+a+HaXe+XML+File+to+Compile>

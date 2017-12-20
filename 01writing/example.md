@@ -1,4 +1,4 @@
-#Example 
+# Example
 
 Simply write to a file.
 Example is from [nodejitsu.com/](https://docs.nodejitsu.com/articles/file-system/how-to-write-files-in-nodejs)
@@ -36,7 +36,7 @@ fs.writeFile('helloworld.txt', 'Hello World!', function (err) {
 
 ## The Main.hx
 
-Open your favorite editor, copy/paste the code and save it in the `src` folder. 
+Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
 *With the current externs it's not possible to recreate example above, but we can something simular*
 
@@ -54,11 +54,11 @@ class Main
 	function new()
 	{
 		trace("Node.js writing Example");
-		
+
 		var str : String = 'Hello World!\nWritten on: ' + Date.now().toString();
 		// this code example is closest to the pure node.js example
 		Fs.writeFile('hello.txt', str, {}, function (err){
-			if (err != null) 
+			if (err != null)
 				trace( "err: " + err );
 			else
 				trace('Hello > hello.txt');
@@ -95,7 +95,7 @@ This is the short version, you want to chech out the full version open this [fil
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
+2. `cd ` to the correct folder where you have saved the `javascript.hxml`
 3. type `haxe javascript.hxml`
 4. press enter
 

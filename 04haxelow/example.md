@@ -1,4 +1,4 @@
-#Example 
+# Example
 
 Write to a simple json database...
 Done in Haxe
@@ -25,7 +25,7 @@ Check out [the installation](installation.md).
 
 ## The Main.hx
 
-Open your favorite editor, copy/paste the code and save it in the `src` folder. 
+Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
 
 ```
@@ -41,7 +41,7 @@ class Main
 	function new()
 	{
 		trace("Node.js Haxelow Example");
-			
+
 		// Create the database
 		var db = new HaxeLow('db.json');
 
@@ -66,7 +66,7 @@ class Main
 
 class Person {
 	public function new(name, age) {
-		this.name = name; 
+		this.name = name;
 		this.age = age;
 	}
 
@@ -99,7 +99,7 @@ This is the short version, you want to chech out the full version open this [fil
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
+2. `cd ` to the correct folder where you have saved the `javascript.hxml`
 3. type `haxe javascript.hxml`
 4. press enter
 

@@ -1,4 +1,4 @@
-#Externs
+# Externs
 
 Tell something more about the externs
 [todo] [fixme]
@@ -12,13 +12,13 @@ Tell something more about the externs
 haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 ```
 
-[https://github.com/abedev/npm](https://github.com/abedev/npm)   
+[https://github.com/abedev/npm](https://github.com/abedev/npm)
 
 ```
 haxelib git npm https://github.com/abedev/npm
 ```
 
-Documentation can be found [here](https://rawgit.com/abedev/npm/master/docs/index.html) 
+Documentation can be found [here](https://rawgit.com/abedev/npm/master/docs/index.html)
 
 
 

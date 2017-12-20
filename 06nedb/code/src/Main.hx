@@ -12,8 +12,8 @@ class Main
 	function new()
 	{
 		trace("Node.js NeDB example");
-		
-		// https://github.com/louischatriot/nedb#finding-documents
+
+		// https://github.com/louischatriot/nedb# finding-documents
 
 		var options : DataStoreOptions = { filename : Path.join(Node.__dirname, '/intermediate.db'), autoload : true};
 
@@ -97,14 +97,14 @@ class Main
 }
 
 
-typedef Planet = 
+typedef Planet =
 {
 	@:optional var _id : String; // 'id1'
 	var planet : String; //'Mars'
 	var system : String; // 'solar'
 	var inhabited : Bool; // false
 	@:optional var satellites : Array<String>; // ['Phobos', 'Deimos'] } );
-	@:optional var humans : { 
+	@:optional var humans : {
 		var genders: Int;
 		@:optional var eyes: Bool;
 	};

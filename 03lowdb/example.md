@@ -1,4 +1,4 @@
-#Example 
+# Example
 
 Simply write to a file.
 Example is from [nodejitsu.com/](https://docs.nodejitsu.com/articles/file-system/how-to-read-files-in-nodejs)
@@ -64,7 +64,7 @@ trace (LowDb.query(_lowdb, 'posts').find({ title: 'lowdb is awesome' }));
 ```
 
 Knowing that I hope the code below will make more sense.
-Open your favorite editor, copy/paste the code and save it in the `src` folder. 
+Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
 
 
@@ -82,7 +82,7 @@ class Main
 	function new()
 	{
 		trace("Node.js LowDB Example");
-		
+
 		var _lowdb = LowDb.construct('db.json');
 		LowDb.query(_lowdb, 'posts').push({title:'lowdb is awesome'});
 
@@ -120,7 +120,7 @@ This is the short version, you want to chech out the full version open this [fil
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
+2. `cd ` to the correct folder where you have saved the `javascript.hxml`
 3. type `haxe javascript.hxml`
 4. press enter
 

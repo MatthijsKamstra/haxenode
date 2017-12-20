@@ -1,4 +1,4 @@
-#Example Sequelize
+# Example Sequelize
 
 This is a simple example from the [Sequelize](http://docs.sequelizejs.com/en/v3/docs/getting-started/#setting-up-a-connection) website.
 You could combine it with the [05website](../05website) example.

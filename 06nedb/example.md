@@ -1,4 +1,4 @@
-#Example NeDB
+# Example NeDB
 
 What is NeDB (Node embedded database)?
 
@@ -37,7 +37,7 @@ Check out [the installation](installation.md).
 
 ## The MainBasic.hx
 
-Open your favorite editor, copy/paste the code and save it in the `src` folder. 
+Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
 
 ```
@@ -51,17 +51,17 @@ class MainBasic
 	{
 		var options : DataStoreOptions = { filename : Path.join(Node.__dirname, '/basic.db'), autoload : true};
 		var db = new NeDB(options);
-		var doc = { 
+		var doc = {
 			hello: 'world',
-			n: 5, 
-			today: Date.now(), 
+			n: 5,
+			today: Date.now(),
 			nedbIsAwesome: true,
 			notthere: null,
 			// notToBeSaved: undefined,  // Will not be saved (Doesn't even work in Haxe: src/MainBasic.hx:29: characters 17-26 : Unknown identifier : undefined)
 			fruits: [ 'apple', 'orange', 'pear' ],
 			infos: { name: 'nedb' }
 		};
-		db.insert(doc, function (err, newDoc) {   
+		db.insert(doc, function (err, newDoc) {
 			// Callback is optional
 			// newDoc is the newly inserted document, including its _id
 			// newDoc has no key called notToBeSaved since its value was undefined
@@ -101,7 +101,7 @@ This is the short version, you want to chech out the full version open this [fil
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
+2. `cd ` to the correct folder where you have saved the `javascript.hxml`
 3. type `haxe javascript.hxml`
 4. press enter
 

@@ -1,9 +1,9 @@
-#Installing
+# Installing
 
 Okay I don't want to mention this again, but you need to install Node.js and Haxe first (read more about that [here](download.md))
 
 
-##Install Node externs for Haxe
+## Install Node externs for Haxe
 
 
 The HaxeFoundation maintains the [hxnodejs](https://github.com/HaxeFoundation/hxnodejs) externs.
@@ -12,7 +12,7 @@ Beside the node externs I suggest you install [https://github.com/clemos/haxe-js
 
 
 
-##Install hxnodejs
+## Install hxnodejs
 
 Install [hxnodejs](http://lib.haxe.org/p/hxnodejs) via haxelib:
 
@@ -21,7 +21,7 @@ haxelib install hxnodejs
 ```
 
 
-##Install **js-kit** using haxelib:
+## Install **js-kit** using haxelib:
 
 You install via git:
 

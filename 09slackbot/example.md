@@ -1,4 +1,4 @@
-#Example incoming webhooks
+# Example incoming webhooks
 
 
 https://api.slack.com/incoming-webhooks
@@ -26,7 +26,7 @@ check out [the installation](installation.md).
 
 ## The Main.hx
 
-Open your favorite editor, copy/paste the code and save it in the `src` folder. 
+Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
 ```
 package ;
@@ -40,12 +40,12 @@ class Main
 		trace("Slack Incoming Webhooks Example");
 		var webhookURL = "https://hooks.slack.com/services/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";
 		var slack = new Webhook(webhookURL);
-		var payload : Webhook.Payload = { 
+		var payload : Webhook.Payload = {
 			text : "another test",
 			icon_emoji : ":8ball:",
 			username : "3cpo"
 		};
-		slack.send(payload); 		
+		slack.send(payload);
 	}
 
     static public function main()
@@ -64,8 +64,8 @@ package slack;
 import js.Node;
 import js.npm.Request;
 
-class Webhook 
-{	
+class Webhook
+{
 	// source: https://api.slack.com/incoming-webhooks
 	private var _url : String;
 	public function new (url:String)
@@ -80,18 +80,18 @@ class Webhook
 			url: _url,
 			body: haxe.Json.stringify(payload)
 		};
-		request.post(option, function (error, response, body) 
+		request.post(option, function (error, response, body)
 		{
 			if (!error) {
 				trace("body: " + body);
 			} else {
 				trace("We’ve encountered an error: " + error);
 			}
-		}); 
+		});
 	}
 }
 
-typedef Payload = 
+typedef Payload =
 {
 	var text:String;
   	@:optional var username:String;
@@ -127,6 +127,6 @@ This is the short version, you want to chech out the full version open this [fil
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
+2. `cd ` to the correct folder where you have saved the `javascript.hxml`
 3. type `haxe javascript.hxml`
 4. press enter

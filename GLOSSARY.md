@@ -3,7 +3,7 @@ Work in progress
 
 # terminal
 The terminal is an interface in which you can type and execute text based commands.
-Alternative names for the terminal:  
+Alternative names for the terminal:
 * Console
 * Shell
 * Command Line
@@ -27,13 +27,13 @@ Haxe build file
 
 # DOM
 DOM is short for Document Object Model.
-It is a platform- and language-neutral interface that will allow programs and scripts to dynamically access and update the content, structure and style of documents. The document can be further processed and the results of that processing can be incorporated back into the presented page. 
+It is a platform- and language-neutral interface that will allow programs and scripts to dynamically access and update the content, structure and style of documents. The document can be further processed and the results of that processing can be incorporated back into the presented page.
 
-# VanillaJS 
+# VanillaJS
 is a name to refer to using plain JavaScript without any additional libraries like jQuery. People use it as a joke to remind other developers that many things can be done nowadays without the need for additional JavaScript libraries.
 
 # IDE
-An **integrated development environment** (IDE) is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of a source code editor, build automation tools and a debugger. Most modern IDEs have intelligent code completion. 
+An **integrated development environment** (IDE) is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of a source code editor, build automation tools and a debugger. Most modern IDEs have intelligent code completion.
 
 
 # API

@@ -1,4 +1,4 @@
-#Hello world
+# Hello world
 
 ![](../img/helloworld.png)
 
@@ -17,18 +17,18 @@ Put this class into a file named `Test.hx` and create the file `compile.hxml` in
 
 To compile open you terminal and type:
 
-	cd 
+	cd
 
 And drag the folder where you saved the files, into the terminal.
 It will look something like this:
-	
+
 	cd /path/to/folder/
 
 Press enter and type:
 
 	haxe compile.hxml
 
-If an error occurs, the terminal will display that. 
+If an error occurs, the terminal will display that.
 If everything went smoothly like it should, this will produce a `test.js` file that can be embedded into an HTML page such as this one :
 
 	<html>
@@ -43,8 +43,8 @@ If everything went smoothly like it should, this will produce a `test.js` file t
 
 1. Put this code into a `test.html` file.
 2. Open it with your browser (like Google Chrome)
-3. It will display **Hello World** in your Console.  
-4. (Google Chrome > Hamburger menu > More Tools > Developers tools) 
+3. It will display **Hello World** in your Console.
+4. (Google Chrome > Hamburger menu > More Tools > Developers tools)
 
 
 

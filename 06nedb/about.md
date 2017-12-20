@@ -1,4 +1,4 @@
-#About Nedb
+# About Nedb
 
 There is always a need to store data, one way or another.
 We already describe two ways to store data in a `.json` file ([haxelow](../04haxelow) and [lowdb](../03lowdb)).
@@ -11,5 +11,5 @@ But what if we need something with more punch: [NeDB](https://github.com/louisch
 
 
 ```
-npm install nedb --save 
+npm install nedb --save
 ```

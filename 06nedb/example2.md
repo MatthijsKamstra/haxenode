@@ -1,4 +1,4 @@
-#Example NeDB
+# Example NeDB
 
 What is NeDB (Node embedded database)?
 
@@ -41,7 +41,7 @@ Check out [the installation](installation.md).
 
 It's really a long list, so not everything is written in this example, download the [source Main.hx](code/src/Main.hx) or view it [here](https://github.com/MatthijsKamstra/haxenode/blob/master/06nedb/code/src/Main.hx).
 
-Open your favorite editor, copy/paste the code and save it in the `src` folder. 
+Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
 
 ```
@@ -105,7 +105,7 @@ This is the short version, you want to chech out the full version open this [fil
 To finish and see what we have, build the file and see the result
 
 1. Open your terminal
-2. `cd ` to the correct folder where you have saved the `javascript.hxml` 
+2. `cd ` to the correct folder where you have saved the `javascript.hxml`
 3. type `haxe javascript.hxml`
 4. press enter
 

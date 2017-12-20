@@ -1,29 +1,29 @@
-#Terminal
+# Terminal
 
-A part of working with Haxe is the terminal.  
+A part of working with Haxe is the terminal.
 You don't have to be very experienced with it to get it working for Haxe.
 
 There are two ways to use the terminal it regarding Haxe:
 
-1. Haxe compiler 
+1. Haxe compiler
 2. Haxelib
 
 ## Open the terminal
 
-###Osx: 
+### Osx:
 How to open the terminal on Osx
 
-1. press CMD + space 
+1. press CMD + space
 2. that will open `Spotlight Search`
 3. type "terminal" (without quotes)
 4. press enter.
 
 And you are done.
 
-###Linux
+### Linux
 fixme
 
-###Window
+### Window
 fixme
 
 
@@ -45,7 +45,7 @@ It will look something like this:
 
 
 
-##Resources
+## Resources
 
 *Osx*
 
