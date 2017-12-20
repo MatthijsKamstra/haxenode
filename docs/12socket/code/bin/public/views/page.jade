@@ -1,0 +1,19 @@
+doctype
+html
+  head
+    title= "Real time web chat"
+    script(src='https://cdn.socket.io/socket.io-1.4.5.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script(src='/js/client.js')
+    // Bootstrap core CSS
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', rel='stylesheet')
+  body
+    .container
+      #content(style='width: 500px; height: 300px; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll;')
+      .controls
+        | Name:
+        input#inputName(style='width:350px;')
+        br
+        input#inputField(style='width:350px;')
+        input#sendBtn(type='button', value='send')
+    script(src='#{livereload}')

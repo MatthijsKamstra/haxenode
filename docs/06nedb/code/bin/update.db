@@ -1,0 +1,2 @@
+{"_id":"id1","planet":"Mars","system":"solar","inhabited":false}
+{"set":{"satellites":["Phobos","Deimos"]},"_id":"id1"}

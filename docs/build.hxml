@@ -1,0 +1,99 @@
+-cmd echo "├─┬ Start Haxe build"
+
+
+# extremly simple hello world
+-cmd cd 00helloworld/code/
+--next
+build.hxml
+-cmd echo "│ ├── 00helloworld/code"
+
+
+# writing
+-cmd cd ../../
+-cmd cd 01writing/code/
+--next
+build.hxml
+-cmd echo "│ ├── 01writing/code"
+
+# reading
+-cmd cd ../../
+-cmd cd 02reading/code/
+--next
+build.hxml
+-cmd echo "│ ├── 02reading/code"
+
+# lowdb
+-cmd cd ../../
+-cmd cd 03lowdb/code/
+--next
+build.hxml
+-cmd echo "│ ├── 03lowdb/code"
+
+# haxelow
+-cmd cd ../../
+-cmd cd 04haxelow/code/
+--next
+build.hxml
+-cmd echo "│ ├── 04haxelow/code"
+
+# website
+-cmd cd ../../
+-cmd cd 05website/code/
+--next
+build.hxml
+-cmd echo "│ ├── 05website/code"
+
+# nedb
+-cmd cd ../../
+-cmd cd 06nedb/code/
+--next
+build.hxml
+-cmd echo "│ ├── 06nedb/code"
+
+# restapi
+-cmd cd ../../
+-cmd cd 07restapi/code/
+--next
+build.hxml
+-cmd echo "│ ├── 07restapi/code"
+
+# slack
+-cmd cd ../../
+-cmd cd 09slackbot/code/
+--next
+build.hxml
+-cmd echo "│ ├── 09slackbot/code"
+
+# scraping
+-cmd cd ../../
+-cmd cd 10scraping/code/
+--next
+build.hxml
+-cmd echo "│ ├── 10scraping/code"
+
+# automation
+-cmd cd ../../
+-cmd cd 11automation/code/
+--next
+build.hxml
+-cmd echo "│ ├── 11automation/code"
+
+# socket
+-cmd cd ../../
+-cmd cd 12socket/code/
+--next
+build.hxml
+-cmd echo "│ ├── 12socket/code"
+
+# sequelize
+# -cmd cd ../../
+# -cmd cd 13sequelize/code/
+# --next
+# build.hxml
+# -cmd echo "│ ├── 13sequelize/code"
+
+
+
+
+
+-cmd echo "└── Finished Haxe build"

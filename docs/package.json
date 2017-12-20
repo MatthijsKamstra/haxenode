@@ -1,0 +1,28 @@
+{
+	"name": "haxenode",
+	"version": "1.0.0",
+	"description": "Documenting Haxe and Node.js",
+	"scripts": {
+		"test": "helloworld"
+	},
+	"devDependencies": {
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MatthijsKamstra/haxenode.git"
+	},
+	"keywords": [
+		"js",
+		"haxe",
+		"Haxe",
+		"javascript",
+		"node.js",
+		"wip"
+	],
+	"author": "Matthijs Kamstra aka [mck]",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/MatthijsKamstra/haxenode/issues"
+	},
+	"homepage": "https://github.com/MatthijsKamstra/haxenode#readme"
+}
