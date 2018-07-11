@@ -26,8 +26,8 @@ class MainIntermediate
 		app.set('port', 3000);
 		app.use(new Favicon(Node.__dirname + '/public/favicon.ico'));
 		// there is no Logger class in js-kit, so I added it in this source folder (js/npm/express/Logger.hx)
-		app.use(new Logger('dev')); 
-		app.use(BodyParser.urlencoded());
+		app.use(new Logger('dev'));
+		app.use(BodyParser.urlencoded({ extended : true}));
 		// app.use(new MethodOverride()); // can't find it in js-kit AND don't know what it does...
 		app.use(new Static(Path.join(Node.__dirname, 'public')));
 
@@ -51,7 +51,7 @@ class MainIntermediate
 			trace('Express server listening on port ' + app.get('port'));
 		});
 
-		
+
 	}
 
 	static public function main()
