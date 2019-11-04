@@ -9,6 +9,6 @@
 		"morgan": "*",
 		"body-parser": "^1.10.1",
 		"serve-favicon": "*",
-		"express": "~4.0"
+		"express": "~4.17"
 	}
 }
