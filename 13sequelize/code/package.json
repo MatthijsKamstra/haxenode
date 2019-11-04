@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 		"sqlite3": "*",
-		"sequelize": "^3.0.0"
+		"sequelize": "^5.21.2"
 	},
 	"scripts": {
 		"watch": "onchange '**/*.hx' '**/*.md' -v -- haxe build.hxml & nodemon bin/example.js & livereload bin/",
