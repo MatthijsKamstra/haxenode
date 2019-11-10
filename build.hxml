@@ -40,7 +40,7 @@ build.hxml
 -cmd cd ../../
 -cmd cd 05website/code/
 --next
-build.hxml
+# build.hxml
 -cmd echo "│ ├── 05website/code"
 
 # nedb
@@ -54,21 +54,21 @@ build.hxml
 -cmd cd ../../
 -cmd cd 07restapi/code/
 --next
-build.hxml
+# build.hxml
 -cmd echo "│ ├── 07restapi/code"
 
 # slack
 -cmd cd ../../
 -cmd cd 09slackbot/code/
 --next
-build.hxml
+# build.hxml
 -cmd echo "│ ├── 09slackbot/code"
 
 # scraping
 -cmd cd ../../
 -cmd cd 10scraping/code/
 --next
-build.hxml
+# build.hxml
 -cmd echo "│ ├── 10scraping/code"
 
 # automation
@@ -82,15 +82,15 @@ build.hxml
 -cmd cd ../../
 -cmd cd 12socket/code/
 --next
-build.hxml
+# build.hxml
 -cmd echo "│ ├── 12socket/code"
 
 # sequelize
-# -cmd cd ../../
-# -cmd cd 13sequelize/code/
-# --next
+-cmd cd ../../
+-cmd cd 13sequelize/code/
+--next
 # build.hxml
-# -cmd echo "│ ├── 13sequelize/code"
+-cmd echo "│ ├── 13sequelize/code"
 
 
 
