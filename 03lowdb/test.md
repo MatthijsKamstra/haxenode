@@ -1,9 +1,26 @@
+## tl;dr
+
+```
+# install
+npm install dts2hx --save-dev
+npm install lowdb --save
+npm install @types/lowdb --save
+
+# run dts2hx
+npx dts2hx @types/lowdb
+
+# install hxnodejs
+haxelib install hxnodejs
+
+# don't forget to add `--library lowdb` to your build
+```
+
 ## install packages
 
 ```
 npm install dts2hx --save-dev
-npm install lowdb -s
-npm install @types/lowdb -s
+npm install lowdb --save
+npm install @types/lowdb --save
 ```
 
 ## run dts2hx
