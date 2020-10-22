@@ -1,7 +1,7 @@
 --library hxnodejs
 --library express
 --class-path src
---main MainBasic
+--main Main00
 --js bin/example.js
 --dce full
 -D js-es=6

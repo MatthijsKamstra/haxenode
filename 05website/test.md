@@ -7,7 +7,7 @@ npm install express --save
 npm install @types/express --save
 
 # run dts2hx
-npx dts2hx @types/express
+npx dts2hx express
 
 # install hxnodejs
 haxelib install hxnodejs

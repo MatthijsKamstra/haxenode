@@ -7,7 +7,7 @@ import Express;
 /**
  * @author Matthijs Kamstra aka [mck]
  */
-class MainBasic {
+class Main00 {
 	var server:node.http.Server;
 
 	function new() {
@@ -30,6 +30,6 @@ class MainBasic {
 	}
 
 	static public function main() {
-		var main = new MainBasic();
+		var main = new Main00();
 	}
 }

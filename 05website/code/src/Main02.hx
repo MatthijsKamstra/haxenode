@@ -10,7 +10,7 @@ import express.*;
 /**
  * @author Matthijs Kamstra aka [mck]
  */
-class MainAdvanced {
+class Main02 {
 	function new() {
 		trace("Express website (Advanced): open browser at http://localhost:3000");
 		trace("Stop node.js : CTRL + c");
@@ -88,6 +88,6 @@ class MainAdvanced {
 	}
 
 	static public function main() {
-		var main = new MainAdvanced();
+		var main = new Main02();
 	}
 }
