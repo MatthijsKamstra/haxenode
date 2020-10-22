@@ -4,9 +4,7 @@ import js.npm.Express;
 import js.npm.express.*;
 
 class Routes {
-
-	public static function init(app : Express):Void
-	{
+	public static function init(app:Express):Void {
 		app.get('/', Controller.index);
 		app.get('/musician/:name', Controller.findByName);
 		app.get('/musicians', Controller.findAll);
@@ -15,5 +13,4 @@ class Routes {
 		// app.put('/musicians/:id', Controller.update);
 		// app.delete('/musicians/:id', Controller.delete);
 	}
-
 }
