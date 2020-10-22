@@ -24,13 +24,11 @@ See example below:
 
 check out [the installation](installation.md).
 
-
 ## The Main.hx
 
 Open your favorite editor, [copy/paste](code/src/Main.hx) the code and save it in the `src` folder.
 
 I guess you know by now how to start a document, so I will only explain some parts
-
 
 ```
 	// Setting up a connection
@@ -52,12 +50,11 @@ I guess you know by now how to start a document, so I will only explain some par
 
 ```
 
-__source: <http://docs.sequelizejs.com/en/v3/docs/getting-started/#setting-up-a-connection>__
+**source: <http://docs.sequelizejs.com/en/v3/docs/getting-started/#setting-up-a-connection>**
 
 Okay the only thing that is different is the `SequelizeOptions` type, but that's about it.
 
 Btw... I was looking for a way to create an empty `database.sqlite`, seems that you can use any empty file.
-
 
 ```
 	sequelize
@@ -94,7 +91,6 @@ Haxe doesn't do that. So it's a function now: `Sequelize.STRING()` so we can als
 
 Other change that I made was from `User` to `user` (feels better to have lowerCase variable names)
 
-
 ```
 	user.sync({force: true}).then(function () {
 		// Table created
@@ -106,7 +102,7 @@ Other change that I made was from `User` to `user` (feels better to have lowerCa
 ```
 
 Exactly the same, moving on...
-__(remember that `force:true` will drop the table if it already exists)__
+**(remember that `force:true` will drop the table if it already exists)**
 
 ```
 	user.findAll().then(function(users) {
@@ -119,8 +115,6 @@ __(remember that `force:true` will drop the table if it already exists)__
 ```
 
 I love when the JavaScript code lokes the same in Haxe. Nice Nice Nice!
-
-
 
 ## Build js with Haxe and start Node
 
@@ -140,9 +134,7 @@ Remember that for node the start you need to uncomment
 
 The better solution is to use the automation
 
-
 ## Automation
-
 
 Update the `node_modules`
 
@@ -160,7 +152,6 @@ This will create a new folder with modules-folders in it:
 
 ```
 
-
 Start NPM watch so it will rebuild `build.hxml` as soon as file changes
 
 ```
@@ -169,10 +160,9 @@ npm run watch
 
 And your done!
 
-
 Cool huh!
 
-----
+---
 
 To stop the terminal process
 
@@ -180,6 +170,4 @@ To stop the terminal process
 Ctrl + c
 ```
 
-
-
------
+---

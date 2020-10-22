@@ -22,14 +22,14 @@ class Main01 {
 		trace('Express website (01):  open browser at http://localhost:${port}');
 		trace("Stop node.js : CTRL + c");
 
+		var router = express.Router.call_();
+
 		app.get('/', (req, res, next) -> res.send('Hello World!'));
 		app.listen(port, () -> trace('Example app listening at http://localhost:${port}'));
 
 		// app.listen(app.get('port'), function() {
 		// 	trace('Express server listening on port ' + app.get('port'));
 		// });
-
-		var router = express.Router.call_();
 
 		// all environments
 		// app.set('port', port);
@@ -38,7 +38,9 @@ class Main01 {
 		// app.use(new Logger('dev'));
 		// app.use(BodyParser.urlencoded({extended: true}));
 		// // app.use(new MethodOverride()); // can't find it in js-kit AND don't know what it does...
-		router.use(Express.static_.call('public')); // no idea...
+
+		// app.use(Express.static_.call('public')); // no idea...
+		// router.use(Express.static_.call('public')); // no idea...
 
 		// var temp = Express.static_.call('public');
 

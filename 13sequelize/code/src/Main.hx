@@ -1,26 +1,21 @@
-package ;
+package;
 
 import js.Node;
 import js.Node.*;
-
 import js.npm.sequelize.*;
 import js.npm.sequelize.Sequelize;
 
 /**
  * @author Matthijs Kamstra aka [mck]
  */
-class Main
-{
+class Main {
 	// http://sequelize.readthedocs.io/en/latest/docs/getting-started/
-
-	function new()
-	{
-
+	function new() {
 		// Setting up a connection
 		// http://sequelize.readthedocs.io/en/latest/docs/getting-started/#setting-up-a-connection
-		var options : SequelizeOptions = {
+		var options:SequelizeOptions = {
 			host: 'localhost',
-		  	dialect: 'sqlite',
+			dialect: 'sqlite',
 
 			pool: {
 				max: 5,
@@ -36,18 +31,15 @@ class Main
 
 		// Test the connection
 		// http://sequelize.readthedocs.io/en/latest/docs/getting-started/#test-the-connection
-		sequelize
-			.authenticate()
-			.then(function(err) {
-				console.log('Connection has been established successfully.');
-			})
-			.Catch(function (err) {
-				console.log('Unable to connect to the database:', err);
-			});
+		sequelize.authenticate().then(function(err) {
+			console.log('Connection has been established successfully.');
+		}).Catch(function(err) {
+			console.log('Unable to connect to the database:', err);
+		});
 
 		// Your first model
 		// http://sequelize.readthedocs.io/en/latest/docs/getting-started/#your-first-model
-		var fields : Dynamic<ModelDefinition> = {
+		var fields:Dynamic<ModelDefinition> = {
 			firstName: {
 				type: Sequelize.STRING()
 			},
@@ -58,7 +50,7 @@ class Main
 		var user = sequelize.define('user', fields);
 
 		// force: true will drop the table if it already exists
-		user.sync({force: false}).then(function () {
+		user.sync({force: false}).then(function() {
 			// Table created
 			return user.create({
 				firstName: 'John',
@@ -69,19 +61,17 @@ class Main
 		// Your first query
 		// http://sequelize.readthedocs.io/en/latest/docs/getting-started/#your-first-query
 		user.findAll().then(function(users) {
-		 	console.log(users);
+			console.log(users);
 		});
 
 		// Promises
 		// http://sequelize.readthedocs.io/en/latest/docs/getting-started/#promises
-		user.findOne().then(function (user) {
+		user.findOne().then(function(user) {
 			console.log(user.get('firstName'));
 		});
-
 	}
 
-	static public function main()
-	{
+	static public function main() {
 		var main = new Main();
 	}
 }

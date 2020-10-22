@@ -1,13 +1,9 @@
 {
-	"license": "MIT",
-	"description": "Create a website with express",
-	"author": "Matthijs Kamstra aka [mck]",
-	"start": "node index.js",
-	"private": true,
-	"dependencies": {
-		"morgan": "^1.5.1",
-		"body-parser": "^1.10.1",
-		"serve-favicon": "*",
-		"express": "~4.17"
-	}
+  "devDependencies": {
+    "dts2hx": "^0.14.4"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.8",
+    "express": "^4.17.1"
+  }
 }

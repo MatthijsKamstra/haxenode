@@ -1,0 +1,10 @@
+{
+	"license": "MIT",
+	"description": "Create a website with express",
+	"author": "Matthijs Kamstra aka [mck]",
+	"start": "node index.js",
+	"private": true,
+	"dependencies": {
+		"express": "~4.17"
+	}
+}

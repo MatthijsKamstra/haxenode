@@ -1,7 +1,3 @@
-```
-npm install body-parser express jade morgan serve-favicon
-```
-
 ## tl;dr
 
 ```
