@@ -11,9 +11,7 @@ This example is a combination of tutorials/examples below:
 Although js-kit is awesome, it doesn't have externs for NeDB...
 So I added it [here](/code/src/js/npm/NeDB.hx).
 
-
 check out the first [example](example.md)
-
 
 ## How to start
 
@@ -31,18 +29,15 @@ See example below:
 	- javascript.hxml
 ```
 
-
 ## Install
 
 Check out [the installation](installation.md).
-
 
 ## The Main.hx
 
 It's really a long list, so not everything is written in this example, download the [source Main.hx](code/src/Main.hx) or view it [here](https://github.com/MatthijsKamstra/haxenode/blob/master/06nedb/code/src/Main.hx).
 
 Open your favorite editor, copy/paste the code and save it in the `src` folder.
-
 
 ```
 package ;
@@ -81,7 +76,6 @@ class Main
 
 ```
 
-
 ## The Haxe build file, javascript.hxml
 
 Copy and past the following lines in a document named `javascript.hxml`
@@ -98,8 +92,6 @@ This is the short version, you want to chech out the full version open this [fil
 -cmd node example.js
 ```
 
-
-
 ## Build js with Haxe and start Node
 
 To finish and see what we have, build the file and see the result
@@ -109,5 +101,4 @@ To finish and see what we have, build the file and see the result
 3. type `haxe javascript.hxml`
 4. press enter
 
------
-
+---

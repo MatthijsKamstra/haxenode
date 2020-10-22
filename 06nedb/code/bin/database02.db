@@ -1,0 +1,2 @@
+{"_id":"id1","planet":"Mars","system":"solar","inhabited":false,"createdAt":{"$$date":1603388300655},"updatedAt":{"$$date":1603388300655}}
+{"_id":"id1","planet":"Mars","system":"solar","inhabited":false,"createdAt":{"$$date":1603388300655},"updatedAt":{"$$date":1603388300660},"satellites":["Phobos","Deimos"]}

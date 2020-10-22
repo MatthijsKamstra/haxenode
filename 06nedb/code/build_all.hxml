@@ -1,0 +1,3 @@
+--cmd haxe build_00.hxml
+--cmd haxe build_02.hxml
+--cmd haxe build_03.hxml
