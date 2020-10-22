@@ -6,12 +6,9 @@ This example is probably a collection of the next tutorials:
 - https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters
 - http://www.clock.co.uk/blog/a-simple-website-in-nodejs-with-express-jade-and-stylus
 
-
 With this we will also be using jade
 But I have NO experience with Jade, so I decide to use a quick way to convert exhisting html to jade:
 <http://html2jade.org/>
-
-
 
 ## How to start
 
@@ -40,7 +37,6 @@ See example below:
 ## Install
 
 check out [the installation](installation.md).
-
 
 ## The MainAdvanced.hx
 
@@ -108,8 +104,6 @@ class MainAdvanced
 }
 ```
 
-
-
 ## The Haxe build file, javascript.hxml
 
 Copy and past the following lines in a document named `javascript.hxml`
@@ -126,8 +120,6 @@ This is the short version, you want to chech out the full version open this [fil
 -cmd node example.js
 ```
 
-
-
 ## Build js with Haxe and start Node
 
 To finish and see what we have, build the file and see the result
@@ -137,4 +129,4 @@ To finish and see what we have, build the file and see the result
 3. type `haxe javascript.hxml`
 4. press enter
 
-----
+---

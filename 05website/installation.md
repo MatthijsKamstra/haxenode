@@ -4,8 +4,6 @@ Read the how to install **Node.js** and **Haxe** [here](../haxenode/download.md)
 Once you have installed **Haxe** you will automatically installed `haxelib`.
 The same goes for **Node.js**, you will have automatically installed `NPM`.
 
-
-
 ## Install Node.js externs for Haxe
 
 Install the [official Haxe node.js externs](https://github.com/HaxeFoundation/hxnodejs) lib via [haxelib](http://lib.haxe.org/p/hxnodejs/).
@@ -22,8 +20,6 @@ haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 
 ```
 
-
-
 ## Install express via NPM :
 
 [Express](https://github.com/strongloop/express)
@@ -33,8 +29,6 @@ haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 ```
 npm install express
 ```
-
-
 
 ## Install for the more Intermediate and Advance example
 
@@ -48,9 +42,7 @@ npm install express
 npm install jade
 ```
 
------
-
-
+---
 
 ## Install all modules with NPM via package.json
 

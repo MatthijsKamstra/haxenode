@@ -16,11 +16,9 @@ See example below:
 	- javascript.hxml
 ```
 
-
 ## Install
 
 Check out [the installation](installation.md).
-
 
 ## The MainBasic.hx
 
@@ -60,7 +58,6 @@ class MainBasic
 }
 ```
 
-
 ## The Haxe build file, javascript.hxml
 
 Copy and past the following lines in a document named `javascript.hxml`
@@ -77,8 +74,6 @@ This is the short version, you want to chech out the full version open this [fil
 -cmd node example.js
 ```
 
-
-
 ## Build js with Haxe and start Node
 
 To finish and see what we have, build the file and see the result
@@ -88,4 +83,4 @@ To finish and see what we have, build the file and see the result
 3. type `haxe javascript.hxml`
 4. press enter
 
------
+---

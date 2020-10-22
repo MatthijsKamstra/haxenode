@@ -5,7 +5,6 @@ This example is probably a collection of the next tutorials:
 - https://www.codementor.io/nodejs/tutorial/build-google-tv-raspberrypi-nodejs-socket-io
 - https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters
 
-
 ## How to start
 
 Create a folder named **foobar** (please use a better name; any name will do) and create folders **bin** and **src**.
@@ -28,11 +27,9 @@ See example below:
 	- javascript.hxml
 ```
 
-
 ## Install
 
 Check out [the installation](installation.md).
-
 
 ## The MainIntermediate.hx
 
@@ -102,8 +99,6 @@ This is the short version, you want to chech out the full version open this [fil
 -cmd node example.js
 ```
 
-
-
 ## Build js with Haxe and start Node
 
 To finish and see what we have, build the file and see the result
@@ -113,4 +108,4 @@ To finish and see what we have, build the file and see the result
 3. type `haxe javascript.hxml`
 4. press enter
 
-----
+---

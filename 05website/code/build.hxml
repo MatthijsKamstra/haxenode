@@ -1,4 +1,3 @@
--lib js-kit
 -lib hxnodejs
 -cp src
 -main MainBasic
