@@ -24,3 +24,5 @@ build.md
 _Main.hx
 99test
 03lowdb/code/.haxelib
+.haxelib
+package-lock.json
