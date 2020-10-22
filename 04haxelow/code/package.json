@@ -1,6 +1,5 @@
 {
-	"dependencies": {
-		"steno": "*"
-
-	}
+  "dependencies": {
+    "steno": "^0.5.0"
+  }
 }
