@@ -3,8 +3,8 @@
 ```
 # install
 npm install dts2hx --save-dev
-npm install lowdb --save
-npm install @types/lowdb --save
+npm install lowdb 
+npm install @types/lowdb
 
 # run dts2hx
 npx dts2hx @types/lowdb
