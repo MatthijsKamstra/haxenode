@@ -7,6 +7,30 @@
     {
       "title": "lowdb is awesome",
       "date": "2016-08-31T09:32:00.570Z"
+    },
+    {
+      "id": 1,
+      "title": "lowdb is awesome"
+    },
+    {
+      "id": 1,
+      "title": "lowdb is awesome"
+    },
+    {
+      "id": 1,
+      "title": "lowdb is awesome"
+    },
+    {
+      "id": 1,
+      "title": "lowdb is awesome"
+    },
+    {
+      "id": 1,
+      "title": "lowdb is awesome"
     }
-  ]
+  ],
+  "user": {
+    "name": "typicode"
+  },
+  "count": 5
 }
