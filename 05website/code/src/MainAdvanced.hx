@@ -25,13 +25,11 @@ class MainAdvanced {
 		// all environments
 		app.set('port', 3000);
 		app.set('views', Node.__dirname + '/public/views');
-		app.set('view engine', 'jade');
+		app.set('view engine', 'pug');
 		app.use(new Favicon(Node.__dirname + '/public/favicon.ico'));
-		// if you read the code from Intermediate example you noticed Logger class here.
-		// for some reason Morgan is used in js-kit, which you will see when you open the Logger.hx class I added :P
 		app.use(new Morgan('dev'));
 		app.use(BodyParser.json());
-		app.use(BodyParser.urlencoded());
+		// app.use(BodyParser.urlencoded()); // deprecated
 		// app.use(new MethodOverride()); // can't find it in js-kit AND don't know what it does...
 		app.use(new Static(Path.join(Node.__dirname, 'public')));
 
@@ -41,10 +39,10 @@ class MainAdvanced {
 		});
 
 		app.get('/remote', function(req:Request, res:Response) {
-			res.sendFile(Node.__dirname + '/public/remote_advanced.html');
+			res.sendFile(Node.__dirname + '/public/remote_intermediate.html');
 		});
 
-		app.get('/jade', function(req:Request, res:Response) {
+		app.get('/pug', function(req:Request, res:Response) {
 			res.render('index', {title: 'Home', h1: 'Title'});
 		});
 
