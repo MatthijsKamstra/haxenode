@@ -1,5 +1,6 @@
 --library hxnodejs
 --library express
+--library morgan
 --class-path src
 --main Main01
 --js bin/example.js

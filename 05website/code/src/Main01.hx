@@ -1,13 +1,9 @@
 package;
 
-import global.express.Request;
-import global.express.Response;
-import global.express.Response;
 import js.Node;
-import js.node.Http;
 import js.node.Path;
 import Express;
-import express.*;
+import Morgan;
 
 /**
  * @author Matthijs Kamstra aka [mck]
@@ -22,77 +18,45 @@ class Main01 {
 		trace('Express website (01):  open browser at http://localhost:${port}');
 		trace("Stop node.js : CTRL + c");
 
-		var router = express.Router.call_();
-
-		app.get('/', (req, res, next) -> res.send('Hello World!'));
-		app.listen(port, () -> trace('Example app listening at http://localhost:${port}'));
-
-		// app.listen(app.get('port'), function() {
-		// 	trace('Express server listening on port ' + app.get('port'));
-		// });
-
 		// all environments
-		// app.set('port', port);
+		app.set('port', 3000);
 		// app.use(new Favicon(Node.__dirname + '/public/favicon.ico'));
-		// // there is no Logger class in js-kit, so I added it in this source folder (js/npm/express/Logger.hx)
-		// app.use(new Logger('dev'));
-		// app.use(BodyParser.urlencoded({extended: true}));
-		// // app.use(new MethodOverride()); // can't find it in js-kit AND don't know what it does...
 
-		// app.use(Express.static_.call('public')); // no idea...
-		// router.use(Express.static_.call('public')); // no idea...
+		// var morgan = Morgan.call('dev');
+		app.use(cast Morgan.call('dev'));
 
-		// var temp = Express.static_.call('public');
+		// app.use(BodyParser.urlencoded());
+		// app.use(new MethodOverride()); // can't find it in js-kit AND don't know what it does...
+
+		// var _static = Express.static_.call(Path.join(Node.__dirname, 'public'));
+		app.use(cast Express.static_.call(Path.join(Node.__dirname, 'public')));
 
 		// Routes
 		// http://localhost:3000
-		// app.get('/d', (req:Request, res:express.Response<{}>, next) -> {
-		// app.get('/d', (req, res, next) -> {
-		// 	// res.send('/d');
-		// 	var file:String = Path.join(Node.__dirname + '/public/index_intermediate.html');
-		// 	res.sendfile(file);
-		// });
 
-		// app.get('/test', (req, res, next) -> {
-		// 	res.send('/test');
-		// });
-
-		// // http://localhost:3000/remote
-		// app.get('/remote', (req, res, next) -> {
-		// 	res.sendfile(Node.__dirname + '/public/remote_intermediate.html');
-		// });
-
-		// // http://localhost:3000/nope
-		// app.use(function(req, res, next) {
-		// 	res.status(404).send('404');
-		// });
-
-		// middleware that is specific to this router
-		// router.use(function timeLog(req, res, next) {
-		// 	js.Browser.console.log('Time: ', Date.now());
-		// 	trace('Time: ', Date.now());
-		// 	return null;
-		// });
-
-		router.get('/test', function(req, res, next) {
-			res.send('test page');
-			return null;
+		app.get('/', (req, res, next) -> {
+			res.send('Hello World :: Express website (01)!');
 		});
 
-		// define the home page route
-		router.get('/', function(req, res, next) {
-			res.send('Birds home page');
-			return null;
+		app.get('/test', (req, res, next) -> {
+			untyped res.sendFile(Node.__dirname + '/public/index_intermediate.html');
 		});
 
-		// define the about route
-		router.get('/about', function(req, res, next) {
-			res.send('About birds');
-			return null;
+		// http://localhost:3000/remote
+
+		//  ResBody, ReqBody, ReqQuery
+		app.get('/remote', (req, res, next) -> {
+			untyped res.sendFile(Node.__dirname + '/public/remote_intermediate.html');
 		});
 
-		// // router.get('/', (req, res, next) -> res.send('Hello World!'));
-		// app.listen(port, () -> trace('Example app listening at http://localhost:${port}'));
+		// http://localhost:3000/nope
+		app.use((req, res, next) -> {
+			res.status(404).send('404');
+		});
+
+		var server = app.listen(app.get('port'), function() {
+			trace('Express server listening on port ' + app.get('port'));
+		});
 	}
 
 	static public function main() {
