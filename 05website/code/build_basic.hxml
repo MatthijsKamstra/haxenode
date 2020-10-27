@@ -1,5 +1,6 @@
+--library js-kit
 --library hxnodejs
---library express
+# --library express
 --class-path src
 --main MainBasic
 --js bin/example.js

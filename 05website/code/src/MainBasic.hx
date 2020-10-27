@@ -1,31 +1,30 @@
 package;
 
-import node.net.AddressInfo;
 import js.Node;
-import Express;
+import js.npm.Express;
 
 /**
  * @author Matthijs Kamstra aka [mck]
  */
 class MainBasic {
-	var server:node.http.Server;
+	private var server:Dynamic;
 
 	function new() {
-		// source http://expressjs.com/starter/hello-world.html
+		trace("Express website (Basic): open browser at http://localhost:3000");
+		trace("Stop node.js : CTRL + c");
 
-		var app = Express.call();
-		var port = 3000;
+		// source http://expressjs.com/en/starter/hello-world.html
 
-		trace('Express website (Basic): open browser at http://localhost:${port}');
-		trace('Stop node.js : CTRL + c');
+		var app:Express = new Express();
 
-		app.get('/', (req, res, next) -> {
+		app.get('/', function(req, res) {
 			res.send('Hello World!');
 		});
 
-		server = app.listen(port, function() {
-			var addressInfo:AddressInfo = server.address();
-			trace('Example app listening at http://${addressInfo.address}:${addressInfo.port}'); // ???? http://:::3000
+		server = app.listen(3000, function() {
+			var host = server.address().address;
+			var port = server.address().port;
+			trace('Example app listening at http://$host:$port'); // ???? http://:::3000
 		});
 	}
 

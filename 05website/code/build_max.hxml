@@ -1,6 +1,7 @@
+--library js-kit
 --library hxnodejs
---library express
---library morgan
+# --library express
+# --library morgan
 --class-path src
 --main MainAdvanced
 --js bin/example.js
