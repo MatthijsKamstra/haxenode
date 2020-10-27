@@ -1,15 +1,15 @@
+--library js-kit
 --library hxnodejs
---library lowdb
 --class-path src
 --main Main
 --js bin/example.js
 --dce full
 -D js-es=6
 
-# --next
+--next
 
-# # Use terminal command to start Node.js!
-# --cmd echo "use: 'node bin/example.js' to check script "
-# --cmd cd bin
-# --cmd node example.js
-# --cmd echo exit
+# Use terminal command to start Node.js!
+--cmd echo "use: 'node bin/example.js' to check script "
+--cmd cd bin
+--cmd node example.js
+--cmd echo exit

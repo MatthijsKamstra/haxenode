@@ -1,9 +1,5 @@
 {
-  "devDependencies": {
-    "dts2hx": "^0.14.4"
-  },
   "dependencies": {
-    "@types/lowdb": "^1.0.9",
-    "lowdb": "^1.0.0"
+    "lowdb": "^0.7.3"
   }
 }

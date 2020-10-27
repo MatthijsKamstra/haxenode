@@ -3,7 +3,7 @@
 ```
 # install
 npm install dts2hx --save-dev
-npm install lowdb 
+npm install lowdb
 npm install @types/lowdb
 
 # run dts2hx
@@ -13,6 +13,12 @@ npx dts2hx @types/lowdb
 haxelib install hxnodejs
 
 # don't forget to add `--library lowdb` to your build
+```
+
+Convert specific adapters
+
+```
+npx dts2hx @types/lowdb/adapters/FileSync.d.ts
 ```
 
 ## install packages
