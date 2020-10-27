@@ -1,9 +1,10 @@
 package;
 
-import js.npm.FileSync;
+// import js.npm.FileSync;
 import js.html.FileReaderSync;
 import js.Syntax;
 import Lowdb;
+import lowdb.adapters.*;
 
 /**
  * @author Matthijs Kamstra aka [mck]
@@ -12,7 +13,7 @@ class Main {
 	function new() {
 		trace("Node.js Lowdb Example");
 
-		// var str = Date.now();
+		var now = Date.now();
 
 		// var _lowdb = Lowdb.call('db.json');
 		// Lowdb.query(_lowdb, 'posts').push({title: 'Lowdb is awesome', date: str});
@@ -25,20 +26,23 @@ class Main {
 		var adapter = new FileSync('db.json');
 		var db = Lowdb.call(adapter);
 
-		trace(Type.typeof(db));
-		trace(db);
-
 		// Set some defaults (required if your JSON file is empty)
-		untyped db.defaults({posts: [], user: {}, count: 0}).write();
+		untyped db.defaults({
+			posts: [],
+			user: {},
+			count: 0,
+			updated: now
+		}).write();
 
 		// Add a post
-		untyped db.get('posts').push({id: 1, title: 'lowdb is awesome'}).write();
+		untyped db.get('posts').push({id: 1, title: 'lowdb is awesome', date: now}).write();
 
 		// Set a user using Lodash shorthand syntax
 		untyped db.set('user.name', 'typicode').write();
 
 		// Increment count
 		untyped db.update('count', n -> n + 1).write();
+		untyped db.update('updated', now).write();
 	}
 
 	static public function main() {

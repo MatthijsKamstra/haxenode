@@ -7,7 +7,8 @@ npm install lowdb --save
 npm install @types/lowdb --save
 
 # run dts2hx
-npx dts2hx @types/lowdb
+npx dts2hx lowdb
+npx dts2hx @types/lowdb/adapters/FileSync
 
 # install hxnodejs
 haxelib install hxnodejs

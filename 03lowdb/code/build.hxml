@@ -8,8 +8,8 @@
 
 # --next
 
-# # Use terminal command to start Node.js!
-# --cmd echo "use: 'node bin/example.js' to check script "
-# --cmd cd bin
-# --cmd node example.js
-# --cmd echo exit
+# Use terminal command to start Node.js!
+--cmd echo "use: 'node bin/example.js' to check script "
+--cmd cd bin
+--cmd node example.js
+--cmd echo exit
