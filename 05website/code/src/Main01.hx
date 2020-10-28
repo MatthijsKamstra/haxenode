@@ -4,6 +4,7 @@ import js.Node;
 import js.node.Path;
 import Express;
 import Morgan;
+import ServeFavicon;
 
 /**
  * @author Matthijs Kamstra aka [mck]
@@ -20,33 +21,34 @@ class Main01 {
 
 		// all environments
 		app.set('port', 3000);
+
 		// app.use(new Favicon(Node.__dirname + '/public/favicon.ico'));
+		app.use(cast ServeFavicon.call(Node.__dirname + '/public/favicon.ico'));
 
 		// var morgan = Morgan.call('dev');
 		app.use(cast Morgan.call('dev'));
 
 		// app.use(BodyParser.urlencoded());
-		// app.use(new MethodOverride()); // can't find it in js-kit AND don't know what it does...
 
 		// var _static = Express.static_.call(Path.join(Node.__dirname, 'public'));
 		app.use(cast Express.static_.call(Path.join(Node.__dirname, 'public')));
 
 		// Routes
-		// http://localhost:3000
 
+		// http://localhost:3000
 		app.get('/', (req, res, next) -> {
-			res.send('Hello World :: Express website (01)!');
+			res.send('Hello World! :: Express website (01)');
 		});
 
-		app.get('/test', (req, res, next) -> {
-			untyped res.sendFile(Node.__dirname + '/public/index_intermediate.html');
+		app.get('/test', function(req, res, next) {
+			res.sendFile(Node.__dirname + '/public/index_intermediate.html');
+			return null;
 		});
 
 		// http://localhost:3000/remote
-
-		//  ResBody, ReqBody, ReqQuery
 		app.get('/remote', (req, res, next) -> {
-			untyped res.sendFile(Node.__dirname + '/public/remote_intermediate.html');
+			res.sendFile(Node.__dirname + '/public/remote_intermediate.html');
+			return null;
 		});
 
 		// http://localhost:3000/nope

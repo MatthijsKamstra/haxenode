@@ -20,7 +20,7 @@ class Main00 {
 		trace('Stop node.js : CTRL + c');
 
 		app.get('/', (req, res, next) -> {
-			res.send('Hello World!');
+			res.send('Hello World! :: Express website (00)');
 		});
 
 		server = app.listen(port, function() {

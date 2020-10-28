@@ -1,8 +1,9 @@
 --library hxnodejs
 --library express
 --library morgan
+--library serve-favicon
 --class-path src
---main MainAdvanced
+--main Main02
 --js bin/example.js
 --dce full
 -D js-es=6

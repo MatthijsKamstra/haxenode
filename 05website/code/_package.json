@@ -1,14 +1,14 @@
 {
-	"license": "MIT",
-	"description": "Create a website with express",
-	"author": "Matthijs Kamstra aka [mck]",
-	"start": "node index.js",
-	"private": true,
-	"dependencies": {
-		"jade": "*",
-		"morgan": "*",
-		"body-parser": "^1.10.1",
-		"serve-favicon": "*",
-		"express": "~4.17"
-	}
+  "license": "MIT",
+  "description": "Create a website with express",
+  "author": "Matthijs Kamstra aka [mck]",
+  "start": "node index.js",
+  "private": true,
+  "dependencies": {
+    "pug": "*",
+    "morgan": "*",
+    "body-parser": "^1.10.1",
+    "serve-favicon": "*",
+    "express": "~4.17"
+  }
 }
