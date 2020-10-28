@@ -1,9 +1,12 @@
 {
+  "scripts": {
+    "postinstall": "dts2hx --all && haxelib install hxnodejs"
+  },
+  "devDependencies": {
+    "dts2hx": "^0.14.6"
+  },
   "dependencies": {
     "@types/nedb": "^1.8.11",
     "nedb": "^1.8.0"
-  },
-  "devDependencies": {
-    "dts2hx": "^0.14.3"
   }
 }
