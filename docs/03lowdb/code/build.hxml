@@ -1,10 +1,12 @@
 --library hxnodejs
+--library lodash
 --library lowdb
 --class-path src
 --main Main
 --js bin/example.js
 --dce full
 -D js-es=6
+
 
 # --next
 
