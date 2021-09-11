@@ -17,12 +17,14 @@ class Main {
 
 		// persons is now an Array<Person>
 		// that can be manipulated as you like
-		persons.push(new Person("Test", 50));
+		persons.push(new Person('Test-${Date.now().getTime()}', Math.round(Math.random() * 100)));
 
 		// Save all collections to disk.
 		// This is the only way to save, no automatic saving
 		// takes place.
 		db.save();
+
+		trace(db.col(Person).length);
 
 		trace("open /bin/db.json");
 	}

@@ -1,4 +1,4 @@
-package ;
+package;
 
 import js.Node;
 import js.node.Http;
@@ -8,20 +8,18 @@ import js.node.http.IncomingMessage;
 /**
  * @author Matthijs Kamstra aka [mck]
  */
-class Main
-{
-	function new()
-	{
+class Main {
+	function new() {
 		trace("Node.js Hello World Example");
 
-		Http.createServer(function (request:IncomingMessage, response:ServerResponse):Void {
+		Http.createServer(function(request:IncomingMessage, response:ServerResponse):Void {
 			response.writeHead(200, {'Content-Type': 'text/html'});
 
 			#if debug
 			response.write('<script src="http://0.0.0.0:35729/livereload.js" type="text/javascript"></script>');
 			#end
 
-			response.end('<b>Hello World</b><br>' + Date.now() );
+			response.end('<b>Hello World</b><br>' + Date.now());
 		}).listen(8080);
 
 		trace('Server started: ');
@@ -29,8 +27,7 @@ class Main
 		trace('Close Node with CTRL + C');
 	}
 
-	static public function main()
-	{
+	static public function main() {
 		var main = new Main();
 	}
 }
