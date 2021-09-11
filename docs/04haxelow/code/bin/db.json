@@ -50,5 +50,15 @@
             ,"name" : "Test-1631357582151"
             ,"age" : 88
         }
+        ,{
+             "_hxcls" : "Person"
+            ,"name" : "Test"
+            ,"age" : 50
+        }
+        ,{
+             "_hxcls" : "Person"
+            ,"name" : "Test-1631357767841"
+            ,"age" : 85
+        }
     ]
 }

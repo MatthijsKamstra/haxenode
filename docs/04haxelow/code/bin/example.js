@@ -167,9 +167,9 @@ class Main {
 		let db = new HaxeLow("db.json");
 		let persons = db.col(Person);
 		persons.push(new Person("Test-" + new Date().getTime(),Math.round(Math.random() * 100)));
+		console.log("src/Main.hx:22:",db.col(Person).length);
 		db.save();
-		console.log("src/Main.hx:27:",db.col(Person).length);
-		console.log("src/Main.hx:29:","open /bin/db.json");
+		console.log("src/Main.hx:30:","open /bin/db.json");
 	}
 	static main() {
 		let main = new Main();
