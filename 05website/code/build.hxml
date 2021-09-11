@@ -1,7 +1,0 @@
---library js-kit
---library hxnodejs
---class-path src
--main MainBasic
---js bin/example.js
---dce full
--D js-es=6

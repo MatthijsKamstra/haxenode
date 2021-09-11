@@ -1,5 +1,12 @@
 {
-	"dependencies": {
-		"lowdb": "^0.7.3"
-	}
+  "scripts": {
+    "_postinstall": "dts2hx --all && haxelib install hxnodejs",
+    "postinstall": "dts2hx --all && dts2hx @types/lowdb/adapters/FileSync && haxelib install hxnodejs"
+  },
+  "devDependencies": {
+    "dts2hx": "^0.16.0"
+  },
+  "dependencies": {
+    "@types/lowdb": "^1.0.11"
+  }
 }

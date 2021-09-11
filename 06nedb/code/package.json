@@ -1,9 +1,0 @@
-{
-	"dependencies": {
-		"@types/nedb": "^1.8.11",
-		"nedb": "^1.8.0"
-	},
-	"devDependencies": {
-		"dts2hx": "^0.14.6"
-	}
-}

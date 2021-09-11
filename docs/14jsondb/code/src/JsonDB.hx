@@ -1,9 +1,8 @@
-package ;
+package;
 
 import js.node.Http;
 import js.Node.console;
 import js.Node.*;
-
 import js.node.Fs;
 import js.node.Url;
 
@@ -11,8 +10,7 @@ import js.node.Url;
  * @author Matthijs Kamstra aka [mck]
  */
 @:expose
-class JsonDB{
-
+class JsonDB {
 	// defaults
 	private var filename = 'database.json';
 	private var humanReadable = true;
@@ -29,12 +27,13 @@ class JsonDB{
 	 *  @param isHumanReadable 		- use a readable json db
 	 *  @param isAutoSave 			- save upon changes
 	 */
-	public function new (?dbName:String, ?isHumanReadable:Bool = true , ?isAutoSave:Bool = true){
+	public function new(?dbName:String, ?isHumanReadable:Bool = true, ?isAutoSave:Bool = true) {
 		// check for .json at the end of the file
-		if(dbName != null && dbName.indexOf('.json') == -1){
+		if (dbName != null && dbName.indexOf('.json') == -1) {
 			dbName += '.json';
 		}
-		if(dbName != null ) DB_FILE = dbName;
+		if (dbName != null)
+			DB_FILE = dbName;
 
 		this.humanReadable = isHumanReadable;
 		this.autosave = isAutoSave;
@@ -42,15 +41,15 @@ class JsonDB{
 		init();
 	}
 
-	private function init(){
-		//create file if it's present.
-		//synchronous because it needs to happen before requests can be processed
-		try	{
-			if(Fs.statSync(DB_FILE).isFile() ){
+	private function init() {
+		// create file if it's present.
+		// synchronous because it needs to happen before requests can be processed
+		try {
+			if (Fs.statSync(DB_FILE).isFile()) {
 				// trace('database "${DB_FILE}" exist');
 				this.serverdata = readFromFile();
 			}
-		} catch (e:Dynamic){
+		} catch (e:Dynamic) {
 			// trace('database "${DB_FILE}" doesn\'t exist, create');
 			writeToFile(this.serverdata);
 		}
@@ -69,9 +68,10 @@ class JsonDB{
 	 *  @param key 		key value used in DB
 	 *  @param value 	can be a string, a number/float/int, an object (JSON object), an array, a boolean, null
 	 */
-	public function set(key:String, value:Dynamic){
+	public function set(key:String, value:Dynamic) {
 		Reflect.setField(serverdata, key, value);
-		if (this.autosave) writeToFile(serverdata);
+		if (this.autosave)
+			writeToFile(serverdata);
 	}
 
 	/**
@@ -82,7 +82,7 @@ class JsonDB{
 	 *  @param key 			key value used in DB
 	 *  @return Dynamic		what every value is stored in the key
 	 */
-	public function get(key:String):Dynamic{
+	public function get(key:String):Dynamic {
 		return Reflect.getProperty(serverdata, key);
 	}
 
@@ -94,7 +94,7 @@ class JsonDB{
 	 *  @param key 			key value used in DB
 	 *  @return Bool		does it exist or not
 	 */
-	public function has(key:String):Bool{
+	public function has(key:String):Bool {
 		return Reflect.hasField(serverdata, key);
 	}
 
@@ -105,17 +105,17 @@ class JsonDB{
 	 *
 	 *  @param key 			key value used in DB
 	 */
-	public function delete(key:String){
+	public function delete(key:String) {
 		Reflect.deleteField(serverdata, key);
-		if (this.autosave) writeToFile(serverdata);
+		if (this.autosave)
+			writeToFile(serverdata);
 	}
-
 
 	/**
 	 *  return the json data use as database
 	 *  @return Dynamic		the db
 	 */
-	public function getData():Dynamic{
+	public function getData():Dynamic {
 		return this.serverdata;
 	}
 
@@ -127,9 +127,9 @@ class JsonDB{
 	 */
 	public function setData(data:Dynamic) {
 		// trace('setData: data: ' + data);
-		for( ff in Reflect.fields(data) ){
+		for (ff in Reflect.fields(data)) {
 			// will overwrite data
-			Reflect.setField (this.serverdata, ff, Reflect.field(data, ff));
+			Reflect.setField(this.serverdata, ff, Reflect.field(data, ff));
 		}
 		// parse object to json string
 		writeToFile(haxe.Json.parse(haxe.Json.stringify(this.serverdata)));
@@ -137,8 +137,7 @@ class JsonDB{
 
 	// ____________________________________ private ____________________________________
 
-
-	private function readFromFile() : String {
+	private function readFromFile():String {
 		return haxe.Json.parse(Fs.readFileSync(DB_FILE, "utf8"));
 	}
 
@@ -150,26 +149,22 @@ class JsonDB{
 		} else {
 			data = haxe.Json.stringify(data);
 		}
-		Fs.writeFileSync(DB_FILE,data,'utf8');
+		Fs.writeFileSync(DB_FILE, data, 'utf8');
 	}
-
 
 	// ____________________________________ server stuff ____________________________________
 
+	public function startServer(?port:Int) {
+		if (port == null)
+			port = PORT;
 
-	public function startServer(?port:Int){
-
-		if(port == null) port = PORT;
-
-		var server = Http.createServer(function(req, res){
-
-			//use querystring module on query strings and stores in 'query' object
+		var server = Http.createServer(function(req, res) {
+			// use querystring module on query strings and stores in 'query' object
 			var parseUrl = Url.parse(req.url, true, true);
 			var statusCode = 404;
 			var content = "404 - Not Found";
 
 			// req.setTimeout(3000);
-
 
 			// GET /addresses/1
 			// POST /addresses
@@ -177,22 +172,19 @@ class JsonDB{
 			// PATCH /addresses/1
 			// DELETE /addresses/1
 
-			//simple routing
-			if(parseUrl.pathname == "/set"){
-				console.log("Inserting value into database:",parseUrl.query);
+			// simple routing
+			if (parseUrl.pathname == "/set") {
+				console.log("Inserting value into database:", parseUrl.query);
 				statusCode = 200;
 
-				//retrieve current state of file (async)
+				// retrieve current state of file (async)
 				// getData(function(err,dataString){
 
 				// 	if(err != null)
 				// 		throw err;
 
-
 				// 	//parse json string
 				// 	var data = haxe.Json.parse(dataString);
-
-
 
 				// 	//assign new query object's contents. don't forget previous state of 'data'
 				// 	untyped Object.assign(data,parseUrl.query,data);
@@ -208,13 +200,12 @@ class JsonDB{
 				// 	});
 
 				// });
-
-			} else if(parseUrl.pathname.indexOf("/get") != -1){
+			} else if (parseUrl.pathname.indexOf("/get") != -1) {
 				var searchKey = untyped parseUrl.query.key;
 				var getContent = {};
-				console.log("parseUrl: ",parseUrl);
-				console.log("parseUrl.query: ",parseUrl.query);
-				console.log("searchKey: key="+searchKey);
+				console.log("parseUrl: ", parseUrl);
+				console.log("parseUrl.query: ", parseUrl.query);
+				console.log("searchKey: key=" + searchKey);
 				statusCode = 200;
 
 				trace('has(searchKey) : ${has(searchKey)}');
@@ -224,60 +215,51 @@ class JsonDB{
 				// trace(this.serverdata);
 				// trace(haxe.Json.stringify(this.serverdata));
 
-				if(parseUrl.search == ''){
+				if (parseUrl.search == '') {
 					// content = haxe.Json.stringify('${this.serverdata}');
 					getContent = this.serverdata;
-				} else if(has(searchKey)){
+				} else if (has(searchKey)) {
 					var obj = {};
-					Reflect.setField(obj, searchKey, get(searchKey) );
+					Reflect.setField(obj, searchKey, get(searchKey));
 					getContent = obj;
 				} else {
 					getContent = {error: true};
 				}
 
 				// res.writeHead(statusCode,{"Content-Type":"text/plain"});
-				res.writeHead(statusCode,{"Content-Type":"application/json"});
+				res.writeHead(statusCode, {"Content-Type": "application/json"});
 				res.end(haxe.Json.stringify(getContent));
-
-			}else{
+			} else {
 				// res.writeHead(statusCode,{"Content-Type":"text/plain"});
-				res.writeHead(statusCode,{"Content-Type":"application/json"});
+				res.writeHead(statusCode, {"Content-Type": "application/json"});
 				res.end(content);
 			}
-
 		});
 		// }).listen(4000);
-
-
-
 
 		trace('http://localhost:4000/get/name');
 		trace('http://localhost:4000/get?name');
 		trace('http://localhost:4000/get?key=name');
 
-
-		server.setTimeout(3000, function (socket):Void{
-		 	server.close();
-  			console.log("Call close");
+		server.setTimeout(3000, function(socket):Void {
+			server.close();
+			console.log("Call close");
 		});
 		server.listen(4000);
-
 	}
 
-	function server(){
+	function server() {
 		// Http.createServer(function (req, res) {
-	 //      res.writeHead(200, {'Content-Type': 'text/plain'});
-	 //      res.end('Hello World\n');
-  //       }).listen(1337, '127.0.0.1');
-  //       console.log('Server running at http://127.0.0.1:1337/');
-  //
-  //       // Workers can share any TCP connection
-			// In this case its a HTTP server
-			Http.createServer(function(req, res) {
-				res.writeHead(200);
-				res.end("hello world\n");
-			}).listen(4000);
-
+		//      res.writeHead(200, {'Content-Type': 'text/plain'});
+		//      res.end('Hello World\n');
+		//       }).listen(1337, '127.0.0.1');
+		//       console.log('Server running at http://127.0.0.1:1337/');
+		//
+		//       // Workers can share any TCP connection
+		// In this case its a HTTP server
+		Http.createServer(function(req, res) {
+			res.writeHead(200);
+			res.end("hello world\n");
+		}).listen(4000);
 	}
-
 }

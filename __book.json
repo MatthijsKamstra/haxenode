@@ -1,0 +1,19 @@
+{
+  "gitbook": ">=2.0.0",
+  "structure": {
+    "readme": "intro.md"
+  },
+  "plugins": ["edit-link", "disqus", "ga", "anchors"],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/MatthijsKamstra/haxenode/blob/master/docs/",
+      "label": ""
+    },
+    "disqus": {
+      "shortName": "haxeandnodejs"
+    },
+    "ga": {
+      "token": "UA-67866831-2"
+    }
+  }
+}

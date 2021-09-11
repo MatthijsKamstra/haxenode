@@ -1,4 +1,4 @@
-package ;
+package;
 
 import js.Node;
 import js.npm.Cheerio;
@@ -7,16 +7,14 @@ import js.npm.Request;
 /**
  * @author Matthijs Kamstra aka [mck]
  */
-class Main
-{
-	function new()
-	{
+class Main {
+	function new() {
 		trace("Node.js Scraping Example");
 
-		var request : Request = Request.construct();
+		var request:Request = Request.construct();
 		var url = "http://www.wunderground.com/cgi-bin/findweather/getForecast?&query=02888";
 
-		request.get(url, function (error, response, body) {
+		request.get(url, function(error, response, body) {
 			if (!error) {
 				// Variables names staring with a dollar are not allowed, that is why I changed $ into _cheerio
 				var _cheerio = Cheerio.load(body);
@@ -29,8 +27,7 @@ class Main
 		});
 	}
 
-    static public function main()
-    {
-        var main = new Main();
+	static public function main() {
+		var main = new Main();
 	}
 }

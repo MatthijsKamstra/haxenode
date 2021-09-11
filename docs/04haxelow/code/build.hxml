@@ -1,7 +1,17 @@
--lib js-kit
--lib hxnodejs
--lib haxelow
--cp src
--main Main
--js bin/example.js
--dce full
+--library haxelow
+--library hxnodejs
+--class-path src
+--main Main
+--js bin/example.js
+--dce full
+-D js-es=6
+# only because we can...
+-D no-deprecation-warnings
+
+--next
+
+# Use terminal command to start Node.js!
+--cmd echo "use: 'node bin/example.js' to check script "
+--cmd cd bin
+--cmd node example.js
+--cmd echo exit
