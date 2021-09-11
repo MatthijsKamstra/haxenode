@@ -1,8 +1,0 @@
-{
-"version":3,
-"file":"example.js",
-"sourceRoot":"file:///",
-"sources":["/Users/matthijs/Documents/workingdir/haxe/haxenode/13sequelize/code/src/Main.hx"],
-"names":[],
-"mappings":";;;WAeC,WACA;AAAA,CAIC,cAAiC,SACzB,uBACK,iBAEN,QACA,SACA,UACC,kBAIE,YAAkB;CAG5B,gBAAgB,+BAAe,WAAY,WAAY,WAAW;CAIlE,8BAEO,cACL;AAAA,cAAa;aAEN,eACP;AAAA,cAAa,qCAAqC;;CAKpD,aAAwC,cAC5B,SACJ,iDAEG,SACH;CAGR,WAAW,iBAAkB,OAAO;CAGpC,UAAU,UAAQ,aAAa,WAE9B;AAAA,SAAO,YAAY,cACN,mBACD;;CAMb,oBAAoB,gBAClB;AAAA,cAAY;;CAKd,oBAAoB,gBACnB;AAAA,cAAY,UAAU;;;YAKV,WAEF;AAAA;;;;;;;;"
-}
