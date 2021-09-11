@@ -6,13 +6,13 @@ import js.node.Path;
 /**
  * @author Matthijs Kamstra aka [mck]
  */
-class Main00 {
+class Main01 {
 	function new() {
-		trace("Node.js NeDB example");
+		trace("Node.js NeDB example 01");
 
 		// https://github.com/louischatriot/nedb#creatingloading-a-database
 
-		var options:nedb.DataStoreOptions = {filename: Path.join(Node.__dirname, '/database00.db'), autoload: true};
+		var options:nedb.DataStoreOptions = {filename: Path.join(Node.__dirname, '/database01.db'), autoload: true};
 		var db = new Nedb(options);
 
 		var doc = {
@@ -36,6 +36,6 @@ class Main00 {
 	}
 
 	static public function main() {
-		var main = new Main00();
+		var main = new Main01();
 	}
 }

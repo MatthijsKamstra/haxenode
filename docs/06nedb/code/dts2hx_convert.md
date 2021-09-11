@@ -1,6 +1,6 @@
 ## tl;dr
 
-```
+```bash
 # install
 npm install dts2hx --save-dev
 npm install nedb --save
@@ -17,7 +17,7 @@ haxelib install hxnodejs
 
 ## install packages
 
-```
+```bash
 npm install dts2hx --save-dev
 npm install nedb --save
 npm install @types/nedb --save
@@ -25,14 +25,14 @@ npm install @types/nedb --save
 
 ## run dts2hx
 
-```
+```bash
 // doesn't work because the nedb ts files are not in the repo
 npx dts2hx nedb
 ```
 
 works
 
-```
+```bash
 npx dts2hx @types/nedb
 ```
 
@@ -40,7 +40,7 @@ npx dts2hx @types/nedb
 
 build.hxml
 
-```
+```bash
 --library nedb
 ```
 

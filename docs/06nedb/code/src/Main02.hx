@@ -8,7 +8,7 @@ import js.node.Path;
  */
 class Main02 {
 	function new() {
-		trace("Node.js NeDB example");
+		trace("Node.js NeDB example 02");
 
 		// https://github.com/louischatriot/nedb#finding-documents
 

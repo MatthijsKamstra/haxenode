@@ -2,14 +2,15 @@
 --library hxnodejs
 --class-path src
 --main Main02
---js bin/example.js
+--js bin/example02.js
 --dce full
 -D js-es=6
+-D source-map-content
 
 --next
 
 # Use terminal command to start Node.js!
 # --cmd echo "use: 'node bin/example.js' to check script "
 --cmd cd bin
---cmd node example.js
+--cmd node example02.js
 # --cmd echo exit

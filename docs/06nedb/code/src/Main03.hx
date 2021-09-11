@@ -9,7 +9,7 @@ import Nedb;
  */
 class Main03 {
 	function new() {
-		trace("Node.js NeDB example");
+		trace("Node.js NeDB example 03");
 
 		// https://github.com/louischatriot/nedb#finding-documents
 
@@ -24,26 +24,38 @@ class Main03 {
 			satellites: ['Phobos', 'Deimos']
 		});
 		db.insert({
-			_id: 'id2',
+			_id: 'id${Date.now().getTime() + 2}',
 			planet: 'Earth',
 			system: 'solar',
 			inhabited: true,
 			humans: {genders: 2, eyes: true}
 		});
 		db.insert({
-			_id: 'id3',
+			_id: 'id${Date.now().getTime() + 3}',
 			planet: 'Jupiter',
 			system: 'solar',
 			inhabited: false
 		});
 		db.insert({
-			_id: 'id4',
+			_id: 'id${Date.now().getTime() + 4}',
 			planet: 'Omicron Persei 8',
 			system: 'futurama',
 			inhabited: true,
 			humans: {genders: 7}
 		});
-		db.insert({_id: 'id5', completeData: {planets: [{name: 'Earth', number: 3}, {name: 'Mars', number: 2}, {name: 'Pluton', number: 9}]}});
+		db.insert({
+			_id: 'id${Date.now().getTime() + 5}',
+			completeData: {
+				planets: [
+					{name: 'Earth', number: 3},
+					{name: 'Mars', number: 2},
+					{
+						name: 'Pluton',
+						number: 9
+					}
+				]
+			}
+		});
 
 		// Finding all planets in the solar system
 		db.find({system: 'solar'}, function(err, docs) {
