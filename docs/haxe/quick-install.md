@@ -7,13 +7,14 @@ You just want to get started ... right!
 
 Choose your OS:
 
-* [OSX](#osx)
-* [Linux](#linux)
-* [Windows](#windows)
+- [OSX](#osx)
+- [Linux](#linux)
+- [Windows](#windows)
 
-__At the time of writing, the version is Haxe 3.2.1, but don't let that stop you when that has changed__
+**At the time of writing, the version is Haxe 3.2.1, but don't let that stop you when that has changed**
 
 <a name="osx"></a>
+
 # OSX
 
 ## Step 0: You have joined an elite Haxe force!
@@ -64,7 +65,7 @@ This is not necessary but something you eventually need to do.
 - Open `terminal`
 - Copy and past the following
 
-```
+```bash
 haxelib install hxnodejs
 haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 haxelib install markdown
@@ -88,11 +89,9 @@ Now you have access to NPM.
 npm -v
 ```
 
-
-
 <a name="linux"></a>
-# Linux
 
+# Linux
 
 ## Step 0: You have joined an elite Haxe force!
 
@@ -115,7 +114,6 @@ On the homepage of [Visual Studio Code](https://code.visualstudio.com/) find the
 
 - Download
 - And install
-
 
 ## Step 3: Install VSCode - Haxe Extension Pack
 
@@ -143,7 +141,7 @@ This is not necessary but something you eventually need to do.
 - Open `terminal`
 - Copy and paste the following
 
-```
+```bash
 haxelib install hxnodejs
 haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 haxelib install markdown
@@ -167,11 +165,9 @@ Now you have access to NPM.
 npm -v
 ```
 
-
-
 <a name="windows"></a>
-# Windows
 
+# Windows
 
 ## Step 0: You have joined an elite Haxe force!
 
@@ -184,7 +180,6 @@ You can find installers and binaries for Windows, OS X and Linux on [http://haxe
 - Download
 - And install
 
-
 ## Step 2: Install Editor
 
 You need an IDE, install **HaxeDevelop**
@@ -196,8 +191,6 @@ On the homepage of [HaxeDevelop](http://www.haxedevelop.org) find the button cal
 - Download
 - And install
 
-
-
 ## Step 3 (extra): Install haxelib libraries
 
 This is not necessary but something you eventually need to do.
@@ -205,7 +198,7 @@ This is not necessary but something you eventually need to do.
 - Open `terminal`
 - Copy and past the following
 
-```
+```bash
 haxelib install hxnodejs
 haxelib git js-kit https://github.com/clemos/haxe-js-kit.git haxelib
 haxelib install markdown
@@ -220,7 +213,6 @@ Download Node.js: get your version here: [https://nodejs.org/](https://nodejs.or
 - Download
 - And install
 
-
 Now you have access to NPM.
 
 - Open `terminal`
@@ -229,8 +221,5 @@ Now you have access to NPM.
 ```
 npm -v
 ```
-
-
-
 
 ---

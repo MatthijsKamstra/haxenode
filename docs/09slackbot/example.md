@@ -26,28 +26,27 @@ check out [the installation](installation.md).
 Open your favorite editor, copy/paste the code and save it in the `src` folder.
 
 ```haxe
-package ;
+package;
 
 import slack.*;
 
-class Main
-{
-	function new()
-	{
+class Main {
+	function new() {
 		trace("Slack Incoming Webhooks Example");
-		var webhookURL = "https://hooks.slack.com/services/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";
+
+		var webhookURL = "https://hooks.slack.com/services/USE/YOUR/CODE/HERE";
 		var slack = new Webhook(webhookURL);
-		var payload : Webhook.Payload = {
-			text : "another test",
-			icon_emoji : ":8ball:",
-			username : "3cpo"
+
+		var payload:Webhook.Payload = {
+			text: "another test",
+			icon_emoji: ":8ball:",
+			username: "3cpo"
 		};
 		slack.send(payload);
 	}
 
-    static public function main()
-    {
-        var main = new Main();
+	static public function main() {
+		var main = new Main();
 	}
 }
 ```
@@ -62,24 +61,23 @@ package slack;
 import js.Node;
 import js.npm.Request;
 
-class Webhook
-{
+class Webhook {
 	// source: https://api.slack.com/incoming-webhooks
-	private var _url : String;
-	public function new (url:String)
-	{
+	private var _url:String;
+
+	public function new(url:String) {
 		_url = url;
 	}
 
-	public function send(payload:Payload):Void
-	{
-		var request : Request = Request.construct();
+	public function send(payload:Payload):Void {
+		var request:Request = Request.construct();
+
 		var option = {
 			url: _url,
 			body: haxe.Json.stringify(payload)
 		};
-		request.post(option, function (error, response, body)
-		{
+
+		request.post(option, function(error, response, body) {
 			if (!error) {
 				trace("body: " + body);
 			} else {
@@ -89,10 +87,9 @@ class Webhook
 	}
 }
 
-typedef Payload =
-{
+typedef Payload = {
 	var text:String;
-  	@:optional var username:String;
+	@:optional var username:String;
 	@:optional var channel:String;
 	@:optional var icon_url:String;
 	@:optional var icon_emoji:String;
@@ -100,6 +97,7 @@ typedef Payload =
 	@:optional var unfurl_links:String;
 	@:optional var link_names:String;
 }
+
 
 ```
 

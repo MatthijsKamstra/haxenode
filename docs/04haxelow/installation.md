@@ -9,7 +9,7 @@ The same goes for **Node.js**, you will have automatically installed `NPM`.
 Install the [official Haxe node.js externs](https://github.com/HaxeFoundation/hxnodejs) lib via [haxelib](http://lib.haxe.org/p/hxnodejs/).
 Haxelib is automaticly installed when installing Haxe and you can see it as a sort of NPM.
 
-```
+```bash
 haxelib install hxnodejs
 ```
 
@@ -17,7 +17,7 @@ haxelib install hxnodejs
 
 Use haxelib to install **haxelow** :
 
-```
+```bash
 haxelib install haxelow
 ```
 

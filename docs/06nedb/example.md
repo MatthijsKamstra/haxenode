@@ -10,7 +10,7 @@ This example is a combination of tutorials/examples below:
 - https://github.com/louischatriot/nedb#creatingloading-a-database
 
 Although js-kit is awesome, it doesn't have externs for NeDB...
-So I added it [here](https://github.com/MatthijsKamstra/haxenode/blob/master/06nedb/code/src/js/npm/NeDB.hx).
+So I added it [here](https://github.com/MatthijsKamstra/haxenode/blob/master/docs/06nedb/code/src/js/npm/NeDB.hx).
 
 ## How to start
 

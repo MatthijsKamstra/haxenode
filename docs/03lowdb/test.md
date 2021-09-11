@@ -47,6 +47,6 @@ build.hxml
 
 ## install hxnodejs in .haxelib folder
 
-```
+```bash
 haxelib install hxnodejs
 ```

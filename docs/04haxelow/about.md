@@ -8,6 +8,6 @@ But there is a better way to do something similar in Haxe.
 
 In this example we will use [haxelow](https://github.com/ciscoheat/haxelow)
 
-```
+```bash
 haxelib install haxelow
 ```
