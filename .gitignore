@@ -6,3 +6,4 @@ docs/05website/code/.haxelib
 docs/*/code/.haxelib
 docs/03lowdb/code/.haxelib
 docs/.haxelib
+*/*/.haxelib
