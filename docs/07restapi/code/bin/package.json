@@ -5,6 +5,6 @@
 	"start": "node index.js",
 	"private": true,
 	"dependencies": {
-		"express": "~4.22"
+		"express": "~5.2"
 	}
 }
